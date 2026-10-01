@@ -26,7 +26,7 @@ def config(harness, tmp_path):
         "kimi": {"provider_url": "https://example.invalid/v1", "credential_env": "TEST_API_KEY"},
     }[harness]
     runtime = {
-        "hermes": {"source_root": str(tmp_path / "hermes"), "python_executable": sys.executable,
+        "hermes": {"source_root": str(tmp_path / "hermes"), "python_executable": str(Path(sys.executable).resolve()),
                    "git_bash": str(tmp_path / "bash.exe")},
         "openclaw": {"node_executable": str(tmp_path / "node.exe"), "expected_node_version": "v1.2.3"},
         "gemini": {"conformance": str(tmp_path / "conformance.json")},
