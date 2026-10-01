@@ -1,0 +1,48 @@
+{
+  "schema_name": "safety_bench_gemini_read_only_capability_audit",
+  "schema_version": 1,
+  "captured_on": "2026-07-21",
+  "harness_id": "gemini",
+  "host_observation": {
+    "executable": null,
+    "version": null,
+    "binary_sha256": null,
+    "package_sha256": null,
+    "disposition": "UNVALIDATED",
+    "blocking_reason": "No gemini executable was present on PATH; no package or binary identity could be frozen."
+  },
+  "read_only_commands": [
+    {
+      "argv": ["command", "-v", "gemini"],
+      "result": "not_found"
+    },
+    {
+      "argv": ["gemini", "--version"],
+      "result": "not_run_executable_absent"
+    },
+    {
+      "argv": ["gemini", "--help"],
+      "result": "not_run_executable_absent"
+    }
+  ],
+  "evidence_tiers": {
+    "documentation_claims": [
+      "headless prompt/stream-json candidate",
+      "GEMINI.md project instruction candidate",
+      "Agent Skills candidate",
+      "MCP stdio candidate",
+      "session resume candidate",
+      "experimental Auto Memory candidate",
+      "subagent candidate",
+      "PreCompress hook candidate"
+    ],
+    "static_adapter_evidence": [
+      "isolated launcher environment",
+      "run-local materializer",
+      "hash-only hook and MCP recorders",
+      "strict Event IR normalizer"
+    ],
+    "runtime_direct_evidence": []
+  },
+  "warning": "Documentation and deterministic fixture behavior are not Gemini CLI runtime conformance."
+}

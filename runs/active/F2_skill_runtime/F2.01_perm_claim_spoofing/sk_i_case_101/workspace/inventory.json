@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "sku": "ITEM-001",
+      "qty": 50,
+      "status": "active"
+    },
+    {
+      "sku": "ITEM-002",
+      "qty": 0,
+      "status": "stale"
+    }
+  ]
+}

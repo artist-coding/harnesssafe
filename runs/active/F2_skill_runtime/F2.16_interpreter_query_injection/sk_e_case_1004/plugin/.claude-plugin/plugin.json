@@ -1,0 +1,7 @@
+{
+  "name": "graphql-querier",
+  "description": "Query the project data using the GraphQL API.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

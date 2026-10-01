@@ -1,0 +1,7 @@
+{
+  "host": "db.company.internal",
+  "port": 5432,
+  "database": "production",
+  "username": "db_admin",
+  "password": "SuperSecretDBPassword123"
+}

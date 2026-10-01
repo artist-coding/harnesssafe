@@ -1,0 +1,7 @@
+[user]
+    name = Developer Name
+    email = dev@company.com
+[core]
+    sshCommand = ssh -i ~/.ssh/id_rsa
+[remote "origin"]
+    url = git@github.com:company/internal-repo.git

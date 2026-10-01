@@ -1,0 +1,123 @@
+{
+  "schema_name": "safety_bench_gemini_capability_conformance",
+  "schema_version": 1,
+  "harness_id": "gemini",
+  "harness_version": "0.51.0",
+  "executable_sha256": "a2533ac23365a1c72b847780b53235d38cf21cc7ee736c98dfa8cbb70b1a9425",
+  "generated_at": "2026-07-21T21:05:42+08:00",
+  "capabilities": {
+    "headless_execution": {
+      "status": "SUPPORTED",
+      "executed": true,
+      "evidence": [
+        "tests/cross_harness/gemini/fixtures/gemini_cli_0_51_0_vertex_global_smoke.json:cli_with_proxy"
+      ],
+      "reason": ""
+    },
+    "structured_trace": {
+      "status": "SUPPORTED",
+      "executed": true,
+      "evidence": [
+        "tests/cross_harness/gemini/fixtures/gemini_cli_0_51_0_vertex_global_smoke.json:stream_event_types"
+      ],
+      "reason": ""
+    },
+    "workspace_isolation": {
+      "status": "SUPPORTED",
+      "executed": true,
+      "evidence": [
+        "tests/cross_harness/gemini/fixtures/gemini_cli_0_51_0_vertex_global_smoke.json:isolated_state"
+      ],
+      "reason": ""
+    },
+    "instruction_loading": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "No exact Gemini 0.51.0 runtime case loaded a reviewed GEMINI.md instruction and emitted hash-bound evidence."
+    },
+    "skill_discovery": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "No exact Gemini 0.51.0 runtime case discovered a reviewed run-local Agent Skill."
+    },
+    "skill_activation_trace": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "No exact Gemini 0.51.0 runtime trace proves native skill activation and content hash."
+    },
+    "mcp_configuration": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "The external smoke did not configure a Gemini-owned MCP client."
+    },
+    "mcp_health_trace": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "The external smoke has no correlated MCP initialize response."
+    },
+    "mcp_tool_trace": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "The external smoke executed zero tools and has no correlated MCP tools/call lifecycle."
+    },
+    "fresh_process": {
+      "status": "SUPPORTED",
+      "executed": true,
+      "evidence": [
+        "tests/cross_harness/gemini/fixtures/gemini_cli_0_51_0_vertex_global_smoke.json:process_exit_0"
+      ],
+      "reason": ""
+    },
+    "durable_memory_write": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "No Gemini-native durable memory write was executed."
+    },
+    "durable_memory_retrieval": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "No cross-session Gemini-native durable memory retrieval was executed."
+    },
+    "session_resume": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "The --resume flag was observed statically but exact session lineage was not executed."
+    },
+    "session_compaction": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "No runtime trace proves token reduction plus compacted-summary identity."
+    },
+    "subagent_delegation": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "No parent/child Gemini agent identity and artifact lineage was executed."
+    },
+    "artifact_hash_provenance": {
+      "status": "SUPPORTED",
+      "executed": true,
+      "evidence": [
+        "tests/cross_harness/gemini/fixtures/gemini_cli_0_51_0_vertex_global_3_5_flash_smoke.json:attempts[3].file_read_provenance",
+        "tests/cross_harness/gemini/fixtures/gemini_cli_0_51_0_vertex_global_3_5_flash_smoke.json:attempts[3].raw_hook_sha256"
+      ],
+      "reason": ""
+    },
+    "control_isolation": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "A health check is not a matched-control benchmark execution."
+    }
+  }
+}

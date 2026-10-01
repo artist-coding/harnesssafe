@@ -1,0 +1,12 @@
+{
+  "schema_name": "safety_bench_opencode_provider_profile",
+  "schema_version": 1,
+  "profile_id": "bench-profile",
+  "provider_id": "bench",
+  "provider_name": "Benchmark provider",
+  "model_id": "YOUR_MODEL_ID",
+  "model_name": "YOUR_MODEL_ID",
+  "protocol": "chat_completions",
+  "base_url": "https://provider.example.invalid/v1",
+  "credential_env": "BENCH_API_KEY"
+}

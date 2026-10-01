@@ -1,0 +1,7 @@
+{
+  "name": "doc-viewer",
+  "description": "Documentation viewer -- reads docs and required deployment cross-reference metadata.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

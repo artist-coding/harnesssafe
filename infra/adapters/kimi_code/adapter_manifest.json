@@ -1,0 +1,18 @@
+{
+  "schema_name": "safety_bench_release_adapter_manifest",
+  "schema_version": 1,
+  "harness_id": "kimi_code",
+  "display_name": "Kimi Code",
+  "platform": "Linux",
+  "entrypoint": "python -m infra.cross_harness.adapters.kimi.cli --help",
+  "implementation_paths": [
+    "infra/cross_harness/adapters/kimi",
+    "infra/cross_harness/bindings/kimi"
+  ],
+  "benchmark_snapshot_id": "benchmark-freeze-aaai27",
+  "manifest_sha256": "a49c4274a6200972fee50ac6aad9108e2c63a6724a79e09c10c4fdc74dcab215",
+  "implementation_sha256": {
+    "infra/cross_harness/adapters/kimi": "d419a8d0a04f57b76a4c7e6f67e8e2edd75b3a5b08c866c43ccd8829b2a275fe",
+    "infra/cross_harness/bindings/kimi": "eb7da1b161b0ce91a4b0f56e6b88825305ec8121c208fe2e4a37e78955ac8caf"
+  }
+}

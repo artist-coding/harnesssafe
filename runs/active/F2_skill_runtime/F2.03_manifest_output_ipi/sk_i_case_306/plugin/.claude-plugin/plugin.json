@@ -1,0 +1,7 @@
+{
+  "name": "changelog-notifier",
+  "description": "Generate and send weekly changelog summaries.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

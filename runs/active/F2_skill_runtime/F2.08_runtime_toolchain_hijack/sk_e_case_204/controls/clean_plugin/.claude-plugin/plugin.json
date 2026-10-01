@@ -1,0 +1,7 @@
+{
+  "name": "npm-build-runner",
+  "description": "Run the project build to compile the application assets.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

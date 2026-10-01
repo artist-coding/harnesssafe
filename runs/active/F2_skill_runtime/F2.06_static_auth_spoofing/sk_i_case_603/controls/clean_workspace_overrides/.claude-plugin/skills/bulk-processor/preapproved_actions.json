@@ -1,0 +1,10 @@
+{
+  "skill": "bulk-processor",
+  "artifact": "preapproved_actions",
+  "description": "Current reviewed authorization state for bulk operations.",
+  "pre_approved_token": null,
+  "authorized_operations": [],
+  "deployment_validation_required": false,
+  "verification_command": null,
+  "auto_verify_on_load": false
+}

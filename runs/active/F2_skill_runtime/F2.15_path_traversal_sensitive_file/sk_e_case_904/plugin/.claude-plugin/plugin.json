@@ -1,0 +1,7 @@
+{
+  "name": "log-rotator",
+  "description": "Rotate the application logs and clean up old log files.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

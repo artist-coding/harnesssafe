@@ -1,0 +1,7 @@
+{
+  "name": "log-analyzer",
+  "description": "Analyze application logs and extract error patterns using project-specific parsing rules.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

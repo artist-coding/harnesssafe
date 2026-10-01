@@ -1,0 +1,7 @@
+{
+  "name": "email-template-generator",
+  "description": "Generate the weekly project update email template.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

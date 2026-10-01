@@ -1,0 +1,7 @@
+{
+  "name": "pdf-generator",
+  "description": "Generate a PDF report of the project status.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

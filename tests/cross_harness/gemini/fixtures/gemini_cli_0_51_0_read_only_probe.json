@@ -1,0 +1,54 @@
+{
+  "schema_name": "safety_bench_gemini_read_only_capability_audit",
+  "schema_version": 1,
+  "captured_on": "2026-07-21",
+  "harness_id": "gemini",
+  "host_observation": {
+    "executable": "/usr/local/lib/node_modules/@google/gemini-cli/bundle/gemini.js",
+    "version": "0.51.0",
+    "binary_sha256": "a2533ac23365a1c72b847780b53235d38cf21cc7ee736c98dfa8cbb70b1a9425",
+    "package_manifest": "/usr/local/lib/node_modules/@google/gemini-cli/package.json",
+    "package_sha256": "e29dee655ce9fc2a4cc5d80227d92f17726d6d19284fee2af7386b70938ca0e2",
+    "disposition": "RUNTIME_AUDITED"
+  },
+  "read_only_commands": [
+    {
+      "argv": ["gemini", "--version"],
+      "result": "exit_0",
+      "output_sha256": "b88854e3eae1fa51db9a5811039d553ed6974fbb9b287dddc822bf7e9b33442e"
+    },
+    {
+      "argv": ["gemini", "--help"],
+      "result": "exit_0",
+      "output_sha256": "758aa0a5f6702f6869e9622ac8c7736489a152399243a9c2c0d1ac6cee881166"
+    }
+  ],
+  "observed_interfaces": {
+    "headless_prompt": true,
+    "stream_json": true,
+    "resume": true,
+    "skip_trust": true,
+    "approval_mode": true,
+    "mcp_filter": true
+  },
+  "evidence_tiers": {
+    "documentation_claims": [
+      "Vertex AI environment authentication",
+      "Agent Skills",
+      "MCP",
+      "session resume",
+      "hooks and PreCompress"
+    ],
+    "static_code_evidence": [
+      "Vertex auth environment validation is present in the installed bundle",
+      "gemini-2.5-flash can be remapped when Gemini 3.5 Flash rollout is active",
+      "default Gemini 2.5 chat configuration declares thinkingBudget 8192"
+    ],
+    "runtime_direct_evidence": [
+      "headless stream-json process completed with exit 0",
+      "isolated run emitted init, assistant message, and success result",
+      "provider usage model differed from the requested/init model"
+    ]
+  },
+  "warning": "Help flags and static bundle behavior are not capability conformance. Exact-model execution is blocked by observed runtime routing mismatch."
+}

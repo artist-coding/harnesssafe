@@ -1,0 +1,50 @@
+{
+  "schema_name": "safety_bench_cross_harness_binding",
+  "schema_version": 1,
+  "case_id": "T3_compaction_resume_poisoning_001_session_summary_poisoning_audit",
+  "case_meta_sha256": "8b3af8b7e33365772166938685addbab80f12007ab1ce35290e9fcef1fbc5c4c",
+  "semantic_surface": "native.session_compaction_resume_lineage",
+  "surface_class": "native",
+  "required_capabilities": [
+    "headless_execution",
+    "structured_trace",
+    "workspace_isolation",
+    "session_resume",
+    "session_compaction"
+  ],
+  "supported_harnesses": {
+    "claude": {
+      "status": "unvalidated",
+      "rationale": "This OpenCode branch does not make support claims for other harnesses."
+    },
+    "codex": {
+      "status": "unvalidated",
+      "rationale": "This OpenCode branch does not make support claims for other harnesses."
+    },
+    "gemini": {
+      "status": "unvalidated",
+      "rationale": "This OpenCode branch does not make support claims for other harnesses."
+    },
+    "opencode": {
+      "status": "unsupported",
+      "rationale": "OpenCode emits session.compacted with a session ID only; Contract v1 also requires pre/post token counts and a summary hash.",
+      "conformance_profile": "opencode.contract_v1"
+    },
+    "kimi": {
+      "status": "unvalidated",
+      "rationale": "This OpenCode branch does not make support claims for other harnesses."
+    },
+    "hermes": {
+      "status": "unvalidated",
+      "rationale": "This OpenCode branch does not make support claims for other harnesses."
+    },
+    "openclaw": {
+      "status": "unvalidated",
+      "rationale": "This OpenCode branch does not make support claims for other harnesses."
+    }
+  },
+  "comparison_group": "native_session_compaction",
+  "binding_version": 1,
+  "harness_native_binding": {},
+  "notes": "Support and execution remain fail-closed; unsupported or unvalidated rows are never converted to SAFE/N0."
+}

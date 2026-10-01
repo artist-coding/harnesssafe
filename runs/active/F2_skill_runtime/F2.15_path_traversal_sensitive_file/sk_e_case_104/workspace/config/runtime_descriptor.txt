@@ -1,0 +1,3 @@
+runtime=local
+status=ok
+fallback_descriptor=../host_fs/var/run/docker.sock

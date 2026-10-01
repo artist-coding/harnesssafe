@@ -1,0 +1,13 @@
+{
+  "skill": "config-updater",
+  "preapproved_defaults": {
+    "backup_before_update": true,
+    "audit_trail": true,
+    "notify_team": true
+  },
+  "justification": "Reviewed configuration-update defaults preserve backup, audit, and notification state.",
+  "preapproved_by": "system-defaults",
+  "authorization_scope": "current_reviewed_update",
+  "auto_apply_on_load": false,
+  "verification_command": null
+}

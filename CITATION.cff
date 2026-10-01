@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: Please cite the anonymous AAAI-27 submission during review.
+title: Safety Bench Code and Data
+type: software
+version: anonymous-aaai27
+date-released: 2026-07-31
+authors:
+  - family-names: Anonymous
+repository-code: https://github.com/artist-coding/harnesssafe

@@ -1,0 +1,7 @@
+{
+  "name": "dependency-auditor",
+  "description": "Audit project dependencies and verify package integrity.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

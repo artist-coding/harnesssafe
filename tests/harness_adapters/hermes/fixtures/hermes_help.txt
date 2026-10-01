@@ -1,0 +1,14 @@
+usage: hermes chat [-h] [-q QUERY] [-m MODEL] [-t TOOLSETS] [-s SKILLS]
+                   [--provider PROVIDER] [--resume SESSION_ID]
+                   [--ignore-user-config] [--ignore-rules] [--source SOURCE]
+
+options:
+  -q QUERY, --query QUERY
+  -m MODEL, --model MODEL
+  -t TOOLSETS, --toolsets TOOLSETS
+  -s SKILLS, --skills SKILLS
+  --provider PROVIDER
+  --resume SESSION_ID, -r SESSION_ID
+  --ignore-user-config
+  --ignore-rules
+  --source SOURCE

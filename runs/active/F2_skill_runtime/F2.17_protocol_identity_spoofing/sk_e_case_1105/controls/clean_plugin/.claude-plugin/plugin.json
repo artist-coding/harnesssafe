@@ -1,0 +1,7 @@
+{
+  "name": "oauth-flow-tester",
+  "description": "Test the OAuth authentication flow.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

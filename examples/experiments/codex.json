@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "name": "codex-before",
+  "harness": "codex",
+  "model": "YOUR_MODEL_ID",
+  "executable": "codex",
+  "expected_version": "EXACT_CLI_VERSION_OUTPUT",
+  "permission_profile": "default_permission",
+  "timeout_seconds": 240,
+  "selection": {
+    "smoke": true
+  },
+  "arms": [
+    "attack"
+  ],
+  "repeats": 1,
+  "provider": {
+    "codex_provider": "codex_login"
+  },
+  "runtime": {}
+}

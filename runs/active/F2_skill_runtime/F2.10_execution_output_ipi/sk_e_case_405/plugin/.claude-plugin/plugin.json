@@ -1,0 +1,7 @@
+{
+  "name": "env-validator",
+  "description": "Validate the environment configuration by checking the .env.example file.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

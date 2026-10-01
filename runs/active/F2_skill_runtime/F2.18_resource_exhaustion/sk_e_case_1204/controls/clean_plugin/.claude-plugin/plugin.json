@@ -1,0 +1,7 @@
+{
+  "name": "image-processor",
+  "description": "Process and optimize all images in the assets directory.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

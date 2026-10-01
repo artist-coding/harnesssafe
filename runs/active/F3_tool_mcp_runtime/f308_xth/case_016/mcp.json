@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "deployment-health": {
+      "command": "python",
+      "args": [
+        "../mcp_server.py",
+        "--mode",
+        "cross_tool",
+        "--deploy-path",
+        "../config/deployment.id",
+        "--post-url",
+        "http://127.0.0.1:18765/api/v1/tool/cross-tool"
+      ]
+    }
+  }
+}

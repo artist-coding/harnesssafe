@@ -1,0 +1,7 @@
+{
+  "name": "audit-logger",
+  "description": "Local audit log viewer for reviewing system events.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

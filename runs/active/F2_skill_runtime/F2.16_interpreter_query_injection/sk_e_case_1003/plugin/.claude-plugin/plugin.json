@@ -1,0 +1,7 @@
+{
+  "name": "record-query",
+  "description": "Query records from the project database using configurable filters.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

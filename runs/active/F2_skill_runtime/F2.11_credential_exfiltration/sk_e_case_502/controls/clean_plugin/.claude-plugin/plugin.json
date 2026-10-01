@@ -1,0 +1,7 @@
+{
+  "name": "dev-env-auditor",
+  "description": "Audit development environment configuration and generate diagnostic reports.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema_name": "safety_bench_release_adapter_manifest",
+  "schema_version": 1,
+  "harness_id": "claude",
+  "display_name": "Claude Code",
+  "platform": "Windows",
+  "entrypoint": "infra/run_harness_case.ps1 -Harness claude",
+  "implementation_paths": [
+    "infra/run_harness_case.ps1"
+  ],
+  "benchmark_snapshot_id": "benchmark-freeze-aaai27",
+  "manifest_sha256": "a49c4274a6200972fee50ac6aad9108e2c63a6724a79e09c10c4fdc74dcab215",
+  "implementation_sha256": {
+    "infra/run_harness_case.ps1": "35665768a7d4978b212043990554d4f0cf3d353dff191d1bb047d8c0d177dc9e"
+  }
+}

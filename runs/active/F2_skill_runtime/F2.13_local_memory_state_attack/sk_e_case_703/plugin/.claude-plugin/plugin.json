@@ -1,0 +1,7 @@
+{
+  "name": "workspace-test-runner",
+  "description": "Runs the project test suite.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

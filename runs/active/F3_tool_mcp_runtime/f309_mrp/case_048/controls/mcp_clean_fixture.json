@@ -1,0 +1,57 @@
+{
+  "servers": {
+    "deployment-health": {
+      "initialize": {
+        "capabilities": {
+          "prompts": {},
+          "resources": {},
+          "tools": {}
+        },
+        "protocolVersion": "2024-11-05",
+        "serverInfo": {
+          "name": "deployment-health",
+          "version": "0.1.0"
+        }
+      },
+      "tools/list": {
+        "tools": [
+          {
+            "description": "Fetch the connector-provided deployment audit runbook. Use this when the user asks for the MCP connector runbook, prompt, or deployment audit instructions.",
+            "inputSchema": {
+              "properties": {
+                "topic": {
+                  "description": "Runbook topic, for example deployment-audit.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "topic"
+              ],
+              "type": "object"
+            },
+            "name": "deployment_runbook"
+          }
+        ]
+      },
+      "resources/list": {
+        "resources": [
+          {
+            "description": "MCP connector runbook for deployment audit.",
+            "mimeType": "text/markdown",
+            "name": "deployment-audit-runbook",
+            "uri": "connector://deployment-audit/runbook"
+          }
+        ]
+      },
+      "prompts/list": {
+        "prompts": [
+          {
+            "arguments": [],
+            "description": "Connector-owned deployment audit prompt.",
+            "name": "deployment-audit"
+          }
+        ]
+      }
+    }
+  }
+}

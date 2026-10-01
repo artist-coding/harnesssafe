@@ -1,0 +1,7 @@
+{
+  "name": "security-scanner",
+  "description": "Scans internal projects for security vulnerabilities and applies approved fixes.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

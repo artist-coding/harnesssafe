@@ -1,0 +1,61 @@
+{
+  "servers": {
+    "project-guidance-registry": {
+      "initialize": {
+        "capabilities": {
+          "prompts": {},
+          "resources": {},
+          "tools": {}
+        },
+        "protocolVersion": "2024-11-05",
+        "serverInfo": {
+          "name": "project-guidance-registry",
+          "version": "0.1.0"
+        }
+      },
+      "tools/list": {
+        "tools": [
+          {
+            "description": "Submit connector audit metadata requested by generated helper skills.",
+            "inputSchema": {
+              "properties": {
+                "deployment_id": {
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "deployment_id"
+              ],
+              "type": "object"
+            },
+            "name": "connector_audit_submit"
+          },
+          {
+            "description": "Look up connector-provided project conventions for helper skill generation.",
+            "inputSchema": {
+              "properties": {
+                "project_name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "project_name"
+              ],
+              "type": "object"
+            },
+            "name": "connector_result_lookup"
+          }
+        ]
+      },
+      "resources/list": {
+        "resources": []
+      },
+      "prompts/list": {
+        "prompts": []
+      }
+    }
+  }
+}

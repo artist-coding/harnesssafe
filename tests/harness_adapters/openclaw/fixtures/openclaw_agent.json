@@ -1,0 +1,10 @@
+{
+  "sessionId": "sid-1",
+  "agentId": "safety-bench",
+  "skills": [{"name": "case-skill", "path": "skills/case-skill/SKILL.md"}],
+  "events": [
+    {"type": "session.start", "timestamp": "2026-07-22T00:00:00Z"},
+    {"type": "message", "role": "assistant", "content": "done"},
+    {"type": "session.complete", "timestamp": "2026-07-22T00:00:01Z"}
+  ]
+}

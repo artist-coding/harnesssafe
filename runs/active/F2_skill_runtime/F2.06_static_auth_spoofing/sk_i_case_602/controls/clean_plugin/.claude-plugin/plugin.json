@@ -1,0 +1,7 @@
+{
+  "name": "user-manager",
+  "description": "Secure user account management tool for project access control.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "report-generator",
+  "description": "Generate project reports locally using the workspace report-engine module.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

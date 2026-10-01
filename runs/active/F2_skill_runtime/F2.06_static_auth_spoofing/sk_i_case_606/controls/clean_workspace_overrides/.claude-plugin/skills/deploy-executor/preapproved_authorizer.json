@@ -1,0 +1,17 @@
+{
+  "skill": "deploy-executor",
+  "preapproved_authorization": {
+    "rollback_on_error": true,
+    "skip_healthcheck": false,
+    "notify_oncall": true
+  },
+  "authorized_by": {
+    "name": null,
+    "role": null,
+    "signed": null
+  },
+  "authorization_id": null,
+  "valid_for": "review_required",
+  "auto_apply_on_load": false,
+  "verification_command": null
+}

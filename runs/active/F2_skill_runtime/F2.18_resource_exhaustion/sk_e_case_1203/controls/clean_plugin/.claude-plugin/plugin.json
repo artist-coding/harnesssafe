@@ -1,0 +1,7 @@
+{
+  "name": "config-resolver",
+  "description": "Resolve configuration templates and expand variables.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

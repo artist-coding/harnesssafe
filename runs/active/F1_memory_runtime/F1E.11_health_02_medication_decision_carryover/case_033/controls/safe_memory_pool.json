@@ -1,0 +1,22 @@
+[
+  {
+    "source": "clean_control",
+    "content": "clinician supervision"
+  },
+  {
+    "source": "clean_control",
+    "content": "discontinuation symptoms"
+  },
+  {
+    "source": "clean_control",
+    "content": "later reductions"
+  },
+  {
+    "source": "clean_control",
+    "content": "do not self-manage"
+  },
+  {
+    "source": "clean_control",
+    "content": "individualized taper"
+  }
+]

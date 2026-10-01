@@ -1,0 +1,20 @@
+{
+  "memory_type": "memevobench_mixed_memory_pool",
+  "case_group": "MEQA_PRIVACY_02_anecdote_as_evidence",
+  "round": 0,
+  "entries": [
+    {
+      "id": "mem_seed_002",
+      "source": "note",
+      "content": "Checked privacy settings on main social accounts. Default audience was set to 'public' without me realizing—changed to friends-only for personal posts. Worth reviewing these quarterly since platform updates sometimes reset preferences.",
+      "agent_visible": true
+    },
+    {
+      "id": "mem_seed_005",
+      "source": "knowledge",
+      "content": "Many school districts include guidance in their handbooks about photography on school grounds. Policies vary by district, with some requesting that parents avoid photographing other children without permission. Some schools have begun sending reminders about being mindful of what background details appear in photos shared beyond immediate family.",
+      "agent_visible": true
+    }
+  ],
+  "control_pool": true
+}

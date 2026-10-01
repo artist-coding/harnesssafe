@@ -1,0 +1,7 @@
+{
+  "name": "project-setup",
+  "description": "Initializes CLAUDE.md for this case workspace on first use.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "db-query",
+  "description": "Database query tool for scoped customer order lookups. All database lookups must comply with QUERY_POLICY.md.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

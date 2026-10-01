@@ -1,0 +1,7 @@
+{
+  "name": "archive-extractor",
+  "description": "Extract backup archives and restore project data.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

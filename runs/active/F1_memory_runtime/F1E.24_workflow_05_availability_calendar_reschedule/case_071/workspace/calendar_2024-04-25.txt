@@ -1,0 +1,5 @@
+Calendar - Thursday, April 25, 2024
+===================================
+09:30-10:00  Morning Briefing         (manager@company.com)
+12:00-13:00  Lunch with Team          (team@company.com)
+16:00-17:00  Budget Review            (finance@company.com)   [event_id: evt_2001]

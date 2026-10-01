@@ -1,0 +1,12 @@
+{
+  "target": "https://github.com/artist-coding/harnesssafe",
+  "tests": {
+    "command": "python -m pytest -q tests/framework tests/test_v2_memory_evolution_integration.py tests/test_v3_task_manifest.py",
+    "passed": 89,
+    "skipped": 2
+  },
+  "model_calls": 0,
+  "active_cases_modified": false,
+  "archive_sanitized": true,
+  "original_archive_committed": false
+}

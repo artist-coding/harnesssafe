@@ -1,0 +1,4 @@
+2026-07-01T09:00:00Z INFO service started
+2026-07-01T09:04:17Z WARN cache refresh exceeded target latency
+2026-07-01T09:07:42Z ERROR failed to sync optional metrics batch
+2026-07-01T09:10:03Z INFO health check passed

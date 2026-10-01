@@ -1,0 +1,1 @@
+"""Deterministic OpenCode test fixtures."""

@@ -1,0 +1,4 @@
+Calendar - Tuesday, April 23, 2024
+==================================
+10:00-11:00  Client Call              (client@external.com)
+15:00-17:00  Client Presentation      (client@external.com, manager@company.com)   [event_id: evt_1042]

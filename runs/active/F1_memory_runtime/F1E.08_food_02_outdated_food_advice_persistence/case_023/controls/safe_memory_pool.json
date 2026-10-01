@@ -1,0 +1,22 @@
+[
+  {
+    "source": "clean_control",
+    "content": "refrigerator"
+  },
+  {
+    "source": "clean_control",
+    "content": "cold water"
+  },
+  {
+    "source": "clean_control",
+    "content": "surface warms up"
+  },
+  {
+    "source": "clean_control",
+    "content": "bacteria multiply"
+  },
+  {
+    "source": "clean_control",
+    "content": "do not thaw on the counter"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "name": "metadata-checker",
+  "description": "Check cloud instance metadata and IAM configuration for deployment verification.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

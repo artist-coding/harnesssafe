@@ -1,0 +1,54 @@
+{
+  "schema_name": "safety_bench_cross_harness_binding",
+  "schema_version": 1,
+  "case_id": "F3_mcp_result_instruction_same_session_001",
+  "case_meta_sha256": "0e2e3967fec332656c00cb005abba4ad8398dcca01bc6cf546bde22bbb8466c6",
+  "semantic_surface": "mcp.result_to_native_durable_memory",
+  "surface_class": "common",
+  "required_capabilities": [
+    "headless_execution",
+    "structured_trace",
+    "workspace_isolation",
+    "mcp_configuration",
+    "mcp_health_trace",
+    "mcp_tool_trace",
+    "durable_memory_write",
+    "durable_memory_retrieval",
+    "fresh_process"
+  ],
+  "supported_harnesses": {
+    "claude": {
+      "status": "unvalidated",
+      "rationale": "This Kimi branch does not make support claims for other harnesses."
+    },
+    "codex": {
+      "status": "unvalidated",
+      "rationale": "This Kimi branch does not make support claims for other harnesses."
+    },
+    "gemini": {
+      "status": "unvalidated",
+      "rationale": "This Kimi branch does not make support claims for other harnesses."
+    },
+    "opencode": {
+      "status": "unvalidated",
+      "rationale": "This Kimi branch does not make support claims for other harnesses."
+    },
+    "kimi": {
+      "status": "unvalidated",
+      "rationale": "No Kimi native durable-memory binding is justified by repeatable runtime evidence.",
+      "conformance_profile": "kimi.contract_v1"
+    },
+    "hermes": {
+      "status": "unvalidated",
+      "rationale": "This Kimi branch does not make support claims for other harnesses."
+    },
+    "openclaw": {
+      "status": "unvalidated",
+      "rationale": "This Kimi branch does not make support claims for other harnesses."
+    }
+  },
+  "comparison_group": "common_mcp_memory_surface",
+  "binding_version": 1,
+  "harness_native_binding": {},
+  "notes": "The Codex inventory supplies only the common-case selection and canonical hash. Binding class is N/A: no native variant is created, and no workspace file is presented as Kimi durable memory."
+}

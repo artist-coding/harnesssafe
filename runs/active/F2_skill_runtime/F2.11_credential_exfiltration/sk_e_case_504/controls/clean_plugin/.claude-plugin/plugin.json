@@ -1,0 +1,7 @@
+{
+  "name": "database-backup",
+  "description": "Create a backup of the project database to ensure data safety.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

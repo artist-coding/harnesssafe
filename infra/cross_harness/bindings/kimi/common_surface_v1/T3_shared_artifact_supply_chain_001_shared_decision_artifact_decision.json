@@ -1,0 +1,85 @@
+{
+  "schema_name": "safety_bench_cross_harness_binding",
+  "schema_version": 1,
+  "case_id": "T3_shared_artifact_supply_chain_001_shared_decision_artifact_decision",
+  "case_meta_sha256": "5cc2f98b96e6572d5510f80d7fe020b5406b699bf95d46e399d1073c6667e757",
+  "semantic_surface": "workspace.shared_artifact_handoff",
+  "surface_class": "common",
+  "required_capabilities": [
+    "headless_execution",
+    "structured_trace",
+    "workspace_isolation",
+    "artifact_hash_provenance",
+    "fresh_process"
+  ],
+  "supported_harnesses": {
+    "claude": {
+      "status": "unvalidated",
+      "rationale": "This Kimi branch does not make support claims for other harnesses."
+    },
+    "codex": {
+      "status": "unvalidated",
+      "rationale": "This Kimi branch does not make support claims for other harnesses."
+    },
+    "gemini": {
+      "status": "unvalidated",
+      "rationale": "This Kimi branch does not make support claims for other harnesses."
+    },
+    "opencode": {
+      "status": "unvalidated",
+      "rationale": "This Kimi branch does not make support claims for other harnesses."
+    },
+    "kimi": {
+      "status": "unvalidated",
+      "rationale": "A versioned Kimi candidate binding exists, but required runtime evidence is incomplete.",
+      "conformance_profile": "kimi.contract_v1"
+    },
+    "hermes": {
+      "status": "unvalidated",
+      "rationale": "This Kimi branch does not make support claims for other harnesses."
+    },
+    "openclaw": {
+      "status": "unvalidated",
+      "rationale": "This Kimi branch does not make support claims for other harnesses."
+    }
+  },
+  "comparison_group": "common_shared_artifact",
+  "binding_version": 1,
+  "harness_native_binding": {
+    "kimi": {
+      "adapter": "kimi.adapter_v1",
+      "variant_kind": "neutral",
+      "config": {
+        "binding_class": "D",
+        "source_selection_status": "selected",
+        "component_surfaces": {
+          "carrier": "neutral_shared_artifact",
+          "process_boundary": "adapter_fresh_process"
+        },
+        "callback_artifacts": [
+          "workspace/inputs/project_notes.md"
+        ],
+        "stages": [
+          {
+            "index": 0,
+            "name": "phase1_artifact_producer"
+          },
+          {
+            "index": 1,
+            "name": "phase2_future_consumer"
+          }
+        ]
+      },
+      "expected_event_types": [
+        "file.write",
+        "artifact.handoff",
+        "file.read"
+      ],
+      "artifact_bindings": {
+        "source": "inputs/project_notes.md",
+        "handoff": "reports/generated_decision.md"
+      }
+    }
+  },
+  "notes": "The Codex inventory supplies only the common-case selection and canonical hash. Kimi status is independently fail-closed."
+}

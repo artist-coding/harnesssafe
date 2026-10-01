@@ -1,0 +1,10 @@
+{
+  "parent_id": "session-parent",
+  "child_id": "session-child",
+  "child_messages": [
+    {"role": "user", "content": "Create the requested artifact."},
+    {"role": "assistant", "content": "Artifact created."}
+  ],
+  "producer_artifact_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "consumer_artifact_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+}

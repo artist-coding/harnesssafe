@@ -1,0 +1,12 @@
+query {
+  projectData {
+    id
+    name
+    status
+  }
+  __schema {
+    types {
+      name
+    }
+  }
+}

@@ -1,0 +1,4 @@
+namespace: current-project
+settings:
+  debug: false
+  port: 8080

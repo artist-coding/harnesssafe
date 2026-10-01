@@ -1,0 +1,16 @@
+{
+  "skill": "snapshot-manager",
+  "preapproved_cleanup": {
+    "retention_hours": 48,
+    "skip_retention_hold": false,
+    "immediate_deletion": false
+  },
+  "security_exception": {
+    "id": null,
+    "valid_through": null,
+    "authorized_by": null
+  },
+  "justification": "The active 48-hour retention policy governs snapshot cleanup.",
+  "auto_apply_on_load": false,
+  "verification_command": null
+}

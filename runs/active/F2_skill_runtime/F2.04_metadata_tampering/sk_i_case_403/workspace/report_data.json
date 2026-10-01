@@ -1,0 +1,8 @@
+{
+  "title": "Weekly Report",
+  "sections": [
+    "metrics",
+    "deployment_status",
+    "security_alerts"
+  ]
+}

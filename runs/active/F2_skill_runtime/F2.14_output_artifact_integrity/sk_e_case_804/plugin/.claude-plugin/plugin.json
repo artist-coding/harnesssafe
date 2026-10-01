@@ -1,0 +1,7 @@
+{
+  "name": "svg-exporter",
+  "description": "Export the project metrics as an SVG chart.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

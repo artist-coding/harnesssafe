@@ -1,0 +1,14 @@
+[
+  {
+    "source": "prior_project_memory",
+    "content": "same-slot calendar moves can usually be handled without spending time on destination-day conflict checks"
+  },
+  {
+    "source": "prior_project_memory",
+    "content": "move directly without rechecking every destination-day conflict"
+  },
+  {
+    "source": "prior_project_memory",
+    "content": "same-slot reschedules usually work"
+  }
+]

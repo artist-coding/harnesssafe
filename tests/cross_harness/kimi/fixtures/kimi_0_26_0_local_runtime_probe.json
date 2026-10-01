@@ -1,0 +1,286 @@
+{
+  "schema_name": "safety_bench_kimi_local_runtime_probe",
+  "schema_version": 1,
+  "captured_on": "2026-07-20",
+  "scored_benchmark_run": false,
+  "external_credentials_used": false,
+  "network_scope": "loopback_only",
+  "provider": "deterministic_local_openai_fixture",
+  "identity": {
+    "package": "@moonshot-ai/kimi-code",
+    "version": "0.26.0",
+    "resolved_executable": "/usr/local/lib/node_modules/@moonshot-ai/kimi-code/dist/main.mjs",
+    "binary_sha256": "bc310a7d2f0c3c2cb1367fa7b2092375351efff51c6d4a358b8681b4a01fb7b0"
+  },
+  "redaction": {
+    "model_text_copied": false,
+    "system_prompt_copied": false,
+    "credential_value_copied": false,
+    "retained_fields": "event types, timestamps, correlation identifiers, lifecycle identifiers, source paths, line numbers, and SHA-256 digests"
+  },
+  "proofs": {
+    "headless_structured_resume": {
+      "kind": "native_session_continuity",
+      "initial_exit_code": 0,
+      "resume_exit_code": 0,
+      "output_format": "stream-json",
+      "session_id": "session_f08d52b3-0159-4a0a-9ad7-beea82e03611",
+      "wire": {
+        "captured_path": "/tmp/kimi-fixture-probe-PQql3uSf/config-kimi-fixture-002/sessions/wd_workspace-kimi-fixture-002_e0ff84e92368/session_f08d52b3-0159-4a0a-9ad7-beea82e03611/agents/main/wire.jsonl",
+        "before_resume_line_count": 14,
+        "before_resume_sha256": "d1f816ea1689f77cd56f7546d60bbf15cd9e9fc25674c4693de5d45b4a009c0b",
+        "after_resume_line_count": 22,
+        "after_resume_sha256": "a56c91d6301f0036d14e102cb1b06e8a6636952460be018405e6254940f66702",
+        "initial_request": {"line": 11, "type": "llm.request", "kind": "loop", "message_count": 2, "time": 1784542046965},
+        "resumed_request": {"line": 19, "type": "llm.request", "kind": "loop", "message_count": 5, "time": 1784542101077}
+      },
+      "state_sha256": "39f760736c3945a03a6260891cbe0d4278f6012c685da7d65a891c7787e6bcb0"
+    },
+    "skill_discovery_activation": {
+      "kind": "native_skill_activation",
+      "session_id": "session_14bcf732-e8ce-4151-bf52-d076e52071bf",
+      "wire": {
+        "captured_path": "/tmp/kimi-fixture-probe-PQql3uSf/config-kimi-skill-001/sessions/wd_workspace-kimi-skill-001_0693cfb89340/session_14bcf732-e8ce-4151-bf52-d076e52071bf/agents/main/wire.jsonl",
+        "sha256": "088c129f07bc3c5e7dba45b2638f9d92a663a2b92f36cfda0d3f77215915302d"
+      },
+      "discovery": {"line": 2, "type": "config.update", "field": "systemPrompt", "listing_contains_exact_skill_name_and_path": true, "system_prompt_sha256": "d55a75f392790f06150e2fc07c134bd3b8f16c5ef846b643512afbd69b93deef"},
+      "tool_call": {"line": 12, "type": "context.append_loop_event", "event_type": "tool.call", "tool_call_id": "call_skill_probe", "tool_name": "Skill", "skill_name": "fixture-probe"},
+      "activation": {"line": 13, "type": "context.append_message", "origin_kind": "skill_activation", "activation_id": "13894343-c592-416f-a6ae-2f6169822837", "skill_name": "fixture-probe", "skill_type": "prompt", "skill_source": "user", "trigger": "model-tool", "skill_sha256": "7a973ce00239bc098d8fd23e483a06e22991197e36b006b5445f7a55237c1cab"},
+      "tool_result": {"line": 14, "type": "context.append_loop_event", "event_type": "tool.result", "tool_call_id": "call_skill_probe"}
+    },
+    "native_instruction_loading": {
+      "kind": "native_project_instruction_loading",
+      "run_id": "instruction-native-001",
+      "session_id": "session_7f80b2a9-9f45-4d4b-a1a4-9b14256e56a5",
+      "exit_code": 0,
+      "instruction": {"captured_path": "/tmp/kimi-instruction-native-probe/run-kimi-instruction-native-001/workspace-kimi-instruction-native-001/.kimi-code/AGENTS.md", "byte_length": 213, "sha256": "62f6ecec529927ba96b26c1169cbc7ea1810ffc699a15525c467723fbf226d63", "marker_offset": 87, "marker_length": 38, "marker_sha256": "89a22df0e650b6bd984b0200cda342a399404ab2de7150c74eeeea26d0b9b209"},
+      "request_observer": {"captured_path": "/tmp/kimi-instruction-native-probe/run-kimi-instruction-native-001/request-log-kimi-instruction-native-001.jsonl", "line": 1, "sha256": "9f5db25e586cda56f997f31245011ff68e7daed07cb84f5bea308d2f6d32b478", "expected_substring_present": true, "expected_substring_sha256": "89a22df0e650b6bd984b0200cda342a399404ab2de7150c74eeeea26d0b9b209", "request_body_sha256": "b797c5c02f2fdfdfd843559f054f2acc7fe366ffd9c733b70ed7b3da0b3919bd", "message_roles": ["system", "user", "user"]},
+      "wire": {"captured_path": "/tmp/kimi-instruction-native-probe/run-kimi-instruction-native-001/config-kimi-instruction-native-001/sessions/wd_workspace-kimi-instruction-native-001_f29b01227f9b/session_7f80b2a9-9f45-4d4b-a1a4-9b14256e56a5/agents/main/wire.jsonl", "line_count": 14, "llm_request_line": 11, "sha256": "c5c3d37c47257bf3cbfc18d8c848f660a02b1e144f2bea31e7e9672c766021bc"},
+      "adapter_implementation_pins": {
+        "direct_evidence_observer": {"path": "infra/cross_harness/adapters/kimi/execution_observer.py", "sha256": "5c358cbfc68b426d82412fb1cfed8899c75da06347496eed9ca5c67997710a51"},
+        "provider_request_observer": {"path": "infra/cross_harness/adapters/kimi/provider_broker.py", "sha256": "5ad33f0467d9555fe42291a394a18a96e87fc4492cd3392bf2c59ec74fb3fbd9"},
+        "event_ir_normalizer": {"path": "infra/cross_harness/adapters/kimi/trace.py", "sha256": "995ffdb17c45360d781495f810452494b10e578562d12eff6ef57f37dead5205"}
+      },
+      "adapter_test_pins": {
+        "direct_evidence_observer": {"path": "tests/cross_harness/kimi/test_execution_observer.py", "sha256": "994abc68200503eb94e1b5331dcd192b7e8a29d12d7e521e2df4bb18b47fa6a9"},
+        "provider_request_observer": {"path": "tests/cross_harness/kimi/test_provider_broker.py", "sha256": "a25123c4b0951cb227493f127c33d8ea3a944a189036f1561ec77f3fb14cc2d9"},
+        "event_ir_normalizer": {"path": "tests/cross_harness/kimi/test_trace.py", "sha256": "dcb29c43182132b78ea469e95037db9166ebc58303f50183bd05ff0d81c1baa0"}
+      }
+    },
+    "mcp_configuration_tool_trace": {
+      "kind": "native_mcp_tool_call",
+      "session_id": "session_b50f9ae7-3cc8-4db6-89da-e7a24d89e0b8",
+      "run_local_config": {
+        "captured_path": "/tmp/kimi-native-mcp-probe-001/run-kimi-native-mcp-probe-001/config-kimi-native-mcp-probe-001-stage-000/mcp.json",
+        "sha256": "4d6763415f44c423e44aadca4fe9b89dba4247286c9e0a8b088c1c28ed6eed74"
+      },
+      "wire": {
+        "captured_path": "/tmp/kimi-native-mcp-probe-001/run-kimi-native-mcp-probe-001/config-kimi-native-mcp-probe-001-stage-000/sessions/wd_workspace-kimi-native-mcp-probe-001_a1fcfe1039b4/session_b50f9ae7-3cc8-4db6-89da-e7a24d89e0b8/agents/main/wire.jsonl",
+        "sha256": "9a41edbef08ff3b049eceed327635499ca6460ac2d36817a79fdbc74ed39dc4d"
+      },
+      "tools_discovered": {"line": 6, "type": "mcp.tools_discovered", "server_name": "deployment-health", "tools_hash": "9f640ae1998175e600ac2ceee4a0f2ac5eee86f787047975f1cda8941099bb59", "enabled_names": ["deployment_runbook"], "health_evidence": false},
+      "tool_call": {"line": 13, "type": "context.append_loop_event", "event_type": "tool.call", "tool_call_id": "call_mcp_probe", "tool_name": "mcp__deployment-health__deployment_runbook", "arguments_sha256": "fea591585345f0b54090cbc5641febfd39b5d553a248987f46b2f950e34c9c75"},
+      "tool_result": {"line": 14, "type": "context.append_loop_event", "event_type": "tool.result", "tool_call_id": "call_mcp_probe", "result_sha256": "dd5fa01873ea6d4ecc0d9f6f08489a48a07b529c9fad8dc2ae00bc18aeff350e"},
+      "native_health_event_observed": false
+    },
+    "adapter_mcp_health_proxy": {
+      "kind": "adapter_owned_mcp_stdio_health",
+      "implementation_path": "infra/cross_harness/adapters/kimi/mcp_stdio_proxy.py",
+      "implementation_sha256": "95ca74858fb2a325ffc26313e1c410a5ee6ee380d3d7e54e197f4629725acb34",
+      "test_path": "tests/cross_harness/kimi/test_mcp_stdio_proxy.py",
+      "test_sha256": "ff970fe26a74890aca286e99da416be676077dadb5e6b85f77bafaa8c64a75d5",
+      "test_command": "/tmp/kimi-adapter-test-venv/bin/python -m pytest -q tests/cross_harness/kimi/test_mcp_stdio_proxy.py",
+      "test_result": {"exit_code": 0, "passed": 5},
+      "native_kimi_probe": {
+        "run_id": "proxy-native-002",
+        "session_id": "session_e7b85afd-c7aa-4ac4-abb8-002516d41379",
+        "server": "deployment-health",
+        "validated_health_status": "connected",
+        "child_argv_sha256": "b3766749d12452f353e65ee7e7deb90f905ed8fa8e72ebd3da3188f51d59a2cd",
+        "initialize": {"captured_path": "/tmp/kimi-proxy-native-probe/run-kimi-proxy-native-002/stage-kimi-proxy-native-002-stage-000-phase1_inject/runtime-kimi-proxy-native-002-stage-000-phase1_inject/mcp-evidence-kimi-proxy-native-002-stage-000-phase1_inject/initialize-mcp-deployment-health-kimi-proxy-native-002-stage-000-phase1_inject.jsonl", "line_count": 2, "sha256": "df8d4020e46a83765c7759aa9e6466b2960803536e4f765becba250e1f6e0a46"},
+        "tools_list": {"captured_path": "/tmp/kimi-proxy-native-probe/run-kimi-proxy-native-002/stage-kimi-proxy-native-002-stage-000-phase1_inject/runtime-kimi-proxy-native-002-stage-000-phase1_inject/mcp-evidence-kimi-proxy-native-002-stage-000-phase1_inject/tools-list-mcp-deployment-health-kimi-proxy-native-002-stage-000-phase1_inject.jsonl", "line_count": 2, "sha256": "530ac85a1f822b24cbce50cb3519e6a94b07ca3b1baa3161edf9dde20bb1b21f"},
+        "stdio": {"captured_path": "/tmp/kimi-proxy-native-probe/run-kimi-proxy-native-002/stage-kimi-proxy-native-002-stage-000-phase1_inject/runtime-kimi-proxy-native-002-stage-000-phase1_inject/mcp-evidence-kimi-proxy-native-002-stage-000-phase1_inject/stdio-mcp-deployment-health-kimi-proxy-native-002-stage-000-phase1_inject.jsonl", "line_count": 7, "sha256": "5d4bea9d2529bbd59ec9afde8c35103faf21384cb8c236aab01f9acbcb944a5c"},
+        "child_exit": {"captured_path": "/tmp/kimi-proxy-native-probe/run-kimi-proxy-native-002/stage-kimi-proxy-native-002-stage-000-phase1_inject/runtime-kimi-proxy-native-002-stage-000-phase1_inject/mcp-evidence-kimi-proxy-native-002-stage-000-phase1_inject/child-exit-mcp-deployment-health-kimi-proxy-native-002-stage-000-phase1_inject.json", "line_count": 1, "exit_code": 0, "sha256": "784f61bb50d9f8190f1a8d6f8cecf548376c976d66b820fb6783d60e8c0ece35"},
+        "kimi_wire": {"captured_path": "/tmp/kimi-proxy-native-probe/run-kimi-proxy-native-002/stage-kimi-proxy-native-002-stage-000-phase1_inject/runtime-kimi-proxy-native-002-stage-000-phase1_inject/config-kimi-proxy-native-002-stage-000-phase1_inject/sessions/wd_workspace_e96a820b5b2e/session_e7b85afd-c7aa-4ac4-abb8-002516d41379/agents/main/wire.jsonl", "sha256": "edcdaa59b1a11668b532ac85aa0059c3014af9fb85bbc5dbaade2418d384b586"}
+      },
+      "required_direct_evidence": ["initialize correlated success", "tools/list correlated success", "owned child exit code 0"],
+      "tools_discovered_alone_is_health": false,
+      "post_run_validation_required": true
+    },
+    "native_compaction": {
+      "kind": "native_session_compaction",
+      "session_id": "session_2ef2df07-1b7a-455d-8d54-566456b232cd",
+      "wire": {
+        "captured_path": "/tmp/kimi-fixture-probe-PQql3uSf/config-kimi-compact-001/sessions/wd_workspace-kimi-compact-001_18f7918b56d3/session_2ef2df07-1b7a-455d-8d54-566456b232cd/agents/main/wire.jsonl",
+        "sha256": "07de2a19528f8761afb17b8569a92fedfa47e77c737833e516c085952c71acf0"
+      },
+      "begin": {"line": 20, "type": "full_compaction.begin", "source": "auto", "time": 1784542544893},
+      "request": {"line": 21, "type": "llm.request", "kind": "compaction", "message_count": 6, "time": 1784542544896},
+      "apply": {"line": 23, "type": "context.apply_compaction", "summary_sha256": "b57ca7ba93a1a6afc6314398e9a726e1104e3c72819b7990351cf6836edb650c", "compacted_count": 6, "tokens_before": 317, "tokens_after": 170, "kept_user_message_count": 2, "time": 1784542544903},
+      "complete": {"line": 26, "type": "full_compaction.complete", "time": 1784542544907},
+      "state_sha256": "cee88a9349be4c3e2394949cb9745cd90f5f94d4936ce9700e6506304da381da",
+      "manual_acp": {
+        "kind": "native_manual_acp_compaction",
+        "session_id": "session_f08d52b3-0159-4a0a-9ad7-beea82e03611",
+        "launch": {
+          "argv": ["/usr/local/bin/kimi", "acp"],
+          "transport": "stdio_ndjson",
+          "request_sequencing": "flush_then_wait_for_matching_response_id",
+          "request_timeout_seconds": 30,
+          "initialize_method": "initialize",
+          "resume_method": "session/resume",
+          "prompt_method": "session/prompt",
+          "command": "/compact preserve-the-existing-summary-and-compact-locally",
+          "command_sha256": "552dc80bc1ddee41acf7b0d30b1dab86773ce06a2d30c60e5d58c171d3329ebc",
+          "client_path": "tests/cross_harness/kimi/fixtures/acp_compact_probe_client.py",
+          "client_sha256": "4a6b98dfaab750ba024bf24d4001451a081ff76d10f7c8c321745627755299c8"
+        },
+        "acp_trace": {
+          "captured_path": "/tmp/kimi-fixture-probe-PQql3uSf/config-kimi-fixture-002/acp-compact-trace-kimi-fixture-003.jsonl",
+          "line_count": 6,
+          "exit_code": 0,
+          "sha256": "30d925d54aca1017dfacef0cbcd9bd26122e06b53f2e5e876a88b7f7c2326163"
+        },
+        "stderr": {
+          "captured_path": "/tmp/kimi-fixture-probe-PQql3uSf/config-kimi-fixture-002/acp-compact-stderr-kimi-fixture-003.log",
+          "line_count": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "initialize_request": {"request_id": 1, "protocol_version": 1, "client_capabilities": {"fs": {"read_text_file": false, "write_text_file": false}, "terminal": false}, "client_info": {"name": "safety-bench-kimi-compaction-probe", "version": "1"}},
+        "resume_request": {"request_id": 2, "method": "session/resume", "session_id": "session_f08d52b3-0159-4a0a-9ad7-beea82e03611", "mcp_server_count": 0},
+        "prompt_request": {"request_id": 3, "method": "session/prompt", "session_id": "session_f08d52b3-0159-4a0a-9ad7-beea82e03611", "content_block_types": ["text"], "text_sha256": "552dc80bc1ddee41acf7b0d30b1dab86773ce06a2d30c60e5d58c171d3329ebc"},
+        "initialize_response": {"line": 1, "request_id": 1, "protocol_version": 1, "agent_version": "0.26.0", "load_session": true},
+        "resume_response": {"line": 2, "request_id": 2, "config_options_observed": true},
+        "available_command": {"line": 4, "method": "session/update", "session_id": "session_f08d52b3-0159-4a0a-9ad7-beea82e03611", "update": "available_commands_update", "name": "compact", "description": "Compact the conversation context"},
+        "prompt_response": {"line": 6, "request_id": 3, "stop_reason": "end_turn"},
+        "provider_request_observer": {
+          "captured_path": "/tmp/kimi-fixture-probe-PQql3uSf/config-kimi-fixture-002/acp-compact-provider-requests-kimi-fixture-002.jsonl",
+          "line": 1,
+          "sha256": "326c48f408c552cdd85d3c7824a9da6498515db2e04eceb8642061260ad2f7c4",
+          "request_body_sha256": "cc546a0133e89eb850a6699e74b0975153ac303a82c04fb03b56629dfe88c1a6",
+          "authorization_present": true,
+          "credential_kind": "run_local_dummy_token",
+          "external_credential": false,
+          "credential_value_retained": false,
+          "network_scope": "loopback_only"
+        },
+        "wire": {
+          "captured_path": "/tmp/kimi-fixture-probe-PQql3uSf/config-kimi-fixture-002/sessions/wd_workspace-kimi-fixture-002_e0ff84e92368/session_f08d52b3-0159-4a0a-9ad7-beea82e03611/agents/main/wire.jsonl",
+          "line_count": 29,
+          "sha256": "feb49925cf4c96b2615510ccc58113b5a740b1056003a044cb54674313a4830a"
+        },
+        "begin": {"line": 23, "type": "full_compaction.begin", "source": "manual", "time": 1784544309961},
+        "request": {"line": 25, "type": "llm.request", "kind": "compaction", "message_count": 7, "time": 1784544309968},
+        "apply": {"line": 26, "type": "context.apply_compaction", "summary_sha256": "73a73f1a5ec4c748aa8ea7963405d37c9e5b72103de094918c6075eb0e76aca8", "compacted_count": 6, "tokens_before": 313, "tokens_after": 170, "kept_user_message_count": 2, "time": 1784544309986},
+        "complete": {"line": 29, "type": "full_compaction.complete", "time": 1784544309990}
+      }
+    },
+    "native_subagent": {
+      "kind": "native_subagent_lifecycle",
+      "session_id": "session_a86684c5-8995-4455-9c67-d213ba0ed69c",
+      "state": {
+        "captured_path": "/tmp/kimi-fixture-probe-PQql3uSf/config-kimi-agent-001/sessions/wd_workspace-kimi-agent-001_fce8e0aee490/session_a86684c5-8995-4455-9c67-d213ba0ed69c/state.json",
+        "sha256": "12881c1e10cdc1810ac9bc999a369115f69d4fea81c65488aa0a8d83147766c2",
+        "parent_agent_id": "main",
+        "child_agent_id": "agent-0",
+        "child_type": "sub"
+      },
+      "parent_wire": {
+        "captured_path": "/tmp/kimi-fixture-probe-PQql3uSf/config-kimi-agent-001/sessions/wd_workspace-kimi-agent-001_fce8e0aee490/session_a86684c5-8995-4455-9c67-d213ba0ed69c/agents/main/wire.jsonl",
+        "sha256": "b78aa0d61c3ba7601b8e6bb3025c4e62972a7e304c57f0dd4e2522f9725e81b7",
+        "tool_call_line": 12,
+        "tool_result_line": 13,
+        "tool_call_id": "call_agent_probe",
+        "tool_name": "Agent",
+        "handoff_sha256": "e0da5a76aa858d0178cf3a4ff33baafa4466c9e02b6419c842bc98a35bb63cdb"
+      },
+      "child_wire": {
+        "captured_path": "/tmp/kimi-fixture-probe-PQql3uSf/config-kimi-agent-001/sessions/wd_workspace-kimi-agent-001_fce8e0aee490/session_a86684c5-8995-4455-9c67-d213ba0ed69c/agents/agent-0/wire.jsonl",
+        "sha256": "f508f32119e014b1d689f243e9bef1a4bbeb75ce7323d455b38ce434166c8346",
+        "trigger_line": 6,
+        "trigger_origin_kind": "system_trigger",
+        "trigger_name": "subagent"
+      }
+    },
+    "adapter_artifact_hash_provenance": {
+      "kind": "native_file_tool_plus_adapter_hash",
+      "adapter_implementation_pins": {
+        "direct_evidence_observer": {"path": "infra/cross_harness/adapters/kimi/execution_observer.py", "sha256": "5c358cbfc68b426d82412fb1cfed8899c75da06347496eed9ca5c67997710a51"},
+        "event_ir_normalizer": {"path": "infra/cross_harness/adapters/kimi/trace.py", "sha256": "995ffdb17c45360d781495f810452494b10e578562d12eff6ef57f37dead5205"}
+      },
+      "adapter_test_pins": {
+        "direct_evidence_observer": {"path": "tests/cross_harness/kimi/test_execution_observer.py", "sha256": "994abc68200503eb94e1b5331dcd192b7e8a29d12d7e521e2df4bb18b47fa6a9"},
+        "event_ir_normalizer": {"path": "tests/cross_harness/kimi/test_trace.py", "sha256": "dcb29c43182132b78ea469e95037db9166ebc58303f50183bd05ff0d81c1baa0"}
+      },
+      "per_run_observation_required": true,
+      "native_result_payload_used_as_file_hash": false,
+      "read": {
+        "session_id": "session_004efb28-2a6d-419c-ae8c-6bc7b556b8f9",
+        "wire": {"captured_path": "/tmp/kimi-artifact-provenance-probe-nAc6qWPM/config-kimi-artifact-read-001/sessions/wd_workspace-kimi-artifact-read-001_574df1345522/session_004efb28-2a6d-419c-ae8c-6bc7b556b8f9/agents/main/wire.jsonl", "line_count": 20, "sha256": "f1f128fc094a3b6db25ac177f2161fb8beb4a03d7eaf4925c506fb4ffbb548e4"},
+        "tool_call": {"line": 12, "type": "context.append_loop_event", "event_type": "tool.call", "tool_name": "Read", "tool_call_id": "call_kimi_mcp_proxy_probe", "arguments_path": "artifacts-kimi-artifact-read-001/evidence.txt", "arguments_sha256": "7a57ff14ab9e8994bb50cb2568882bf8741784f4593267e17b16f4d3d5c99ef1", "display_kind": "file_io", "display_operation": "read", "resolved_path": "/tmp/kimi-artifact-provenance-probe-nAc6qWPM/workspace-kimi-artifact-read-001/artifacts-kimi-artifact-read-001/evidence.txt", "time": 1784544829889},
+        "tool_result": {"line": 13, "type": "context.append_loop_event", "event_type": "tool.result", "tool_call_id": "call_kimi_mcp_proxy_probe", "success_omission": true, "result_sha256": "825f3d86def7c582b31c526e9495d56d2af4f115d0e0865fd12636ee175ca5f9", "time": 1784544829895},
+        "adapter_hash_observation": {"observation_phase": "execution", "path": "artifacts-kimi-artifact-read-001/evidence.txt", "byte_length": 43, "is_symlink": false, "sha256": "2fe66fc47cf29db714ebd8d8dc6be8327b55b97aca9ec55fca8c67ab517295d4", "source": "run_local_file_bytes_immediately_after_correlated_read"},
+        "provider_request_observer": {"captured_path": "/tmp/kimi-artifact-provenance-probe-nAc6qWPM/provider-requests-kimi-artifact-read-001.jsonl", "line_count": 2, "sha256": "69f27cecd3944b41de5938ff79879245f04793f7fa6380ba538b1c4ac83b2e10", "authorization_present": true, "credential_kind": "run_local_dummy_token", "external_credential": false, "credential_value_retained": false, "network_scope": "loopback_only"}
+      },
+      "write": {
+        "session_id": "session_fb09ab37-e819-458a-99a8-a50de261f70b",
+        "wire": {"captured_path": "/tmp/kimi-artifact-provenance-probe-nAc6qWPM/config-kimi-artifact-write-001/sessions/wd_workspace-kimi-artifact-write-001_b8fd70fabf35/session_fb09ab37-e819-458a-99a8-a50de261f70b/agents/main/wire.jsonl", "line_count": 20, "sha256": "d7798ca5d743ae5e82747d56ce89af0138f0400f6bad981ff087de44197b2cc9"},
+        "tool_call": {"line": 12, "type": "context.append_loop_event", "event_type": "tool.call", "tool_name": "Write", "tool_call_id": "call_kimi_mcp_proxy_probe", "arguments_path": "artifacts-kimi-artifact-write-001/generated.txt", "arguments_mode": "overwrite", "arguments_sha256": "3df2943b4ae057e8515066ac9f20341e5ecd4d1b1fa042d73f1c3f3774cad201", "content_byte_length": 48, "content_sha256": "e27cbe268dfbd0141504b6840b1e56c9ec9aa0c232646a2d3e2cdf94ffb683b8", "display_kind": "file_io", "display_operation": "write", "resolved_path": "/tmp/kimi-artifact-provenance-probe-nAc6qWPM/workspace-kimi-artifact-write-001/artifacts-kimi-artifact-write-001/generated.txt", "time": 1784544872994},
+        "tool_result": {"line": 13, "type": "context.append_loop_event", "event_type": "tool.result", "tool_call_id": "call_kimi_mcp_proxy_probe", "success_omission": true, "result_sha256": "8010d11bf7b668d3df7cd18826aaced3da0806d857c36e7840e87c96754eb4d4", "time": 1784544872999},
+        "adapter_hash_observation": {"observation_phase": "execution", "path": "artifacts-kimi-artifact-write-001/generated.txt", "byte_length": 48, "is_symlink": false, "sha256": "e27cbe268dfbd0141504b6840b1e56c9ec9aa0c232646a2d3e2cdf94ffb683b8", "source": "write_content_and_run_local_file_bytes"},
+        "provider_request_observer": {"captured_path": "/tmp/kimi-artifact-provenance-probe-nAc6qWPM/provider-requests-kimi-artifact-write-001.jsonl", "line_count": 2, "sha256": "6aff6f0ffcd8631ba8797fc4560d7a5399e84b6f3427d4ccc16ae0631937756b", "authorization_present": true, "credential_kind": "run_local_dummy_token", "external_credential": false, "credential_value_retained": false, "network_scope": "loopback_only"}
+      }
+    }
+  },
+  "negative_evidence": {
+    "tool_process_environment_inheritance": {
+      "kind": "native_tool_process_environment_inheritance",
+      "session_id": "session_26115994-b096-4235-9dd2-7b4f0a32b714",
+      "environment_variable": "KIMI_MODEL_API_KEY",
+      "wire": {
+        "captured_path": "/tmp/kimi-env-leak-probe-DfQCmSTu/config-kimi-env-leak-001/sessions/wd_workspace-kimi-env-leak-001_e4ac5efe90b4/session_26115994-b096-4235-9dd2-7b4f0a32b714/agents/main/wire.jsonl",
+        "line_count": 20,
+        "sha256": "a1829afcd3d243341738013e84a65fc9b7f4fac7005c58dbff2bf676ecda121c"
+      },
+      "check_script": {
+        "captured_path": "/tmp/kimi-env-leak-probe-DfQCmSTu/check_env.py",
+        "sha256": "56e921ef025aa115761d6a158aca70c862dc2f020a5bf9106866c4a126c57b95"
+      },
+      "tool_call": {"line": 12, "type": "context.append_loop_event", "event_type": "tool.call", "tool_name": "Bash", "tool_call_id": "call_kimi_mcp_proxy_probe", "arguments_sha256": "da716c5afbd273d792219feae6b2019a399ce13cd42b102fd584982a964583e3", "time": 1784544510186},
+      "tool_result": {"line": 13, "type": "context.append_loop_event", "event_type": "tool.result", "tool_call_id": "call_kimi_mcp_proxy_probe", "result_classification": "PRESENT", "result_sha256": "97c71b53cf69ab3c8136b4290a86c4238f1805fb14f5f0c886177c924247433e", "time": 1784544510199},
+      "provider_request_observer": {
+        "captured_path": "/tmp/kimi-env-leak-probe-DfQCmSTu/provider-requests-kimi-env-leak-001.jsonl",
+        "line_count": 2,
+        "sha256": "d4dede693077181329ae683fc1ca4a9049adaa8858a98f7e1927a98b4731d5e7",
+        "authorization_present": true,
+        "credential_value_retained": false,
+        "network_scope": "loopback_only"
+      },
+      "external_credential_used": false,
+      "credential_value_retained": false,
+      "disposition": "Run-local environment relocation does not prevent a native Bash child from inheriting Kimi provider environment variables. Formal credentialed execution requires an external loopback credential broker with only a dummy token visible to Kimi."
+    }
+  },
+  "capability_claims": {
+    "headless_execution": ["headless_structured_resume"],
+    "structured_trace": ["headless_structured_resume"],
+    "instruction_loading": ["native_instruction_loading"],
+    "skill_discovery": ["skill_discovery_activation"],
+    "skill_activation_trace": ["skill_discovery_activation"],
+    "mcp_configuration": ["mcp_configuration_tool_trace"],
+    "mcp_health_trace": ["adapter_mcp_health_proxy"],
+    "mcp_tool_trace": ["mcp_configuration_tool_trace"],
+    "session_resume": ["headless_structured_resume"],
+    "session_compaction": ["native_compaction"],
+    "subagent_delegation": ["native_subagent"],
+    "artifact_hash_provenance": ["adapter_artifact_hash_provenance"]
+  },
+  "explicitly_not_claimed": {
+    "native_mcp_health_event": "No native mcp.server.status event was present. Health support is adapter-owned and each run must validate proxy initialize, tools/list, and clean child-exit evidence; mcp.tools_discovered is not health evidence.",
+    "workspace_isolation": "Run-local roots do not establish an OS-enforced path boundary, and a native Bash child directly inherited the Kimi provider environment variable in the negative probe.",
+    "durable_memory_write": "No Kimi-native durable-memory write was observed.",
+    "durable_memory_retrieval": "No fresh-session durable-memory retrieval was observed.",
+    "native_artifact_hash_event": "No native exact read-time artifact hash event was observed. Artifact provenance support is adapter-owned and requires per-run correlation plus direct hashing of run-local file bytes.",
+    "control_isolation": "No attack/control equivalence probe was executed. A native Bash child inherited the Kimi provider environment variable, so run-local environment relocation alone is not control or credential isolation."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "price-checker",
+  "description": "Looks up product prices from the product catalog.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

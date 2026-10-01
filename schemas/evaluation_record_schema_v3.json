@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://safety-bench.local/schema/evaluation-record-v3.json",
+  "title": "Safety Bench Evaluation Record v3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_name", "schema_version", "case", "run", "execution", "contract", "eligibility", "score"],
+  "properties": {
+    "schema_name": {"const": "safety_bench_evaluation_record"},
+    "schema_version": {"const": 3},
+    "case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["case_dir", "attack_id", "suite", "family", "construction_authority", "construction_process"],
+      "properties": {
+        "case_dir": {"type": "string"},
+        "attack_id": {"type": "string"},
+        "suite": {"type": "string"},
+        "family": {"type": "string"},
+        "construction_authority": {"const": "runs/manifest.json"},
+        "construction_process": {
+          "type": "array",
+          "prefixItems": [
+            {"const": "seeded_python_generation"},
+            {"const": "human_review"},
+            {"const": "ai_assisted_review"},
+            {"const": "complexity_and_diversity_expansion"},
+            {"const": "final_active_suite_curation"}
+          ],
+          "items": false
+        }
+      }
+    },
+    "run": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["run_id", "harness", "model", "run_kind", "source_run_validity_schema_version"],
+      "properties": {
+        "run_id": {"type": "string"},
+        "harness": {"type": "string"},
+        "model": {"type": "string"},
+        "run_kind": {"enum": ["attack", "control", "any", ""]},
+        "source_run_validity_schema_version": {"type": ["integer", "string", "null"]}
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["outcome", "valid", "terminal", "retry_eligible", "failure_reasons", "normalization_mode", "source_result_class", "protocol_failure_kind", "protocol_failure_stage", "protocol_evidence"],
+      "properties": {
+        "outcome": {"enum": ["scored", "protocol_noncompletion", "execution_invalid", "missing"]},
+        "valid": {"type": "boolean"},
+        "terminal": {"type": "boolean"},
+        "retry_eligible": {"type": "boolean"},
+        "failure_reasons": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "normalization_mode": {"enum": ["native", "legacy_hard_evidence_migration"]},
+        "source_result_class": {"type": "string"},
+        "protocol_failure_kind": {"type": "string"},
+        "protocol_failure_stage": {"type": "string"},
+        "protocol_evidence": {"type": "array", "items": {"type": "object"}}
+      }
+    },
+    "contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "current_case_match", "main_table_eligible", "attack_success_metric_excluded", "metric_exclusion_reason"],
+      "properties": {
+        "status": {"enum": ["matched", "stale_run_contract", "missing", "unavailable"]},
+        "current_case_match": {"type": "boolean"},
+        "main_table_eligible": {"type": "boolean"},
+        "attack_success_metric_excluded": {"type": "boolean"},
+        "metric_exclusion_reason": {"type": "string"}
+      }
+    },
+    "eligibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evaluation_eligible", "exclusion_reasons"],
+      "properties": {
+        "evaluation_eligible": {"type": "boolean"},
+        "exclusion_reasons": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      }
+    },
+    "score": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["progress_node", "verdict", "attack_success", "confirmed_compromise", "risk_score", "evidence_oracles"],
+      "properties": {
+        "progress_node": {"enum": ["", "N0", "N1", "N2", "N3", "N4", "N5a", "N5b"]},
+        "verdict": {"type": "string"},
+        "attack_success": {"type": "boolean"},
+        "confirmed_compromise": {"type": "boolean"},
+        "risk_score": {"type": ["integer", "number", "null"]},
+        "evidence_oracles": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      }
+    }
+  }
+}

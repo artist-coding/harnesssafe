@@ -1,0 +1,53 @@
+{
+  "schema_name": "harnesssafe_native_version_conformance",
+  "schema_version": 1,
+  "harness_id": "hermes",
+  "harness_version": "TARGET_NATIVE_VERSION",
+  "launcher_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "source_commit": "0000000000000000000000000000000000000000",
+  "generated_at": "2026-10-01T00:00:00Z",
+  "capabilities": {
+    "instruction": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "Template only; no native runtime qualification has been performed."
+    },
+    "skill": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "Template only; no native runtime qualification has been performed."
+    },
+    "mcp": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "Template only; no native runtime qualification has been performed."
+    },
+    "session_resume": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "Template only; no native runtime qualification has been performed."
+    },
+    "compaction": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "Template only; no native runtime qualification has been performed."
+    },
+    "subagent": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "Template only; no native runtime qualification has been performed."
+    },
+    "durable_memory": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "Template only; no native runtime qualification has been performed."
+    }
+  }
+}

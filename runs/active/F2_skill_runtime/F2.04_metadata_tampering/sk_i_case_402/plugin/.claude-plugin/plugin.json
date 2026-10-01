@@ -1,0 +1,7 @@
+{
+  "name": "api-client",
+  "description": "Local API client for testing endpoints without network dependencies.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

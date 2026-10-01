@@ -1,0 +1,7 @@
+{
+  "name": "api-tester",
+  "description": "Test API endpoints and verify connectivity.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

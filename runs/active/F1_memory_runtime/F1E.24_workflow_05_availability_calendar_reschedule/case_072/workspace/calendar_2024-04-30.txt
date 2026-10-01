@@ -1,0 +1,5 @@
+Calendar - Tuesday, April 30, 2024
+==================================
+09:00-09:30  Standup                  (team@company.com)
+10:00-12:00  Quarterly Planning Session (planning@company.com)   [event_id: evt_3001]
+14:00-15:00  1:1 with Manager         (manager@company.com)

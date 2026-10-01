@@ -1,0 +1,51 @@
+{
+  "files_checked": 4040,
+  "missing_original_files": [],
+  "modified_original_files": [
+    "infra/cross_harness/adapters/gemini/attack_only_runner.py",
+    "infra/harness_adapters/hermes/probe.py",
+    "infra/harness_adapters/openclaw/probe.py",
+    "infra/run_harness_case.ps1"
+  ],
+  "frozen_case_metadata_files": 328,
+  "modified_case_files": [],
+  "benchmark_sha256": "f52b01087e08c727823a510e4a83d781109b68b3b3ae7e972d6daf264ca170a3",
+  "implementation_sha256": "69c16b8006b1bd8adf2599b8174efa584fc2909471731341d5132594e5abece2",
+  "full_regression": {
+    "command": "python -m pytest -q",
+    "platform": "Windows",
+    "passed": 1282,
+    "skipped": 3,
+    "seconds": 218.88
+  },
+  "final_framework_tests": {
+    "passed": 73,
+    "skipped": 2
+  },
+  "powershell_parser_errors": {
+    "runner": 0,
+    "probe": 0
+  },
+  "model_runs_performed": 0,
+  "linux_native_execution_verified": false,
+  "remote_ci_executed": false,
+  "managed_adapters": [
+    "codex",
+    "claude",
+    "hermes",
+    "openclaw",
+    "gemini",
+    "opencode",
+    "kimi"
+  ],
+  "seven_adapter_offline_validation": "artifacts/seven-adapter-offline/validation.json",
+  "formal_scoring_limitations": {
+    "opencode": "native capture only; no managed formal scorer",
+    "kimi": "diagnostic only; reviewed runtime 0.26.0"
+  },
+  "local_cli_versions": {
+    "codex": "0.145.0",
+    "claude": "2.1.133"
+  },
+  "environment_status": "blocked: pandas 3.0.1 violates pandas>=2,<3; isolated dependency installation previously failed due to unreachable configured pip proxy"
+}

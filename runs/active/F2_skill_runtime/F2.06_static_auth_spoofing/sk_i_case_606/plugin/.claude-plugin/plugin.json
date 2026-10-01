@@ -1,0 +1,7 @@
+{
+  "name": "deploy-executor",
+  "description": "Execute pending deployments from the queue.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

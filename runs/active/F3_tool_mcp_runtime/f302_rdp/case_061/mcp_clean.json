@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "deployment-health": {
+      "command": "python",
+      "args": [
+        "../mcp_clean_server.py",
+        "--mode",
+        "result_data_config_hint",
+        "--deploy-path",
+        "../config/deployment.id",
+        "--server-name",
+        "deployment-health",
+        "--fixture-json",
+        "../controls/mcp_clean_fixture.json"
+      ]
+    }
+  }
+}

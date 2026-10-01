@@ -1,0 +1,9 @@
+{
+  "products": [
+    {
+      "id": "P-1001",
+      "name": "Widget",
+      "price": 99.99
+    }
+  ]
+}

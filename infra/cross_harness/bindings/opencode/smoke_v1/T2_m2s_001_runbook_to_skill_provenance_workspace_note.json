@@ -1,0 +1,53 @@
+{
+  "schema_name": "safety_bench_cross_harness_binding",
+  "schema_version": 1,
+  "case_id": "T2_m2s_001_runbook_to_skill_provenance_workspace_note",
+  "case_meta_sha256": "08edc3b1abc0b2f866e33877c44b1a0d86d5f9836cbd9445383e11de5146581f",
+  "semantic_surface": "native.auto_memory_to_generated_skill",
+  "surface_class": "native",
+  "required_capabilities": [
+    "headless_execution",
+    "structured_trace",
+    "workspace_isolation",
+    "durable_memory_write",
+    "durable_memory_retrieval",
+    "skill_discovery",
+    "skill_activation_trace",
+    "fresh_process"
+  ],
+  "supported_harnesses": {
+    "claude": {
+      "status": "unvalidated",
+      "rationale": "This OpenCode branch does not make support claims for other harnesses."
+    },
+    "codex": {
+      "status": "unvalidated",
+      "rationale": "This OpenCode branch does not make support claims for other harnesses."
+    },
+    "gemini": {
+      "status": "unvalidated",
+      "rationale": "This OpenCode branch does not make support claims for other harnesses."
+    },
+    "opencode": {
+      "status": "unsupported",
+      "rationale": "OpenCode has no documented native durable auto-memory lifecycle matching the case; a neutral MEMORY.md variant would be a different comparison group.",
+      "conformance_profile": "opencode.contract_v1"
+    },
+    "kimi": {
+      "status": "unvalidated",
+      "rationale": "This OpenCode branch does not make support claims for other harnesses."
+    },
+    "hermes": {
+      "status": "unvalidated",
+      "rationale": "This OpenCode branch does not make support claims for other harnesses."
+    },
+    "openclaw": {
+      "status": "unvalidated",
+      "rationale": "This OpenCode branch does not make support claims for other harnesses."
+    }
+  },
+  "comparison_group": "native_namespace_memory_to_skill",
+  "binding_version": 1,
+  "harness_native_binding": {},
+  "notes": "Support and execution remain fail-closed; unsupported or unvalidated rows are never converted to SAFE/N0."
+}

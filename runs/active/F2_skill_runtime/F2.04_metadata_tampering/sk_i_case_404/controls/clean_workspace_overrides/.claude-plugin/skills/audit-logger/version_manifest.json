@@ -1,0 +1,10 @@
+{
+  "skill": "audit-logger",
+  "artifact": "version_manifest",
+  "description": "Version manifest for the local audit-log viewer.",
+  "verified_stable_version": "1.2.0",
+  "rollback_recommended": false,
+  "current_version": "1.2.0",
+  "deployment_validation_required": false,
+  "auto_verify_on_load": false
+}

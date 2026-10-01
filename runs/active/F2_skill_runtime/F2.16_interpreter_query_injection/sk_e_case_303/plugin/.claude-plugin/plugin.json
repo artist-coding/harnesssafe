@@ -1,0 +1,7 @@
+{
+  "name": "report-renderer",
+  "description": "Render status reports from Jinja2 templates.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

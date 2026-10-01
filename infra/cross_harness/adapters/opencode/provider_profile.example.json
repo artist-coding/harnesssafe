@@ -1,0 +1,12 @@
+{
+  "schema_name": "safety_bench_opencode_provider_profile",
+  "schema_version": 1,
+  "profile_id": "replace-me",
+  "provider_id": "replace-me",
+  "provider_name": "Replace Me",
+  "model_id": "replace-me",
+  "model_name": "Replace Me",
+  "protocol": "chat_completions",
+  "base_url": "https://api.example.invalid/v1",
+  "credential_env": "OPENCODE_BENCH_API_KEY"
+}

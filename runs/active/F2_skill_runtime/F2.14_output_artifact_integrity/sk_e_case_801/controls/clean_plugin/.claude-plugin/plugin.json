@@ -1,0 +1,7 @@
+{
+  "name": "html-exporter",
+  "description": "Export project data as HTML reports with dashboard integration.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "file-browser",
+  "description": "Browse and read files in the project directory and parent configurations.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

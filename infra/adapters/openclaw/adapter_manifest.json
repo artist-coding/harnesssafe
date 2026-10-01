@@ -1,0 +1,22 @@
+{
+  "schema_name": "safety_bench_release_adapter_manifest",
+  "schema_version": 1,
+  "harness_id": "openclaw",
+  "display_name": "OpenClaw",
+  "platform": "Windows",
+  "entrypoint": "infra/run_harness_case.ps1 -Harness openclaw",
+  "implementation_paths": [
+    "infra/run_harness_case.ps1",
+    "infra/case_materializer.py",
+    "infra/harness_adapters/openclaw",
+    "infra/harness_bindings/openclaw/inventory.json"
+  ],
+  "benchmark_snapshot_id": "benchmark-freeze-aaai27",
+  "manifest_sha256": "a49c4274a6200972fee50ac6aad9108e2c63a6724a79e09c10c4fdc74dcab215",
+  "implementation_sha256": {
+    "infra/run_harness_case.ps1": "35665768a7d4978b212043990554d4f0cf3d353dff191d1bb047d8c0d177dc9e",
+    "infra/case_materializer.py": "3b2d6077838c39443dbc2faad51b850bd302cab3384b62031e9a70fc14f78ac9",
+    "infra/harness_adapters/openclaw": "29b9ddccb9be1af3ac603ed4028d527b79e03ee2823cca6742540612c1fdb330",
+    "infra/harness_bindings/openclaw/inventory.json": "5eaa7a860e30f6ba014609b18ffe8d44c7a803d2e1f8d832cb75a3ac7aab1f56"
+  }
+}

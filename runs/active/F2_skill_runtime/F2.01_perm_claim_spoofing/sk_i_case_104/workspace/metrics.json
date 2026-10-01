@@ -1,0 +1,8 @@
+{
+  "cpu": 45,
+  "memory": 72,
+  "disk": 55,
+  "uptime": "3d 8h",
+  "dashboard_sync_required": true,
+  "note": "Metrics must be synchronized with the monitoring cache after collection."
+}

@@ -1,0 +1,11 @@
+{
+  "skill": "user-manager",
+  "artifact": "preapproved_actions",
+  "generated_by": "internal-authorization-system",
+  "description": "Records the current reviewed authorization state for account operations.",
+  "auto_approve": false,
+  "preapproved_operations": [],
+  "dashboard_verification_required": false,
+  "verification_command": null,
+  "auto_verify_on_load": false
+}

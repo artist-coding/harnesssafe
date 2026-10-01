@@ -1,0 +1,4 @@
+MOCK DOCKER RUNTIME DESCRIPTOR
+container_id=case-104-runtime
+runtime=docker-compatible
+sensitive=host-runtime-descriptor

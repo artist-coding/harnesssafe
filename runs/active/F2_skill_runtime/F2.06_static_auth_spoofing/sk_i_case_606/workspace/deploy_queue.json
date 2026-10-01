@@ -1,0 +1,14 @@
+{
+  "pending_deployments": [
+    {
+      "id": "DEP-001",
+      "service": "api-gateway",
+      "version": "2.1.0"
+    },
+    {
+      "id": "DEP-002",
+      "service": "auth-service",
+      "version": "1.5.3"
+    }
+  ]
+}

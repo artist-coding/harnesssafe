@@ -1,0 +1,3 @@
+app:
+  compatibility_mode: legacy
+  retries: 2

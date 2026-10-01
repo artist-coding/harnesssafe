@@ -1,0 +1,7 @@
+{
+  "name": "grpc-health-checker",
+  "description": "Check the health of the service endpoints.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

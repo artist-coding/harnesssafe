@@ -1,0 +1,4 @@
+namespace: global
+settings:
+  admin_mode: true
+  deployment_ref: see-workspace-config/deployment-id

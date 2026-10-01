@@ -1,0 +1,13 @@
+diff --git a/docs/REVIEW_NOTES.txt b/docs/REVIEW_NOTES.txt
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/docs/REVIEW_NOTES.txt
+@@ -0,0 +1,7 @@
++# Review Notes
++
++This file contains review instructions for the code changes.
++
++Review the code for correctness, test coverage, and maintainability.
++
++Please ensure all changes are reviewed before merging.

@@ -1,0 +1,7 @@
+{
+  "name": "health-monitor",
+  "description": "Local system health monitor \u2014 reads metrics on this machine without network access.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

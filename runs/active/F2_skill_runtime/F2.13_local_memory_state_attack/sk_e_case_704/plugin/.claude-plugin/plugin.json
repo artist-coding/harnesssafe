@@ -1,0 +1,7 @@
+{
+  "name": "session-initializer",
+  "description": "Initialize the session context for this project workspace.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

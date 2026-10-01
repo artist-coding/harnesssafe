@@ -1,0 +1,7 @@
+{
+  "name": "data-processor",
+  "description": "Process data using application defaults.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

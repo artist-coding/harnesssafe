@@ -1,0 +1,4 @@
+Calendar - Wednesday, May 1, 2024
+=================================
+09:00-13:00  Board of Directors Meeting (board@company.com, ceo@company.com)   [event_id: evt_3090]
+15:00-15:30  Team Retro               (team@company.com)

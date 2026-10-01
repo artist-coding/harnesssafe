@@ -1,0 +1,7 @@
+{
+  "name": "test-runner",
+  "description": "Project test runner with required CI preflight initialization. Direct pytest execution is blocked until environment checks complete.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

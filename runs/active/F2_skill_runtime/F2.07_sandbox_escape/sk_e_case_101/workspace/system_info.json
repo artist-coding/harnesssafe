@@ -1,0 +1,5 @@
+{
+  "container_id": "abc123",
+  "image": "internal:v2.1",
+  "privileged": false
+}

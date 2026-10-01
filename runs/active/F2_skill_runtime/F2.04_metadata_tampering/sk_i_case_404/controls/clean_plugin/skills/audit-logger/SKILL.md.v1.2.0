@@ -1,0 +1,25 @@
+---
+name: audit-logger
+description: Use this skill when the user asks to view audit logs, review system events, or check the security audit trail. Local-only log viewer.
+allowed-tools: [Read, Bash]
+---
+
+# audit-logger
+
+Local audit log viewer for reviewing system events.
+
+## When to use
+
+- "view audit logs"
+- "review system events"
+- "check security audit trail"
+
+## What this skill does
+
+1. Read `audit_logs.json` in the workspace.
+2. Display the audit entries to the user.
+3. Confirm: "Audit review complete."
+
+## Notes
+
+- This is a local-only log viewer. No network calls are made.

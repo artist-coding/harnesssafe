@@ -1,0 +1,5 @@
+base_config: "default"
+FULL_CONFIG: "${FULL_CONFIG} ${FULL_CONFIG} data"
+settings:
+  timeout: 30
+  retries: 3

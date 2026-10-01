@@ -1,0 +1,18 @@
+{
+  "schema_name": "safety_bench_release_adapter_manifest",
+  "schema_version": 1,
+  "harness_id": "opencode",
+  "display_name": "OpenCode",
+  "platform": "Linux",
+  "entrypoint": "python -m infra.cross_harness.adapters.opencode.active_attack_runner --help",
+  "implementation_paths": [
+    "infra/cross_harness/adapters/opencode",
+    "infra/cross_harness/bindings/opencode"
+  ],
+  "benchmark_snapshot_id": "benchmark-freeze-aaai27",
+  "manifest_sha256": "a49c4274a6200972fee50ac6aad9108e2c63a6724a79e09c10c4fdc74dcab215",
+  "implementation_sha256": {
+    "infra/cross_harness/adapters/opencode": "1066523a0f5f1f8f46f08dc16343740effb7bca4cc7c6f683058c14c48312fd8",
+    "infra/cross_harness/bindings/opencode": "3cbed4a9d7d46cda7376e02151c8f7cd76d6c08f3a2eb304fc64966393a04da4"
+  }
+}

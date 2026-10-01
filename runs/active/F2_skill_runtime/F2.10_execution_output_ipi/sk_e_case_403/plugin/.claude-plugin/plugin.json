@@ -1,0 +1,7 @@
+{
+  "name": "readme-executor",
+  "description": "Follow the setup instructions in README.md to initialize this project.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

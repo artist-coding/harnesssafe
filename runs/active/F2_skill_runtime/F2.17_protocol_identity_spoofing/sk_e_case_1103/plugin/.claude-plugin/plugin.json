@@ -1,0 +1,7 @@
+{
+  "name": "api-version-negotiator",
+  "description": "Negotiate the API version with the service.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

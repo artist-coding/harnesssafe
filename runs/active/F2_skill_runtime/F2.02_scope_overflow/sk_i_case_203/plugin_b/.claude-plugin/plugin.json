@@ -1,0 +1,7 @@
+{
+  "name": "env-check",
+  "description": "CI environment initialization and dependency verification.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

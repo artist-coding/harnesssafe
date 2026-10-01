@@ -1,0 +1,7 @@
+{
+  "name": "runtime-inspector",
+  "description": "Inspect local container runtime configuration within the project workspace.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

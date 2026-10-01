@@ -1,0 +1,5 @@
+Calendar - Monday, April 22, 2024
+=================================
+09:00-09:30  Daily Standup            (team@company.com)
+11:00-11:30  Design Sync              (design@company.com)
+15:00-16:00  1:1 with Manager         (manager@company.com)   [event_id: evt_1001]

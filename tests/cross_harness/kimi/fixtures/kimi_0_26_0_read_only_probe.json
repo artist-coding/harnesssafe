@@ -1,0 +1,61 @@
+{
+  "schema_name": "safety_bench_kimi_read_only_probe",
+  "schema_version": 1,
+  "captured_on": "2026-07-20",
+  "runtime_model_invocation": false,
+  "executable": "/usr/local/bin/kimi",
+  "resolved_executable": "/usr/local/lib/node_modules/@moonshot-ai/kimi-code/dist/main.mjs",
+  "package": "@moonshot-ai/kimi-code",
+  "version": "0.26.0",
+  "sha256": {
+    "resolved_executable": "bc310a7d2f0c3c2cb1367fa7b2092375351efff51c6d4a358b8681b4a01fb7b0",
+    "package_json": "65dfa318a882d834e356828d0f371f349f2dcfc99585cb01412f7c0a9e6ae52a"
+  },
+  "commands": [
+    {"argv": ["command", "-v", "kimi"], "exit_code": 0},
+    {"argv": ["kimi", "--version"], "exit_code": 0, "stdout": "0.26.0"},
+    {"argv": ["kimi", "--help"], "exit_code": 0},
+    {"argv": ["kimi", "export", "--help"], "exit_code": 0},
+    {"argv": ["kimi", "provider", "--help"], "exit_code": 0},
+    {"argv": ["kimi", "acp", "--help"], "exit_code": 0},
+    {"argv": ["kimi", "server", "--help"], "exit_code": 0},
+    {"argv": ["kimi", "server", "run", "--help"], "exit_code": 0},
+    {"argv": ["kimi", "doctor", "--help"], "exit_code": 0},
+    {"argv": ["kimi", "vis", "--help"], "exit_code": 0},
+    {"argv": ["kimi", "session"], "exit_code": 1, "observation": "unknown command"},
+    {"argv": ["kimi", "mcp"], "exit_code": 1, "observation": "unknown command"},
+    {"argv": ["kimi", "skill"], "exit_code": 1, "observation": "unknown command"},
+    {"argv": ["kimi", "session", "--help"], "exit_code": 0, "observation": "misleading top-level help"},
+    {"argv": ["kimi", "mcp", "--help"], "exit_code": 0, "observation": "misleading top-level help"},
+    {"argv": ["kimi", "skill", "--help"], "exit_code": 0, "observation": "misleading top-level help"}
+  ],
+  "top_help_observations": {
+    "headless_prompt": "-p, --prompt <prompt>",
+    "structured_stdout_candidate": "--output-format stream-json",
+    "skills_dir_replacement": "--skills-dir <dir>",
+    "session_flags": ["--session [id]", "--continue"],
+    "automatic_permission_mode": "--auto"
+  },
+  "installed_bundle_locators": {
+    "skill_activation_event": "dist/main.mjs:265505",
+    "skill_roots": "dist/main.mjs:265987",
+    "mcp_config_paths": "dist/main.mjs:276275",
+    "mcp_wire_tool_events": "dist/main.mjs:293043",
+    "mcp_status_event": "dist/main.mjs:293776",
+    "tool_result_success_semantics": "dist/main.mjs:298682",
+    "agents_md_loading": "dist/main.mjs:295458",
+    "cli_flags": "dist/main.mjs:355115",
+    "stream_json_serializer": "dist/main.mjs:428725",
+    "stream_json_ignored_lifecycle_events": "dist/main.mjs:429742"
+  },
+  "warning": "Unknown mcp/skill/session-style subcommands may print top-level help with exit code 0 when --help is present; they were not treated as supported commands.",
+  "official_sources": [
+    "https://moonshotai.github.io/kimi-code/en/reference/kimi-command.html",
+    "https://moonshotai.github.io/kimi-code/en/guides/sessions.html",
+    "https://moonshotai.github.io/kimi-code/en/customization/skills",
+    "https://moonshotai.github.io/kimi-code/en/customization/mcp.html",
+    "https://moonshotai.github.io/kimi-code/en/customization/agents",
+    "https://moonshotai.github.io/kimi-code/en/configuration/overrides.html",
+    "https://moonshotai.github.io/kimi-code/en/configuration/data-locations.html"
+  ]
+}

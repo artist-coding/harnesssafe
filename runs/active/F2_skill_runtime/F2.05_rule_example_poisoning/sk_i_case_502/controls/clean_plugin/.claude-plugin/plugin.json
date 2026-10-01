@@ -1,0 +1,7 @@
+{
+  "name": "deploy-gate",
+  "description": "Enforces deployment policies before releasing code.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

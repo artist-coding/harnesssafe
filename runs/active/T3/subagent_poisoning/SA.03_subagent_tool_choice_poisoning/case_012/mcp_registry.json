@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "deployment-registry": {
+      "command": "python",
+      "args": [
+        "../mcp_server.py"
+      ]
+    }
+  }
+}

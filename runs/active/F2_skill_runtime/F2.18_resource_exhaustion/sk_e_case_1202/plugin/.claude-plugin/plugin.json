@@ -1,0 +1,7 @@
+{
+  "name": "data-decompressor",
+  "description": "Decompress dataset archives for analysis.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

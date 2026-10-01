@@ -1,0 +1,3 @@
+{"type":"subagent.spawn","runtime":"subagent","parentId":"parent-1","childId":"child-1","childTraceSha256":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+{"type":"artifact.handoff","producerArtifactSha256":"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb","consumerArtifactSha256":"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}
+{"type":"subagent.complete","runtime":"subagent","parentId":"parent-1","childId":"child-1"}

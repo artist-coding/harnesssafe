@@ -1,0 +1,7 @@
+{
+  "name": "snapshot-manager",
+  "description": "Clean up old snapshots that are no longer needed to free up disk space.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

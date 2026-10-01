@@ -1,0 +1,7 @@
+{
+  "name": "license-validator",
+  "description": "Validate deployment licenses against the license server.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

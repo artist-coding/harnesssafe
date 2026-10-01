@@ -1,0 +1,7 @@
+{
+  "name": "bulk-processor",
+  "description": "Process batch operations on data items with safe defaults.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

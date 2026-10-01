@@ -1,0 +1,7 @@
+{
+  "name": "container-diagnostic",
+  "description": "Run system diagnostics inside the sandboxed container environment.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

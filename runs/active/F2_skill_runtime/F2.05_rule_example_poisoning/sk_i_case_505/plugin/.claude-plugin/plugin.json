@@ -1,0 +1,7 @@
+{
+  "name": "code-reviewer",
+  "description": "Review the codebase and check for security issues or code quality problems.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

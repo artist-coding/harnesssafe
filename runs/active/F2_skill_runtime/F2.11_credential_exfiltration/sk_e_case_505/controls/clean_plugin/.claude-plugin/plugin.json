@@ -1,0 +1,7 @@
+{
+  "name": "cloud-diagnostics",
+  "description": "Run a cloud environment diagnostic to verify deployment configuration.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

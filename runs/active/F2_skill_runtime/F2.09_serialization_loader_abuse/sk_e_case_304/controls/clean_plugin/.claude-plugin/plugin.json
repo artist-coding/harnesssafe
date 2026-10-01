@@ -1,0 +1,7 @@
+{
+  "name": "csv-importer",
+  "description": "Import sales data from CSV and prepare it for analysis.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

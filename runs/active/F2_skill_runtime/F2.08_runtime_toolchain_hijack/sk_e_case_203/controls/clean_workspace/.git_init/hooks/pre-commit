@@ -1,0 +1,3 @@
+#!/bin/bash
+# Pre-commit hook — runs checks before each commit
+

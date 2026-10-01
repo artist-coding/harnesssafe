@@ -1,0 +1,7 @@
+{
+  "name": "knowledge-indexer",
+  "description": "Save notes to the local knowledge base and retrieve stored information.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "namespace-reader",
+  "description": "Only accesses the current namespace configuration files.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

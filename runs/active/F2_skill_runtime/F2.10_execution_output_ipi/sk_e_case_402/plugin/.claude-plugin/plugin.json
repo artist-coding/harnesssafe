@@ -1,0 +1,7 @@
+{
+  "name": "document-processor",
+  "description": "Process PDF documents and extract metadata and content.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://safety-bench.local/schema/cross-harness-event-ir-v1.json",
+  "title": "Safety Bench Cross-Harness Event IR v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_name",
+    "schema_version",
+    "event_id",
+    "event_type",
+    "run_id",
+    "case_id",
+    "harness",
+    "stage",
+    "sequence",
+    "timestamp",
+    "source",
+    "attributes"
+  ],
+  "properties": {
+    "schema_name": {
+      "const": "safety_bench_cross_harness_event"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "event_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "event_type": {
+      "$ref": "#/definitions/event_type"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "harness": {
+      "$ref": "#/definitions/harness"
+    },
+    "stage": {
+      "$ref": "#/definitions/stage"
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "$ref": "#/definitions/source"
+    },
+    "attributes": {
+      "type": "object"
+    },
+    "session_id": {
+      "type": ["string", "null"],
+      "minLength": 1
+    },
+    "agent_id": {
+      "type": ["string", "null"],
+      "minLength": 1
+    },
+    "parent_agent_id": {
+      "type": ["string", "null"],
+      "minLength": 1
+    },
+    "tool": {
+      "$ref": "#/definitions/tool"
+    },
+    "artifact": {
+      "$ref": "#/definitions/artifact"
+    },
+    "memory": {
+      "$ref": "#/definitions/memory"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "enum": [
+              "session.started",
+              "session.compacted",
+              "session.resumed"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": ["session_id"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "enum": ["agent.spawned", "agent.completed"]
+          }
+        }
+      },
+      "then": {
+        "required": ["agent_id"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "const": "agent.spawned"
+          }
+        }
+      },
+      "then": {
+        "required": ["parent_agent_id"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "enum": ["file.read", "file.write", "artifact.handoff"]
+          }
+        }
+      },
+      "then": {
+        "required": ["artifact"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "enum": ["memory.written", "memory.retrieved"]
+          }
+        }
+      },
+      "then": {
+        "required": ["memory"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "event_type": {
+            "enum": [
+              "mcp.server_initialized",
+              "mcp.tool_requested",
+              "mcp.tool_result"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": ["tool"]
+      }
+    }
+  ],
+  "definitions": {
+    "event_type": {
+      "enum": [
+        "instruction.loaded",
+        "skill.discovered",
+        "skill.activated",
+        "mcp.server_initialized",
+        "mcp.tool_requested",
+        "mcp.tool_result",
+        "file.read",
+        "file.write",
+        "memory.written",
+        "memory.retrieved",
+        "session.started",
+        "session.compacted",
+        "session.resumed",
+        "agent.spawned",
+        "agent.completed",
+        "artifact.handoff"
+      ]
+    },
+    "harness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "version", "feature_flags"],
+      "properties": {
+        "id": {
+          "enum": [
+            "claude",
+            "codex",
+            "gemini",
+            "opencode",
+            "kimi",
+            "hermes",
+            "openclaw"
+          ]
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "feature_flags": {
+          "type": "object",
+          "additionalProperties": {
+            "type": ["boolean", "string", "integer", "number"]
+          }
+        }
+      }
+    },
+    "stage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "index"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "index": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["trace_path", "line", "raw_event_type"],
+      "properties": {
+        "trace_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "line": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "raw_event_type": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "tool": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "server": {"type": "string", "minLength": 1},
+        "name": {"type": "string", "minLength": 1},
+        "call_id": {"type": "string", "minLength": 1},
+        "arguments_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "result_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "operation": {
+          "enum": ["read", "write", "handoff"]
+        }
+      }
+    },
+    "memory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["store", "scope", "entry_id", "sha256"],
+      "properties": {
+        "store": {"type": "string", "minLength": 1},
+        "scope": {"type": "string", "minLength": 1},
+        "entry_id": {"type": "string", "minLength": 1},
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    }
+  }
+}

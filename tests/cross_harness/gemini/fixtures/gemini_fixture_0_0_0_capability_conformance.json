@@ -1,0 +1,122 @@
+{
+  "schema_name": "safety_bench_gemini_capability_conformance",
+  "schema_version": 1,
+  "harness_id": "gemini",
+  "harness_version": "0.0.0-fixture",
+  "executable_sha256": "bd84cb46bfc1fd6bc7dc53ee4ce414e24158cf12b46daa1b531887808a306385",
+  "generated_at": "2026-07-21T00:00:00+08:00",
+  "capabilities": {
+    "headless_execution": {
+      "status": "SUPPORTED",
+      "executed": true,
+      "evidence": [
+        "tests/cross_harness/gemini/fixtures/gemini_cli_fixture.py:headless-exit-0"
+      ],
+      "reason": ""
+    },
+    "structured_trace": {
+      "status": "SUPPORTED",
+      "executed": true,
+      "evidence": [
+        "tests/cross_harness/gemini/fixtures/gemini_cli_fixture.py:stream-json-init"
+      ],
+      "reason": ""
+    },
+    "workspace_isolation": {
+      "status": "SUPPORTED",
+      "executed": true,
+      "evidence": [
+        "tests/cross_harness/gemini/test_runtime_smoke.py:run-local-home-xdg"
+      ],
+      "reason": ""
+    },
+    "instruction_loading": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "The deterministic fixture does not emulate Gemini project instruction loading."
+    },
+    "skill_discovery": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "The deterministic fixture does not emulate Gemini Agent Skills discovery."
+    },
+    "skill_activation_trace": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "The deterministic fixture does not emulate native activate_skill."
+    },
+    "mcp_configuration": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "The deterministic fixture does not execute a Gemini-owned MCP client."
+    },
+    "mcp_health_trace": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "No Gemini-owned MCP initialize lifecycle is exercised by this fixture."
+    },
+    "mcp_tool_trace": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "No Gemini-owned MCP tools/call lifecycle is exercised by this fixture."
+    },
+    "fresh_process": {
+      "status": "SUPPORTED",
+      "executed": true,
+      "evidence": [
+        "tests/cross_harness/gemini/test_runtime_smoke.py:subprocess-exit-0"
+      ],
+      "reason": ""
+    },
+    "durable_memory_write": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "No Gemini-native durable memory write is exercised."
+    },
+    "durable_memory_retrieval": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "No Gemini-native durable memory retrieval is exercised."
+    },
+    "session_resume": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "The fixture does not emulate exact Gemini session resume lineage."
+    },
+    "session_compaction": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "The fixture does not emulate Gemini compaction or token reduction."
+    },
+    "subagent_delegation": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "The fixture does not emulate a Gemini-native subagent."
+    },
+    "artifact_hash_provenance": {
+      "status": "SUPPORTED",
+      "executed": true,
+      "evidence": [
+        "tests/cross_harness/gemini/fixtures/gemini_cli_fixture.py:read-time-sha256"
+      ],
+      "reason": ""
+    },
+    "control_isolation": {
+      "status": "UNVALIDATED",
+      "executed": false,
+      "evidence": [],
+      "reason": "A local launcher fixture is not matched-control isolation evidence."
+    }
+  }
+}

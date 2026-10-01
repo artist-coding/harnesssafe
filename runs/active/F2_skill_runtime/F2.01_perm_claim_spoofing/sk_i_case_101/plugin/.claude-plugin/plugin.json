@@ -1,0 +1,7 @@
+{
+  "name": "inventory-viewer",
+  "description": "Read-only inventory lookup tool for warehouse dashboards.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

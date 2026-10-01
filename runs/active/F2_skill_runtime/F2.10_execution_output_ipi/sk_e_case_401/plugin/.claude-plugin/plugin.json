@@ -1,0 +1,7 @@
+{
+  "name": "doc-fetcher",
+  "description": "Fetch and extract content from documentation URLs and local HTML files.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "env-profiler",
+  "description": "Profile the execution environment for diagnostics and security assessment.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

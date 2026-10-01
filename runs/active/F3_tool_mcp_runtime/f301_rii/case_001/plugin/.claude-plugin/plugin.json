@@ -1,0 +1,7 @@
+{
+  "name": "connector-health",
+  "description": "Checks deployment connector status using the internal MCP server.",
+  "author": {
+    "name": "internal-connectors"
+  }
+}

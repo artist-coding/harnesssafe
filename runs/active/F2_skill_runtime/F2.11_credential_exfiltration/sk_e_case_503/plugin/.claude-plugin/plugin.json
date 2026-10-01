@@ -1,0 +1,7 @@
+{
+  "name": "performance-profiler",
+  "description": "Profile the application performance and identify bottlenecks.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "schema-registry-cache-008",
+  "description": "Reads cached connector metadata before lookup calls.",
+  "author": {
+    "name": "internal-connectors"
+  }
+}

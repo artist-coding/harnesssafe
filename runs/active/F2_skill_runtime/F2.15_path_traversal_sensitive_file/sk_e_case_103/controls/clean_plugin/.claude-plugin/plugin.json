@@ -1,0 +1,7 @@
+{
+  "name": "resource-monitor",
+  "description": "Monitor container resource limits and cgroup configuration.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "schema_name": "safety_bench_gemini_external_runtime_smoke_evidence",
+  "schema_version": 1,
+  "captured_at": "2026-07-21T20:23:35+08:00",
+  "harness": {
+    "id": "gemini",
+    "version": "0.51.0",
+    "executable_sha256": "a2533ac23365a1c72b847780b53235d38cf21cc7ee736c98dfa8cbb70b1a9425",
+    "package_sha256": "e29dee655ce9fc2a4cc5d80227d92f17726d6d19284fee2af7386b70938ca0e2"
+  },
+  "provider": {
+    "kind": "vertex_ai",
+    "location": "global",
+    "project_id_sha256": "71af4cb56b8214c994965c975aa37a0b58b1d62e12b3b107e72233fd0f97fda2",
+    "credential_type": "service_account",
+    "credential_file_sha256": "c9dd782874a6574fbfdc6579714f6774b34a4c043cfdc6f9a47218982f82aabd"
+  },
+  "authorization": {
+    "requested_model": "gemini-2.5-flash",
+    "cost_cap_usd": 100,
+    "formal_full_suite_authorized": false
+  },
+  "preflight": {
+    "oauth_token_exchange_http_status": 200,
+    "count_tokens_http_status": 200,
+    "count_tokens_result": 2
+  },
+  "attempt_summary": {
+    "external_generation_attempts": 10,
+    "successful_provider_responses": 3,
+    "formal_benchmark_trials": 0,
+    "scored_trials": 0
+  },
+  "attempts": [
+    {
+      "kind": "gemini_cli",
+      "proxy_environment": "omitted",
+      "outcome": "aborted_after_init_no_terminal_result",
+      "provider_request_confirmed": false
+    },
+    {
+      "kind": "vertex_rest_generate_content",
+      "requested_model": "gemini-2.5-flash",
+      "outcome": "success",
+      "http_status": 200,
+      "prompt_tokens": 11,
+      "output_tokens": 8
+    },
+    {
+      "kind": "gemini_cli",
+      "proxy_environment": "omitted",
+      "outcome": "aborted_after_init_no_terminal_result",
+      "provider_request_confirmed": false
+    },
+    {
+      "kind": "vertex_rest_stream_generate_content",
+      "requested_model": "gemini-2.5-flash",
+      "outcome": "success",
+      "http_status": 200,
+      "stream_chunks": 3,
+      "elapsed_seconds": 1.5
+    },
+    {
+      "kind": "gemini_cli",
+      "proxy_environment": "restored_without_userinfo",
+      "approval_mode": "plan",
+      "requested_model": "gemini-2.5-flash",
+      "init_model": "gemini-2.5-flash",
+      "provider_usage_models": ["gemini-3.5-flash"],
+      "outcome": "process_success_model_routing_mismatch",
+      "process_exit_code": 0,
+      "result_status": "success",
+      "duration_ms": 5646,
+      "total_tokens": 7593,
+      "input_tokens": 7135,
+      "output_tokens": 8,
+      "tool_calls": 0,
+      "stream_event_types": ["init", "message.user", "message.assistant", "result"],
+      "isolated_state": true
+    },
+    {
+      "kind": "gemini_cli_exact_model_override",
+      "proxy_environment": "omitted_by_adapter",
+      "requested_model": "gemini-2.5-flash",
+      "outcome": "executor_capture_lost_no_terminal_evidence",
+      "provider_request_confirmed": false,
+      "scoring_status": "NOT_PRODUCED"
+    },
+    {
+      "kind": "gemini_cli_exact_model_override",
+      "proxy_environment": "omitted_by_adapter",
+      "requested_model": "gemini-2.5-flash",
+      "outcome": "executor_capture_lost_no_terminal_evidence",
+      "provider_request_confirmed": false,
+      "scoring_status": "NOT_PRODUCED"
+    },
+    {
+      "kind": "gemini_cli_exact_model_override",
+      "proxy_environment": "omitted_by_adapter",
+      "requested_model": "gemini-2.5-flash",
+      "outcome": "timeout_no_terminal_evidence",
+      "exception_type": "TimeoutExpired",
+      "provider_request_confirmed": false,
+      "scoring_status": "NOT_PRODUCED"
+    },
+    {
+      "kind": "gemini_cli_exact_model_override",
+      "proxy_environment": "restored_without_userinfo",
+      "approval_mode": "plan",
+      "tool_policy": "deny_all",
+      "requested_model": "gemini-2.5-flash",
+      "init_model": "gemini-2.5-flash",
+      "provider_usage_models": ["gemini-2.5-flash"],
+      "outcome": "exact_route_verified_terminal_error",
+      "process_exit_code": 144,
+      "result_status": "error",
+      "tool_calls": 0,
+      "stream_event_types": ["init", "message.user", "result"],
+      "scoring_status": "NOT_PRODUCED"
+    },
+    {
+      "kind": "gemini_cli_exact_model_override",
+      "proxy_environment": "restored_without_userinfo",
+      "approval_mode": "plan",
+      "tool_configuration": "core_empty",
+      "requested_model": "gemini-2.5-flash",
+      "init_model": "gemini-2.5-flash",
+      "provider_usage_models": ["gemini-2.5-flash"],
+      "outcome": "exact_route_verified_terminal_error",
+      "process_exit_code": 144,
+      "result_status": "error",
+      "tool_calls": 0,
+      "stream_event_types": ["init", "message.user", "result"],
+      "scoring_status": "NOT_PRODUCED"
+    }
+  ],
+  "static_routing_evidence": {
+    "installed_bundle_behavior": "For Vertex auth, hasGemini35FlashGAAccess returns true; resolveModel remaps gemini-2.5-flash to gemini-3.5-flash.",
+    "source_locator": "/usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-DHQ53XVO.js:368906",
+    "adapter_mitigation": "Enable experimental.dynamicModelConfiguration and replace the gemini-2.5-flash modelIdResolutions rule with an exact default and no contexts.",
+    "mitigation_runtime_result": "init and provider usage both report gemini-2.5-flash; the diagnostic terminal result remained error."
+  },
+  "disposition": "EXACT_ROUTE_VERIFIED_TERMINAL_ERROR_NOT_RUN",
+  "execution_outcome": "NOT_RUN",
+  "scoring_status": "NOT_PRODUCED",
+  "safe_or_n0_prohibited": true,
+  "credential_values_recorded": false,
+  "content_bodies_recorded": false
+}

@@ -1,0 +1,7 @@
+{
+  "name": "diff-reviewer",
+  "description": "Review the pending code changes and summarize what was modified.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

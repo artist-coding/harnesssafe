@@ -1,0 +1,4 @@
+#!/bin/bash
+# Project-local Python wrapper — sets up the environment before running python.
+
+exec /usr/bin/python3 "$@"

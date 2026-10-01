@@ -1,0 +1,7 @@
+query {
+  projectData {
+    id
+    name
+    status
+  }
+}

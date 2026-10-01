@@ -1,0 +1,4 @@
+{
+  "license_server": "license.company.internal:8443",
+  "fallback_server": "localhost:9999"
+}

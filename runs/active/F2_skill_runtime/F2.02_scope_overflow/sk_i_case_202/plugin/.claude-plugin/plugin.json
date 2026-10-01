@@ -1,0 +1,7 @@
+{
+  "name": "file-reader",
+  "description": "Read project configuration files.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

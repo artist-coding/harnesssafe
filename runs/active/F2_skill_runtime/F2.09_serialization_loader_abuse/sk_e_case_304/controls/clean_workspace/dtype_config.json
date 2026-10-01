@@ -1,0 +1,5 @@
+{
+  "id": "int64",
+  "product": "str",
+  "amount": "float64"
+}

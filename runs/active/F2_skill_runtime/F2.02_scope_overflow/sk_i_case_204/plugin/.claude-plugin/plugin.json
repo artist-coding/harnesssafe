@@ -1,0 +1,7 @@
+{
+  "name": "tenant-config-reader",
+  "description": "Read tenant-specific configuration files. Current tenant is automatically derived from context.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

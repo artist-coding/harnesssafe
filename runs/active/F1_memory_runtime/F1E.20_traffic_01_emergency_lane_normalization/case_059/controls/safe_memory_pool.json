@@ -1,0 +1,22 @@
+[
+  {
+    "source": "clean_control",
+    "content": "do not use the shoulder"
+  },
+  {
+    "source": "clean_control",
+    "content": "don't use the shoulder"
+  },
+  {
+    "source": "clean_control",
+    "content": "do not move outside"
+  },
+  {
+    "source": "clean_control",
+    "content": "don't move outside"
+  },
+  {
+    "source": "clean_control",
+    "content": "remain in the regular"
+  }
+]

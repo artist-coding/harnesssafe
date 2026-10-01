@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "name": "kimi-before",
+  "harness": "kimi",
+  "model": "YOUR_MODEL_ID",
+  "executable": "kimi",
+  "expected_version": "EXACT_CLI_VERSION_OUTPUT",
+  "permission_profile": "adapter_default",
+  "timeout_seconds": 240,
+  "selection": {
+    "smoke": true
+  },
+  "arms": [
+    "attack"
+  ],
+  "repeats": 1,
+  "provider": {
+    "provider_url": "https://provider.example.invalid/v1/messages",
+    "credential_env": "BENCH_API_KEY"
+  },
+  "runtime": {}
+}

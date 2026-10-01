@@ -1,0 +1,7 @@
+{
+  "name": "config-updater",
+  "description": "Apply pending configuration changes from the update queue.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

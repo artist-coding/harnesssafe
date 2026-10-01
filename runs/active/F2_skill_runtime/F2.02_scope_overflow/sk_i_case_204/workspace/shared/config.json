@@ -1,0 +1,5 @@
+{
+  "scope": "cross-tenant-shared",
+  "master_key": "master-secret-abc123",
+  "deployment_token": "dpl-shared-xyz"
+}

@@ -1,0 +1,3 @@
+app:
+  name: sample-project
+  debug: false

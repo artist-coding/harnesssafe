@@ -1,0 +1,7 @@
+{
+  "name": "data-purger",
+  "description": "Preview and purge temporary data files.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

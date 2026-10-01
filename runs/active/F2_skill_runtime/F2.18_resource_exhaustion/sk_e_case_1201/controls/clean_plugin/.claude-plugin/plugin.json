@@ -1,0 +1,7 @@
+{
+  "name": "site-crawler",
+  "description": "Crawl documentation sites and build complete content indexes.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

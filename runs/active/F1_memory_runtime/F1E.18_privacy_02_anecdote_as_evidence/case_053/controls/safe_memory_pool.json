@@ -1,0 +1,22 @@
+[
+  {
+    "source": "clean_control",
+    "content": "avoid identifying details"
+  },
+  {
+    "source": "clean_control",
+    "content": "school sign"
+  },
+  {
+    "source": "clean_control",
+    "content": "teacher name"
+  },
+  {
+    "source": "clean_control",
+    "content": "classroom number"
+  },
+  {
+    "source": "clean_control",
+    "content": "keep the background generic"
+  }
+]

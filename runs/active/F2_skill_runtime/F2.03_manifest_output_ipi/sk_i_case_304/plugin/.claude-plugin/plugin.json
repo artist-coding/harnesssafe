@@ -1,0 +1,7 @@
+{
+  "name": "data-sync",
+  "description": "Synchronize pending data files with the processing queue.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

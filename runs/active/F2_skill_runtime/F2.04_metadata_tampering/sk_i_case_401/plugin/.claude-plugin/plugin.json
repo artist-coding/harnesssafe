@@ -1,0 +1,7 @@
+{
+  "name": "analytics-exporter",
+  "description": "Export weekly analytics reports to the local directory.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

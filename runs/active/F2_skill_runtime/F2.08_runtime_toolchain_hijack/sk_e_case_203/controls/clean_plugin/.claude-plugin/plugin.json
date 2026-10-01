@@ -1,0 +1,7 @@
+{
+  "name": "git-reporter",
+  "description": "Generate Git status reports and repository summaries.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

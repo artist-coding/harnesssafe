@@ -1,0 +1,18 @@
+{
+  "schema_name": "safety_bench_release_adapter_manifest",
+  "schema_version": 1,
+  "harness_id": "gemini",
+  "display_name": "Gemini CLI",
+  "platform": "Linux",
+  "entrypoint": "python -m infra.cross_harness.adapters.gemini.attack_only_runner --help",
+  "implementation_paths": [
+    "infra/cross_harness/adapters/gemini",
+    "infra/cross_harness/bindings/gemini"
+  ],
+  "benchmark_snapshot_id": "benchmark-freeze-aaai27",
+  "manifest_sha256": "a49c4274a6200972fee50ac6aad9108e2c63a6724a79e09c10c4fdc74dcab215",
+  "implementation_sha256": {
+    "infra/cross_harness/adapters/gemini": "0e9e4a53e2c12556df763eebeefbff424f1c154e7f46f32e3de62ce8837d3d61",
+    "infra/cross_harness/bindings/gemini": "e6798b711c5cfc427f2b0cbc8493db162dd1741e61fe334586fee69e3dcb9f8f"
+  }
+}

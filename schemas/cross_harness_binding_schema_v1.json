@@ -1,0 +1,196 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://safety-bench.local/schema/cross-harness-binding-v1.json",
+  "title": "Safety Bench Cross-Harness Binding v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_name",
+    "schema_version",
+    "case_id",
+    "case_meta_sha256",
+    "semantic_surface",
+    "surface_class",
+    "required_capabilities",
+    "supported_harnesses",
+    "comparison_group",
+    "binding_version",
+    "harness_native_binding"
+  ],
+  "properties": {
+    "schema_name": {
+      "const": "safety_bench_cross_harness_binding"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_meta_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "semantic_surface": {
+      "$ref": "#/definitions/identifier"
+    },
+    "surface_class": {
+      "enum": ["common", "native", "neutral"]
+    },
+    "required_capabilities": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/definitions/capability"
+      }
+    },
+    "supported_harnesses": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "claude",
+        "codex",
+        "gemini",
+        "opencode",
+        "kimi",
+        "hermes",
+        "openclaw"
+      ],
+      "properties": {
+        "claude": {"$ref": "#/definitions/support"},
+        "codex": {"$ref": "#/definitions/support"},
+        "gemini": {"$ref": "#/definitions/support"},
+        "opencode": {"$ref": "#/definitions/support"},
+        "kimi": {"$ref": "#/definitions/support"},
+        "hermes": {"$ref": "#/definitions/support"},
+        "openclaw": {"$ref": "#/definitions/support"}
+      }
+    },
+    "comparison_group": {
+      "$ref": "#/definitions/identifier"
+    },
+    "binding_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "harness_native_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "claude": {"$ref": "#/definitions/native_binding"},
+        "codex": {"$ref": "#/definitions/native_binding"},
+        "gemini": {"$ref": "#/definitions/native_binding"},
+        "opencode": {"$ref": "#/definitions/native_binding"},
+        "kimi": {"$ref": "#/definitions/native_binding"},
+        "hermes": {"$ref": "#/definitions/native_binding"},
+        "openclaw": {"$ref": "#/definitions/native_binding"}
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "definitions": {
+    "identifier": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*(?:\\.[a-z0-9_]+)*$"
+    },
+    "capability": {
+      "enum": [
+        "headless_execution",
+        "structured_trace",
+        "workspace_isolation",
+        "instruction_loading",
+        "skill_discovery",
+        "skill_activation_trace",
+        "mcp_configuration",
+        "mcp_health_trace",
+        "mcp_tool_trace",
+        "fresh_process",
+        "durable_memory_write",
+        "durable_memory_retrieval",
+        "session_resume",
+        "session_compaction",
+        "subagent_delegation",
+        "artifact_hash_provenance",
+        "control_isolation"
+      ]
+    },
+    "event_type": {
+      "enum": [
+        "instruction.loaded",
+        "skill.discovered",
+        "skill.activated",
+        "mcp.server_initialized",
+        "mcp.tool_requested",
+        "mcp.tool_result",
+        "file.read",
+        "file.write",
+        "memory.written",
+        "memory.retrieved",
+        "session.started",
+        "session.compacted",
+        "session.resumed",
+        "agent.spawned",
+        "agent.completed",
+        "artifact.handoff"
+      ]
+    },
+    "support": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "rationale"],
+      "properties": {
+        "status": {
+          "enum": [
+            "supported",
+            "conditional",
+            "unsupported",
+            "unvalidated"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "conformance_profile": {
+          "$ref": "#/definitions/identifier"
+        }
+      }
+    },
+    "native_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "adapter",
+        "variant_kind",
+        "config",
+        "expected_event_types"
+      ],
+      "properties": {
+        "adapter": {
+          "$ref": "#/definitions/identifier"
+        },
+        "variant_kind": {
+          "enum": ["native", "neutral"]
+        },
+        "config": {
+          "type": "object"
+        },
+        "expected_event_types": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/definitions/event_type"
+          }
+        },
+        "artifact_bindings": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "name": "gemini-before",
+  "harness": "gemini",
+  "model": "YOUR_MODEL_ID",
+  "executable": "gemini",
+  "expected_version": "EXACT_CLI_VERSION_OUTPUT",
+  "permission_profile": "adapter_default",
+  "timeout_seconds": 240,
+  "selection": {
+    "smoke": true
+  },
+  "arms": [
+    "attack"
+  ],
+  "repeats": 1,
+  "provider": {
+    "api_base_url": "https://provider.example.invalid/v1",
+    "api_key_env": "BENCH_API_KEY",
+    "provider_kind": "openai-compatible",
+    "project": "harnesssafe",
+    "location": "global"
+  },
+  "runtime": {
+    "conformance": "/path/to/gemini-conformance.json"
+  }
+}

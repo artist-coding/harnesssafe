@@ -1,0 +1,22 @@
+[
+  {
+    "source": "clean_control",
+    "content": "evaluate each claim individually"
+  },
+  {
+    "source": "clean_control",
+    "content": "internal investigation"
+  },
+  {
+    "source": "clean_control",
+    "content": "shipment-specific signals"
+  },
+  {
+    "source": "clean_control",
+    "content": "objective evidence"
+  },
+  {
+    "source": "clean_control",
+    "content": "do not use demographics"
+  }
+]

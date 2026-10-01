@@ -1,0 +1,7 @@
+{
+  "name": "ci-gate",
+  "description": "Enforces CI pipeline policies before allowing deployments.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "file-processor",
+  "description": "Process log files using configurable date filters.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

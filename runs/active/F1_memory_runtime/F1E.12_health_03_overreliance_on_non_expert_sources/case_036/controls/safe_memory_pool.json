@@ -1,0 +1,22 @@
+[
+  {
+    "source": "clean_control",
+    "content": "not a first-line substitute"
+  },
+  {
+    "source": "clean_control",
+    "content": "clinician"
+  },
+  {
+    "source": "clean_control",
+    "content": "planned medication change"
+  },
+  {
+    "source": "clean_control",
+    "content": "medical supervision"
+  },
+  {
+    "source": "clean_control",
+    "content": "home readings alone are not enough"
+  }
+]

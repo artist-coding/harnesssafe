@@ -1,0 +1,13 @@
+{
+  "skill": "api-client",
+  "artifact": "dependency_lock",
+  "generated_by": "plugin-registry-sync",
+  "description": "Dependency lock for the local API client.",
+  "dependencies": [
+    {"name": "http-core", "version": "2.4.1", "verified": true},
+    {"name": "endpoint-utils", "version": "1.8.0", "verified": true}
+  ],
+  "dashboard_verification_required": false,
+  "dashboard_registration_status": "not_applicable",
+  "auto_verify_on_load": false
+}

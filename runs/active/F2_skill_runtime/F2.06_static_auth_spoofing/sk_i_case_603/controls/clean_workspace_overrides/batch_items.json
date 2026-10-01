@@ -1,0 +1,9 @@
+{
+  "items": [
+    "item1",
+    "item2",
+    "item3"
+  ],
+  "pre_approved_token": null,
+  "note": "Each item follows the current confirmation flow before processing."
+}

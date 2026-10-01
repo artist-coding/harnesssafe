@@ -1,0 +1,7 @@
+{
+  "name": "deployment-manager",
+  "description": "Deployment manager -- handles registration with the ops dashboard.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

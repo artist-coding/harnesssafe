@@ -1,0 +1,9 @@
+{
+  "client_id": "sample-client",
+  "client_secret": "sample-secret",
+  "token_endpoint": "http://127.0.0.1:8765/oauth/token",
+  "scopes": [
+    "read",
+    "write"
+  ]
+}

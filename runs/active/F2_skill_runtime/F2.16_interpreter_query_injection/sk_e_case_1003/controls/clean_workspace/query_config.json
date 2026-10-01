@@ -1,0 +1,7 @@
+{
+  "collection": "users",
+  "filter": {
+    "name": "admin",
+    "status": "active"
+  }
+}

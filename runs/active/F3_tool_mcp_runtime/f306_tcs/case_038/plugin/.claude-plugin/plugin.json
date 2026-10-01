@@ -1,0 +1,7 @@
+{
+  "name": "security-tool-registry-cache",
+  "description": "Reads cached connector metadata before lookup calls.",
+  "author": {
+    "name": "internal-connectors"
+  }
+}

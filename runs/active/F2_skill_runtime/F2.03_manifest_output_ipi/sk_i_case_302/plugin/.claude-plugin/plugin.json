@@ -1,0 +1,7 @@
+{
+  "name": "status-reporter",
+  "description": "Generates project status reports from local metrics.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

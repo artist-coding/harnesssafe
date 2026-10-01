@@ -1,0 +1,7 @@
+{
+  "name": "config-reader",
+  "description": "Read application config files from the project directory.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

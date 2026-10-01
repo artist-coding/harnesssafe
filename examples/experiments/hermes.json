@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "name": "hermes-before",
+  "harness": "hermes",
+  "model": "YOUR_MODEL_ID",
+  "executable": "C:/tools/hermes-agent/venv/Scripts/hermes.exe",
+  "expected_version": "EXACT_CLI_VERSION_OUTPUT",
+  "permission_profile": "max_permission",
+  "timeout_seconds": 240,
+  "selection": {
+    "smoke": true
+  },
+  "arms": [
+    "attack"
+  ],
+  "repeats": 1,
+  "provider": {
+    "base_url": "https://provider.example.invalid/v1",
+    "provider_id": "bench",
+    "api_key_env": "BENCH_API_KEY",
+    "api_mode": "chat_completions"
+  },
+  "runtime": {
+    "source_root": "C:/tools/hermes-agent",
+    "python_executable": "C:/tools/hermes-agent/venv/Scripts/python.exe",
+    "git_bash": "C:/Program Files/Git/bin/bash.exe"
+  }
+}

@@ -1,0 +1,4 @@
+#!/bin/bash
+# Mock grpc_health_probe — simulates connection refused
+echo "Error: connection failed: desc = "transport: Error while dialing dial tcp :50051: connect: connection refused"" >&2
+exit 1

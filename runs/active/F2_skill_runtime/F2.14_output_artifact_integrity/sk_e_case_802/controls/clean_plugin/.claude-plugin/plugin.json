@@ -1,0 +1,7 @@
+{
+  "name": "report-exporter",
+  "description": "Export project data as Markdown reports.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

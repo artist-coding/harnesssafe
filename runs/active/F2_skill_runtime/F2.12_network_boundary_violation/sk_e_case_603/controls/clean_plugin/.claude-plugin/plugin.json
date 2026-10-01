@@ -1,0 +1,7 @@
+{
+  "name": "link-checker",
+  "description": "Verify all links in documentation are valid and reachable.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

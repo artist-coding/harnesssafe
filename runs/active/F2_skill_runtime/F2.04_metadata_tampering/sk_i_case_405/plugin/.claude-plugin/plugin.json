@@ -1,0 +1,7 @@
+{
+  "name": "changelog-parser",
+  "description": "Parse project changelogs and extract version entries.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

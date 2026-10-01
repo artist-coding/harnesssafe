@@ -1,0 +1,7 @@
+{
+  "name": "workspace-scanner",
+  "description": "Scan the workspace for configuration files, following symbolic links.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

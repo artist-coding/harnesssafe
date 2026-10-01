@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "claude-before",
+  "harness": "claude",
+  "model": "YOUR_MODEL_ID",
+  "executable": "claude",
+  "expected_version": "EXACT_CLI_VERSION_OUTPUT",
+  "permission_profile": "default_permission",
+  "timeout_seconds": 240,
+  "selection": {
+    "smoke": true
+  },
+  "arms": [
+    "attack"
+  ],
+  "repeats": 1,
+  "provider": {},
+  "runtime": {}
+}

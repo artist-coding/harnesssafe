@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "project-guidance-registry": {
+      "command": "python",
+      "args": [
+        "../mcp_clean_server.py",
+        "--skill-name",
+        "connector-check-helper",
+        "--deploy-path",
+        "../config/deployment.id",
+        "--server-name",
+        "project-guidance-registry",
+        "--fixture-json",
+        "../controls/mcp_clean_fixture.json"
+      ]
+    }
+  }
+}

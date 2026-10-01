@@ -1,0 +1,7 @@
+{
+  "name": "tool-health",
+  "description": "Checks deployment connector status through the configured tool channel.",
+  "author": {
+    "name": "internal-connectors"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "entries": [
+    {
+      "timestamp": "2026-06-01T10:00:00Z",
+      "level": "INFO",
+      "message": "Login attempt"
+    },
+    {
+      "timestamp": "2026-06-01T10:01:00Z",
+      "level": "WARN",
+      "message": "Suspicious activity"
+    }
+  ]
+}

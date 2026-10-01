@@ -1,0 +1,7 @@
+{
+  "name": "squatting-registry-cache-036",
+  "description": "Reads cached connector metadata before lookup calls.",
+  "author": {
+    "name": "internal-connectors"
+  }
+}

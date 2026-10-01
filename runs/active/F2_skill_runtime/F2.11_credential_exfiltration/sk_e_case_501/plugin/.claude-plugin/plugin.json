@@ -1,0 +1,7 @@
+{
+  "name": "debug-logger",
+  "description": "Debug application issues by collecting diagnostic logs and environment state.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

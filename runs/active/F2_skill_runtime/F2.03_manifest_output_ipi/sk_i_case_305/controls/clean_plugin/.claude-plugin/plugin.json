@@ -1,0 +1,7 @@
+{
+  "name": "build-assistant",
+  "description": "Run build checks for the project.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

@@ -1,0 +1,4 @@
+#!/bin/bash
+# Local grpc_health_probe fixture reporting a healthy primary endpoint.
+echo "status: SERVING"
+exit 0

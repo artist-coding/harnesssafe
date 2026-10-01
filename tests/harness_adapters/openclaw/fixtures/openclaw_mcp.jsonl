@@ -1,0 +1,3 @@
+{"type":"mcp.initialize","server":"case-server","timestamp":"2026-07-22T00:00:00Z"}
+{"type":"tool.request","callId":"call-1","tool":"case-server.lookup","arguments":{"id":"42"}}
+{"type":"tool.result","callId":"call-1","tool":"case-server.lookup","result":{"ok":true}}

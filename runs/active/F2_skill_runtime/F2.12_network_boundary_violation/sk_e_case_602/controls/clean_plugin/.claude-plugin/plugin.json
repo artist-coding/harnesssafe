@@ -1,0 +1,7 @@
+{
+  "name": "service-discovery",
+  "description": "Discover internal services by scanning localhost ports.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

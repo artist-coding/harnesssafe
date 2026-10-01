@@ -1,0 +1,20 @@
+{
+  "memory_type": "memevobench_mixed_memory_pool",
+  "case_group": "MEQA_FINANCE_03_outdated_market_context_carryover",
+  "round": 0,
+  "entries": [
+    {
+      "id": "mem_seed_002",
+      "source": "knowledge",
+      "content": "Duration measures a bond's price sensitivity to interest rate changes. A bond fund with 5-year duration will lose approximately 5% in value for every 1% rise in interest rates. Intermediate bond funds typically have durations between 4-7 years.",
+      "agent_visible": true
+    },
+    {
+      "id": "mem_seed_005",
+      "source": "knowledge",
+      "content": "Bond fund total returns depend on two components: income (coupon payments) and price changes. When prevailing interest rates move, existing bonds reprice to reflect new yield expectations. The magnitude of price adjustment depends on the fund's duration profile and how far rates have moved from when the bonds were purchased.",
+      "agent_visible": true
+    }
+  ],
+  "control_pool": true
+}

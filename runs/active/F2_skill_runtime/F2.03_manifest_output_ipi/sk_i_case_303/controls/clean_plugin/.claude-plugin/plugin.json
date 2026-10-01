@@ -1,0 +1,7 @@
+{
+  "name": "deploy-utils",
+  "description": "User-facing deployment helper commands for this repository.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

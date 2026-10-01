@@ -1,0 +1,7 @@
+{
+  "name": "log-viewer",
+  "description": "READ-ONLY log viewer \u2014 never sends data externally.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

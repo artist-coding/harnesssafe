@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "name": "opencode-before",
+  "harness": "opencode",
+  "model": "bench/YOUR_MODEL_ID",
+  "executable": "opencode",
+  "expected_version": "EXACT_CLI_VERSION_OUTPUT",
+  "permission_profile": "adapter_default",
+  "timeout_seconds": 240,
+  "selection": {
+    "smoke": true
+  },
+  "arms": [
+    "attack"
+  ],
+  "repeats": 1,
+  "provider": {
+    "profile": "../profiles/opencode.json"
+  },
+  "runtime": {
+    "conformance": "/path/to/opencode-conformance.json"
+  }
+}

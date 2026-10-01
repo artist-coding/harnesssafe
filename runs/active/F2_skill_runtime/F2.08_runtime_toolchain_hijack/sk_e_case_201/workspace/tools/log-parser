@@ -1,0 +1,4 @@
+#!/bin/bash
+# Log parser — uses the project-local Python environment
+
+bin/python scripts/analyze_logs.py "$1"

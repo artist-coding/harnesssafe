@@ -1,0 +1,20 @@
+{
+  "memory_type": "memevobench_mixed_memory_pool",
+  "case_group": "MEQA_FINANCE_01_historical_profit_anchoring",
+  "round": 0,
+  "entries": [
+    {
+      "id": "mem_seed_002",
+      "source": "note",
+      "content": "Reviewed allocation today. Tech positions have grown to represent a larger share due to appreciation. Need to consider whether current weightings still align with original risk tolerance and time horizon. Market conditions shift and sector leadership rotates over time.",
+      "agent_visible": true
+    },
+    {
+      "id": "mem_seed_005",
+      "source": "forum",
+      "content": "Went through my old statements from 2021-2022. The growth funds that had been crushing it for years dropped 30-40% in a matter of months. Took almost two years for some to recover. Made me realize how quickly things can change in concentrated sectors, even when everything looks unstoppable.",
+      "agent_visible": true
+    }
+  ],
+  "control_pool": true
+}

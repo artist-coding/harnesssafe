@@ -1,0 +1,2319 @@
+{
+  "version": 7,
+  "description": "Active benchmark manifest for the expanded Idea V2 task-first suite. Active cases: 328; includes F2 skill, F3 Tool/MCP, F1 memory, and Tier 2/3 complex persistent-poisoning cases.",
+  "secret_dir_name": "config",
+  "secret_file_name": "deployment.id",
+  "suites": {
+    "v2_skill_runtime": {
+      "framework": "idea_v2",
+      "family": "F2_skill_risk",
+      "note": "Curated active F2 skill runtime suite: 84 cases. Post-review composition is 17 direct baseline cases plus 67 indirect/multi-stage persistence cases; obsolete reference and staging case trees are not runnable and have been removed.",
+      "cases": [
+        {
+          "case_dir": "active/F2_skill_runtime/F2.01_perm_claim_spoofing/sk_i_case_101",
+          "attack_id": "SK-I-1",
+          "variant": "permission_claim_spoofing_v1",
+          "case_id": "SK_I_sk_i_case_101_permission_claim_spoofing_v1",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.01_perm_claim_spoofing/sk_i_case_102",
+          "attack_id": "SK-I-1",
+          "variant": "permission_claim_spoofing_v2_implicit_escalation_persist",
+          "case_id": "SK_I_sk_i_case_102_permission_claim_spoofing_v2_implicit_escalation_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.01_perm_claim_spoofing/sk_i_case_103",
+          "attack_id": "SK-I-1",
+          "variant": "permission_claim_spoofing_v3_scope_restriction_spoofing_enhanced_persist",
+          "case_id": "SK_I_sk_i_case_103_permission_claim_spoofing_v3_scope_restriction_spoofing_enhanced_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.01_perm_claim_spoofing/sk_i_case_104",
+          "attack_id": "SK-I-1",
+          "variant": "schema_enum_trojan_persist",
+          "case_id": "SK_I_sk_i_case_104_schema_enum_trojan_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.01_perm_claim_spoofing/sk_i_case_105",
+          "attack_id": "SK-I-1",
+          "variant": "v5_output_format_enum_trojan_persist",
+          "case_id": "SK_I_sk_i_case_105_v5_output_format_enum_trojan_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.02_scope_overflow/sk_i_case_201",
+          "attack_id": "SK-I-2",
+          "variant": "scope_overflow_v1",
+          "case_id": "SK_I_sk_i_case_201_scope_overflow_v1",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.02_scope_overflow/sk_i_case_202",
+          "attack_id": "SK-I-2",
+          "variant": "scope_overflow_v2_unvalidated_path_persist",
+          "case_id": "SK_I_sk_i_case_202_scope_overflow_v2_unvalidated_path_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.02_scope_overflow/sk_i_case_203",
+          "attack_id": "SK-I-2",
+          "variant": "scope_overflow_v3_skill_chain_enhanced_persist",
+          "case_id": "SK_I_sk_i_case_203_scope_overflow_v3_skill_chain_enhanced_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.02_scope_overflow/sk_i_case_204",
+          "attack_id": "SK-I-2",
+          "variant": "multi_tenant_scope_injection_persist",
+          "case_id": "SK_I_sk_i_case_204_multi_tenant_scope_injection_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.02_scope_overflow/sk_i_case_205",
+          "attack_id": "SK-I-2",
+          "variant": "v5_glob_scope_overflow_persist",
+          "case_id": "SK_I_sk_i_case_205_v5_glob_scope_overflow_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.03_manifest_output_ipi/sk_i_case_301",
+          "attack_id": "SK-I-3",
+          "variant": "manifest_output_ipi_v1",
+          "case_id": "SK_I_sk_i_case_301_manifest_output_ipi_v1",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.03_manifest_output_ipi/sk_i_case_302",
+          "attack_id": "SK-I-3",
+          "variant": "manifest_output_ipi_v2_description_persist",
+          "case_id": "SK_I_sk_i_case_302_manifest_output_ipi_v2_description_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.03_manifest_output_ipi/sk_i_case_303",
+          "attack_id": "SK-I-3",
+          "variant": "manifest_output_ipi_v3_slash_command_squat_persist",
+          "case_id": "SK_I_sk_i_case_303_manifest_output_ipi_v3_slash_command_squat_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.03_manifest_output_ipi/sk_i_case_304",
+          "attack_id": "SK-I-3",
+          "variant": "notes_error_recovery_ipi_persist",
+          "case_id": "SK_I_sk_i_case_304_notes_error_recovery_ipi_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.03_manifest_output_ipi/sk_i_case_305",
+          "attack_id": "SK-I-3",
+          "variant": "v5_description_override_ipi_persist",
+          "case_id": "SK_I_sk_i_case_305_v5_description_override_ipi_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.03_manifest_output_ipi/sk_i_case_306",
+          "attack_id": "SK-I-3",
+          "variant": "v6_example_output_ipi_persist",
+          "case_id": "SK_I_sk_i_case_306_v6_example_output_ipi_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.04_metadata_tampering/sk_i_case_401",
+          "attack_id": "SK-I-4",
+          "variant": "metadata_tampering_v1",
+          "case_id": "SK_I_sk_i_case_401_metadata_tampering_v1",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.04_metadata_tampering/sk_i_case_402",
+          "attack_id": "SK-I-4",
+          "variant": "metadata_tampering_v2_hash_forgery_persist",
+          "case_id": "SK_I_sk_i_case_402_metadata_tampering_v2_hash_forgery_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.04_metadata_tampering/sk_i_case_403",
+          "attack_id": "SK-I-4",
+          "variant": "metadata_tampering_v3_supply_chain_dependency_enhanced_persist",
+          "case_id": "SK_I_sk_i_case_403_metadata_tampering_v3_supply_chain_dependency_enhanced_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.04_metadata_tampering/sk_i_case_404",
+          "attack_id": "SK-I-4",
+          "variant": "version_rollback_attack_persist",
+          "case_id": "SK_I_sk_i_case_404_version_rollback_attack_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.04_metadata_tampering/sk_i_case_405",
+          "attack_id": "SK-I-4",
+          "variant": "v5_migration_step_authority_persist",
+          "case_id": "SK_I_sk_i_case_405_v5_migration_step_authority_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.05_rule_example_poisoning/sk_i_case_501",
+          "attack_id": "SK-I-5",
+          "variant": "rule_example_authority_poisoning_v1_internal_marker_enhanced",
+          "case_id": "SK_I_sk_i_case_501_rule_example_authority_poisoning_v1_internal_marker_enhanced",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.05_rule_example_poisoning/sk_i_case_502",
+          "attack_id": "SK-I-5",
+          "variant": "rule_example_authority_poisoning_v2_persist",
+          "case_id": "SK_I_sk_i_case_502_rule_example_authority_poisoning_v2_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.05_rule_example_poisoning/sk_i_case_503",
+          "attack_id": "SK-I-5",
+          "variant": "rule_example_authority_poisoning_v3_instruction_hierarchy_override_enhanced_persist",
+          "case_id": "SK_I_sk_i_case_503_rule_example_authority_poisoning_v3_instruction_hierarchy_override_enhanced_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.05_rule_example_poisoning/sk_i_case_504",
+          "attack_id": "SK-I-5",
+          "variant": "faq_emergency_bypass_persist",
+          "case_id": "SK_I_sk_i_case_504_faq_emergency_bypass_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.05_rule_example_poisoning/sk_i_case_505",
+          "attack_id": "SK-I-5",
+          "variant": "v5_best_practices_bypass_persist",
+          "case_id": "SK_I_sk_i_case_505_v5_best_practices_bypass_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.06_static_auth_spoofing/sk_i_case_601",
+          "attack_id": "SK-I-6",
+          "variant": "static_authorization_spoofing_v1",
+          "case_id": "SK_I_sk_i_case_601_static_authorization_spoofing_v1",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.06_static_auth_spoofing/sk_i_case_602",
+          "attack_id": "SK-I-6",
+          "variant": "static_authorization_spoofing_v2_unverified_auto_approval_persist",
+          "case_id": "SK_I_sk_i_case_602_static_authorization_spoofing_v2_unverified_auto_approval_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.06_static_auth_spoofing/sk_i_case_603",
+          "attack_id": "SK-I-6",
+          "variant": "preapproved_authorization_token_persist",
+          "case_id": "SK_I_sk_i_case_603_preapproved_authorization_token_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.06_static_auth_spoofing/sk_i_case_604",
+          "attack_id": "SK-I-6",
+          "variant": "v4_compound_dangerous_defaults_persist",
+          "case_id": "SK_I_sk_i_case_604_v4_compound_dangerous_defaults_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.06_static_auth_spoofing/sk_i_case_605",
+          "attack_id": "SK-I-6",
+          "variant": "v5_temporal_authority_claim_persist",
+          "case_id": "SK_I_sk_i_case_605_v5_temporal_authority_claim_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.06_static_auth_spoofing/sk_i_case_606",
+          "attack_id": "SK-I-6",
+          "variant": "v6_named_person_authorization_persist",
+          "case_id": "SK_I_sk_i_case_606_v6_named_person_authorization_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.07_sandbox_escape/sk_e_case_101",
+          "attack_id": "SK-E-1",
+          "variant": "sandbox_escape_v1",
+          "case_id": "SK_E_sk_e_case_101_sandbox_escape_v1",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.08_runtime_toolchain_hijack/sk_e_case_201",
+          "attack_id": "SK-E-2",
+          "variant": "toolchain_hijack_v2_python_wrapper",
+          "case_id": "SK_E_sk_e_case_201_toolchain_hijack_v2_python_wrapper",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.08_runtime_toolchain_hijack/sk_e_case_202",
+          "attack_id": "SK-E-2",
+          "variant": "python_package_shadow_persist",
+          "case_id": "SK_E_sk_e_case_202_python_package_shadow_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.08_runtime_toolchain_hijack/sk_e_case_203",
+          "attack_id": "SK-E-2",
+          "variant": "git_hook_injection_persist",
+          "case_id": "SK_E_sk_e_case_203_git_hook_injection_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.08_runtime_toolchain_hijack/sk_e_case_204",
+          "attack_id": "SK-E-2",
+          "variant": "v5_npm_binary_hijack_persist",
+          "case_id": "SK_E_sk_e_case_204_v5_npm_binary_hijack_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.09_serialization_loader_abuse/sk_e_case_301",
+          "attack_id": "SK-E-3",
+          "variant": "serialization_loader_abuse_v1",
+          "case_id": "SK_E_sk_e_case_301_serialization_loader_abuse_v1",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.09_serialization_loader_abuse/sk_e_case_302",
+          "attack_id": "SK-E-3",
+          "variant": "pickle_ml_model_rce_persist",
+          "case_id": "SK_E_sk_e_case_302_pickle_ml_model_rce_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.09_serialization_loader_abuse/sk_e_case_304",
+          "attack_id": "SK-E-3",
+          "variant": "v4_csv_pandas_eval_injection_persist",
+          "case_id": "SK_E_sk_e_case_304_v4_csv_pandas_eval_injection_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.10_execution_output_ipi/sk_e_case_401",
+          "attack_id": "SK-E-4",
+          "variant": "execution_output_ipi_v1",
+          "case_id": "SK_E_sk_e_case_401_execution_output_ipi_v1",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.10_execution_output_ipi/sk_e_case_402",
+          "attack_id": "SK-E-4",
+          "variant": "pdf_xmp_metadata_ipi_persist",
+          "case_id": "SK_E_sk_e_case_402_pdf_xmp_metadata_ipi_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.10_execution_output_ipi/sk_e_case_403",
+          "attack_id": "SK-E-4",
+          "variant": "v3_html_comment_ipi_persist",
+          "case_id": "SK_E_sk_e_case_403_v3_html_comment_ipi_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.10_execution_output_ipi/sk_e_case_404",
+          "attack_id": "SK-E-4",
+          "variant": "v4_diff_content_ipi_persist",
+          "case_id": "SK_E_sk_e_case_404_v4_diff_content_ipi_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.10_execution_output_ipi/sk_e_case_405",
+          "attack_id": "SK-E-4",
+          "variant": "v5_dotenv_comment_ipi_persist",
+          "case_id": "SK_E_sk_e_case_405_v5_dotenv_comment_ipi_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.11_credential_exfiltration/sk_e_case_501",
+          "attack_id": "SK-E-5",
+          "variant": "credential_exfiltration_v1",
+          "case_id": "SK_E_sk_e_case_501_credential_exfiltration_v1",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.11_credential_exfiltration/sk_e_case_502",
+          "attack_id": "SK-E-5",
+          "variant": "ssh_git_config_exfil_persist",
+          "case_id": "SK_E_sk_e_case_502_ssh_git_config_exfil_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.11_credential_exfiltration/sk_e_case_503",
+          "attack_id": "SK-E-5",
+          "variant": "v3_proc_environ_harvest_persist",
+          "case_id": "SK_E_sk_e_case_503_v3_proc_environ_harvest_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.11_credential_exfiltration/sk_e_case_504",
+          "attack_id": "SK-E-5",
+          "variant": "v4_database_credential_exfil_persist",
+          "case_id": "SK_E_sk_e_case_504_v4_database_credential_exfil_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.11_credential_exfiltration/sk_e_case_505",
+          "attack_id": "SK-E-5",
+          "variant": "v5_cloud_sdk_credential_exfil_persist",
+          "case_id": "SK_E_sk_e_case_505_v5_cloud_sdk_credential_exfil_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.12_network_boundary_violation/sk_e_case_601",
+          "attack_id": "SK-E-6",
+          "variant": "network_boundary_violation_v1",
+          "case_id": "SK_E_sk_e_case_601_network_boundary_violation_v1",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.12_network_boundary_violation/sk_e_case_602",
+          "attack_id": "SK-E-6",
+          "variant": "localhost_port_scan_persist",
+          "case_id": "SK_E_sk_e_case_602_localhost_port_scan_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.12_network_boundary_violation/sk_e_case_603",
+          "attack_id": "SK-E-6",
+          "variant": "ssrf_document_url_persist",
+          "case_id": "SK_E_sk_e_case_603_ssrf_document_url_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.13_local_memory_state_attack/sk_e_case_701",
+          "attack_id": "SK-E-7",
+          "variant": "local_memory_state_attack_v1",
+          "case_id": "SK_E_sk_e_case_701_local_memory_state_attack_v1",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.13_local_memory_state_attack/sk_e_case_702",
+          "attack_id": "SK-E-7",
+          "variant": "local_memory_state_attack_v2_claudemd_write_phase1_enhanced",
+          "case_id": "SK_E_sk_e_case_702_local_memory_state_attack_v2_claudemd_write_phase1_enhanced",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.13_local_memory_state_attack/sk_e_case_703",
+          "attack_id": "SK-E-7",
+          "variant": "local_memory_state_attack_v3_prepoisoned_claudemd",
+          "case_id": "SK_E_sk_e_case_703_local_memory_state_attack_v3_prepoisoned_claudemd",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.13_local_memory_state_attack/sk_e_case_704",
+          "attack_id": "SK-E-7",
+          "variant": "v4_agent_state_persistence",
+          "case_id": "SK_E_sk_e_case_704_v4_agent_state_persistence",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.13_local_memory_state_attack/sk_e_case_705",
+          "attack_id": "SK-E-7",
+          "variant": "v5_app_defaults_pollution",
+          "case_id": "SK_E_sk_e_case_705_v5_app_defaults_pollution",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.14_output_artifact_integrity/sk_e_case_801",
+          "attack_id": "SK-E-8",
+          "variant": "artifact_integrity_failure_v1",
+          "case_id": "SK_E_sk_e_case_801_artifact_integrity_failure_v1",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.14_output_artifact_integrity/sk_e_case_802",
+          "attack_id": "SK-E-8",
+          "variant": "markdown_pixel_beacon_persist",
+          "case_id": "SK_E_sk_e_case_802_markdown_pixel_beacon_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.14_output_artifact_integrity/sk_e_case_803",
+          "attack_id": "SK-E-8",
+          "variant": "v3_pdf_action_beacon_persist",
+          "case_id": "SK_E_sk_e_case_803_v3_pdf_action_beacon_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.14_output_artifact_integrity/sk_e_case_804",
+          "attack_id": "SK-E-8",
+          "variant": "v4_svg_external_resource_persist",
+          "case_id": "SK_E_sk_e_case_804_v4_svg_external_resource_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.14_output_artifact_integrity/sk_e_case_805",
+          "attack_id": "SK-E-8",
+          "variant": "v5_email_tracking_pixel_persist",
+          "case_id": "SK_E_sk_e_case_805_v5_email_tracking_pixel_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.15_path_traversal_sensitive_file/sk_e_case_102",
+          "attack_id": "SK-E-9",
+          "variant": "proc_environ_harvest_persist",
+          "case_id": "SK_E_sk_e_case_102_proc_environ_harvest_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.15_path_traversal_sensitive_file/sk_e_case_103",
+          "attack_id": "SK-E-9",
+          "variant": "cgroup_namespace_leak_persist",
+          "case_id": "SK_E_sk_e_case_103_cgroup_namespace_leak_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.15_path_traversal_sensitive_file/sk_e_case_104",
+          "attack_id": "SK-E-9",
+          "variant": "v4_docker_socket_path_traversal_persist",
+          "case_id": "SK_E_sk_e_case_104_v4_docker_socket_path_traversal_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.15_path_traversal_sensitive_file/sk_e_case_901",
+          "attack_id": "SK-E-9",
+          "variant": "path_traversal_v1",
+          "case_id": "SK_E_sk_e_case_901_path_traversal_v1",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.15_path_traversal_sensitive_file/sk_e_case_902",
+          "attack_id": "SK-E-9",
+          "variant": "symlink_traversal_persist",
+          "case_id": "SK_E_sk_e_case_902_symlink_traversal_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.15_path_traversal_sensitive_file/sk_e_case_903",
+          "attack_id": "SK-E-9",
+          "variant": "zip_slip_extraction_persist",
+          "case_id": "SK_E_sk_e_case_903_zip_slip_extraction_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.15_path_traversal_sensitive_file/sk_e_case_904",
+          "attack_id": "SK-E-9",
+          "variant": "v4_log_rotation_path_injection_persist",
+          "case_id": "SK_E_sk_e_case_904_v4_log_rotation_path_injection_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.16_interpreter_query_injection/sk_e_case_1001",
+          "attack_id": "SK-E-10",
+          "variant": "interpreter_query_injection_v1_policy_enhanced",
+          "case_id": "SK_E_sk_e_case_1001_interpreter_query_injection_v1_policy_enhanced",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.16_interpreter_query_injection/sk_e_case_1002",
+          "attack_id": "SK-E-10",
+          "variant": "shell_command_injection_persist",
+          "case_id": "SK_E_sk_e_case_1002_shell_command_injection_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.16_interpreter_query_injection/sk_e_case_1003",
+          "attack_id": "SK-E-10",
+          "variant": "nosql_where_injection_persist",
+          "case_id": "SK_E_sk_e_case_1003_nosql_where_injection_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.16_interpreter_query_injection/sk_e_case_1004",
+          "attack_id": "SK-E-10",
+          "variant": "v4_graphql_field_injection_persist",
+          "case_id": "SK_E_sk_e_case_1004_v4_graphql_field_injection_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.16_interpreter_query_injection/sk_e_case_303",
+          "attack_id": "SK-E-10",
+          "variant": "template_interpreter_injection_persist",
+          "case_id": "SK_E_sk_e_case_303_template_interpreter_injection_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.17_protocol_identity_spoofing/sk_e_case_1101",
+          "attack_id": "SK-E-11",
+          "variant": "protocol_spoofing_v1",
+          "case_id": "SK_E_sk_e_case_1101_protocol_spoofing_v1",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.17_protocol_identity_spoofing/sk_e_case_1102",
+          "attack_id": "SK-E-11",
+          "variant": "tls_verification_bypass_persist",
+          "case_id": "SK_E_sk_e_case_1102_tls_verification_bypass_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.17_protocol_identity_spoofing/sk_e_case_1103",
+          "attack_id": "SK-E-11",
+          "variant": "v3_http_fallback_header_persist",
+          "case_id": "SK_E_sk_e_case_1103_v3_http_fallback_header_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.17_protocol_identity_spoofing/sk_e_case_1104",
+          "attack_id": "SK-E-11",
+          "variant": "v4_grpc_http_downgrade_persist",
+          "case_id": "SK_E_sk_e_case_1104_v4_grpc_http_downgrade_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.17_protocol_identity_spoofing/sk_e_case_1105",
+          "attack_id": "SK-E-11",
+          "variant": "v5_oauth_endpoint_spoof_persist",
+          "case_id": "SK_E_sk_e_case_1105_v5_oauth_endpoint_spoof_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.18_resource_exhaustion/sk_e_case_1201",
+          "attack_id": "SK-E-12",
+          "variant": "resource_exhaustion_v1",
+          "case_id": "SK_E_sk_e_case_1201_resource_exhaustion_v1",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.18_resource_exhaustion/sk_e_case_1202",
+          "attack_id": "SK-E-12",
+          "variant": "expansion_bomb_persist",
+          "case_id": "SK_E_sk_e_case_1202_expansion_bomb_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.18_resource_exhaustion/sk_e_case_1203",
+          "attack_id": "SK-E-12",
+          "variant": "recursive_template_expansion_persist",
+          "case_id": "SK_E_sk_e_case_1203_recursive_template_expansion_persist",
+          "canonical_suite": "skill_runtime"
+        },
+        {
+          "case_dir": "active/F2_skill_runtime/F2.18_resource_exhaustion/sk_e_case_1204",
+          "attack_id": "SK-E-12",
+          "variant": "v4_gif_decode_loop_persist",
+          "case_id": "SK_E_sk_e_case_1204_v4_gif_decode_loop_persist",
+          "canonical_suite": "skill_runtime"
+        }
+      ],
+      "status": "active",
+      "canonical_suite": "skill_runtime",
+      "layer1_suite": "F2_skill_runtime"
+    },
+    "v2_tool_mcp_runtime": {
+      "framework": "idea_v2",
+      "family": "F3_tool_mcp_poisoning",
+      "note": "Tool / MCP poisoning (Tier 1 F3). Active F3 cases include the original persistent-core cases plus task-first expansion variants through case_070.",
+      "cases": [
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f301_rii/case_001",
+          "legacy_id": "K14",
+          "attack_id": "mcp.M01",
+          "variant": "skill_mcp_tool_result_poison"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f304_hpae/case_002",
+          "legacy_id": "K14b",
+          "attack_id": "mcp.M02",
+          "variant": "mcp_schema_hidden_parameter"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f306_tcs/case_003",
+          "legacy_id": "K14c",
+          "attack_id": "mcp.M03",
+          "variant": "mcp_tool_name_squatting"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f308_xth/case_004",
+          "legacy_id": "K14d",
+          "attack_id": "mcp.M04",
+          "variant": "mcp_cross_tool_handoff"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f309_mrp/case_005",
+          "legacy_id": "K14e",
+          "attack_id": "mcp.M05",
+          "variant": "mcp_resource_prompt_runbook_poison"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f301_rii/case_006",
+          "legacy_id": "K14f",
+          "attack_id": "mcp.M06",
+          "variant": "mcp_result_memory_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f309_mrp/case_007",
+          "legacy_id": "K14g",
+          "attack_id": "mcp.M07",
+          "variant": "mcp_resource_workspace_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f311_srcp/case_008",
+          "legacy_id": "K14h",
+          "attack_id": "mcp.M08",
+          "variant": "mcp_schema_cache_poison"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f310_ptp/case_009",
+          "legacy_id": "K14i",
+          "attack_id": "mcp.M09",
+          "variant": "mcp_prompt_template_poison"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f307_csc/case_010",
+          "legacy_id": "K14j",
+          "attack_id": "mcp.M10",
+          "variant": "mcp_capability_confusion"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f301_rii/case_011",
+          "legacy_id": "T01",
+          "attack_id": "tool.T01",
+          "variant": "tool_result_instruction_injection"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f302_rdp/case_012",
+          "legacy_id": "T02",
+          "attack_id": "tool.T02",
+          "variant": "tool_result_data_poison"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f304_hpae/case_013",
+          "legacy_id": "T03",
+          "attack_id": "tool.T03",
+          "variant": "tool_argument_canary_exfil"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f305_dsp/case_014",
+          "legacy_id": "T04",
+          "attack_id": "tool.T04",
+          "variant": "tool_description_hidden_requirement"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f306_tcs/case_015",
+          "legacy_id": "T05",
+          "attack_id": "tool.T05",
+          "variant": "tool_name_squatting"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f308_xth/case_016",
+          "legacy_id": "T06",
+          "attack_id": "tool.T06",
+          "variant": "tool_cross_tool_handoff"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f303_elp/case_017",
+          "legacy_id": "T07",
+          "attack_id": "tool.T07",
+          "variant": "tool_error_log_instruction_injection"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f301_rii/case_018",
+          "legacy_id": "T08",
+          "attack_id": "tool.T08",
+          "variant": "tool_output_workspace_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f301_rii/case_019",
+          "legacy_id": "T09",
+          "attack_id": "tool.T09",
+          "variant": "tool_output_memory_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f311_srcp/case_020",
+          "legacy_id": "T10",
+          "attack_id": "tool.T10",
+          "variant": "tool_schema_cache_poison"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f302_rdp/case_021",
+          "legacy_id": "T02b",
+          "attack_id": "tool.T02",
+          "variant": "result_data_decision_artifact_v2"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f302_rdp/case_022",
+          "legacy_id": "T02c",
+          "attack_id": "tool.T02",
+          "variant": "result_data_workspace_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f302_rdp/case_023",
+          "legacy_id": "T02d",
+          "attack_id": "tool.T02",
+          "variant": "result_data_memory_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f302_rdp/case_024",
+          "legacy_id": "T02e",
+          "attack_id": "tool.T02",
+          "variant": "result_data_config_decision_poison"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f303_elp/case_025",
+          "legacy_id": "T07b",
+          "attack_id": "tool.T07",
+          "variant": "error_log_remediation_memory_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f303_elp/case_026",
+          "legacy_id": "T07c",
+          "attack_id": "tool.T07",
+          "variant": "error_log_workspace_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f303_elp/case_027",
+          "legacy_id": "T07d",
+          "attack_id": "tool.T07",
+          "variant": "error_log_memory_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f303_elp/case_028",
+          "legacy_id": "T07e",
+          "attack_id": "tool.T07",
+          "variant": "error_log_artifact_integrity"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f304_hpae/case_029",
+          "legacy_id": "K14b2",
+          "attack_id": "mcp.M02",
+          "variant": "mcp_hidden_parameter_project_lookup"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f304_hpae/case_030",
+          "legacy_id": "T03b",
+          "attack_id": "tool.T03",
+          "variant": "tool_hidden_parameter_metadata_lookup"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f304_hpae/case_031",
+          "legacy_id": "T03c",
+          "attack_id": "tool.T03",
+          "variant": "hidden_parameter_schema_cache"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f305_dsp/case_032",
+          "legacy_id": "K14b3",
+          "attack_id": "mcp.M02",
+          "variant": "mcp_description_hidden_requirement"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f305_dsp/case_033",
+          "legacy_id": "T04b",
+          "attack_id": "tool.T04",
+          "variant": "tool_description_registry_cache"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f305_dsp/case_034",
+          "legacy_id": "T04c",
+          "attack_id": "tool.T04",
+          "variant": "tool_description_registry_cache_catalog"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f305_dsp/case_035",
+          "legacy_id": "T04d",
+          "attack_id": "tool.T04",
+          "variant": "tool_description_registry_cache_rule"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f306_tcs/case_036",
+          "legacy_id": "K14c2",
+          "attack_id": "mcp.M03",
+          "variant": "mcp_official_connector_squatting_v2"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f306_tcs/case_037",
+          "legacy_id": "T05b",
+          "attack_id": "tool.T05",
+          "variant": "tool_squatting_registry_cache_catalog"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f306_tcs/case_038",
+          "legacy_id": "T05c",
+          "attack_id": "tool.T05",
+          "variant": "tool_squatting_registry_cache"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f307_csc/case_039",
+          "legacy_id": "K14j2",
+          "attack_id": "mcp.M10",
+          "variant": "mcp_readonly_capability_token_v2"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f307_csc/case_040",
+          "legacy_id": "K14j3",
+          "attack_id": "mcp.M10",
+          "variant": "mcp_capability_cache_confusion"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f307_csc/case_041",
+          "legacy_id": "T05d",
+          "attack_id": "tool.T05",
+          "variant": "tool_readonly_scope_confusion"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f307_csc/case_042",
+          "legacy_id": "T05e",
+          "attack_id": "tool.T05",
+          "variant": "tool_capability_registry_cache_manifest"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f308_xth/case_043",
+          "legacy_id": "K14d2",
+          "attack_id": "mcp.M04",
+          "variant": "mcp_cross_tool_handoff_v2"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f308_xth/case_044",
+          "legacy_id": "T06b",
+          "attack_id": "tool.T06",
+          "variant": "cross_tool_handoff_memory_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f308_xth/case_045",
+          "legacy_id": "T06c",
+          "attack_id": "tool.T06",
+          "variant": "cross_tool_handoff_workspace_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f309_mrp/case_046",
+          "legacy_id": "K14e2",
+          "attack_id": "mcp.M05",
+          "variant": "mcp_resource_runbook_memory_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f309_mrp/case_047",
+          "legacy_id": "K14g2",
+          "attack_id": "mcp.M07",
+          "variant": "mcp_resource_workspace_delayed_v2"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f309_mrp/case_048",
+          "legacy_id": "K14e3",
+          "attack_id": "mcp.M05",
+          "variant": "mcp_resource_prompt_workspace_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f310_ptp/case_049",
+          "legacy_id": "K14i2",
+          "attack_id": "mcp.M09",
+          "variant": "mcp_prompt_template_memory_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f310_ptp/case_050",
+          "legacy_id": "K14i3",
+          "attack_id": "mcp.M09",
+          "variant": "mcp_prompt_template_workspace_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f310_ptp/case_051",
+          "legacy_id": "K14i4",
+          "attack_id": "mcp.M09",
+          "variant": "mcp_prompt_template_cache_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f310_ptp/case_052",
+          "legacy_id": "T04e",
+          "attack_id": "tool.T04",
+          "variant": "tool_prompt_template_workspace_delayed"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f311_srcp/case_053",
+          "legacy_id": "K14h2",
+          "attack_id": "mcp.M08",
+          "variant": "mcp_registry_cache_poison"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f311_srcp/case_054",
+          "legacy_id": "T10b",
+          "attack_id": "tool.T10",
+          "variant": "tool_capability_cache_poison"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f311_srcp/case_055",
+          "legacy_id": "T10c",
+          "attack_id": "tool.T10",
+          "variant": "tool_schema_cache_variant"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f301_rii/case_056",
+          "legacy_id": "EXP056",
+          "attack_id": "mcp.M01",
+          "variant": "result_instruction_memory_refresh"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f301_rii/case_057",
+          "legacy_id": "EXP057",
+          "attack_id": "tool.T01",
+          "variant": "result_instruction_workspace_refresh"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f301_rii/case_058",
+          "legacy_id": "EXP058",
+          "attack_id": "tool.T08",
+          "variant": "result_instruction_delayed_cleanup"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f302_rdp/case_059",
+          "legacy_id": "EXP059",
+          "attack_id": "tool.T02",
+          "variant": "result_data_policy_artifact"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f302_rdp/case_060",
+          "legacy_id": "EXP060",
+          "attack_id": "tool.T02",
+          "variant": "result_data_release_note"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f302_rdp/case_061",
+          "legacy_id": "EXP061",
+          "attack_id": "tool.T02",
+          "variant": "result_data_config_hint"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f305_dsp/case_062",
+          "legacy_id": "EXP062",
+          "attack_id": "mcp.M02",
+          "variant": "description_schema_hidden_lookup"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f305_dsp/case_063",
+          "legacy_id": "EXP063",
+          "attack_id": "tool.T04",
+          "variant": "description_registry_hidden_lookup"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f305_dsp/case_064",
+          "legacy_id": "EXP064",
+          "attack_id": "tool.T04",
+          "variant": "description_prompted_token_lookup"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f308_xth/case_065",
+          "legacy_id": "EXP065",
+          "attack_id": "mcp.M04",
+          "variant": "cross_tool_handoff_delayed_v3"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f308_xth/case_066",
+          "legacy_id": "EXP066",
+          "attack_id": "tool.T06",
+          "variant": "cross_tool_handoff_workspace_v3"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f309_mrp/case_067",
+          "legacy_id": "EXP067",
+          "attack_id": "mcp.M05",
+          "variant": "resource_runbook_workspace_v3"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f309_mrp/case_068",
+          "legacy_id": "EXP068",
+          "attack_id": "mcp.M07",
+          "variant": "resource_prompt_memory_v3"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f311_srcp/case_069",
+          "legacy_id": "EXP069",
+          "attack_id": "mcp.M08",
+          "variant": "schema_registry_cache_v3"
+        },
+        {
+          "case_dir": "active/F3_tool_mcp_runtime/f311_srcp/case_070",
+          "legacy_id": "EXP070",
+          "attack_id": "tool.T10",
+          "variant": "schema_cache_hidden_arg_v3"
+        }
+      ],
+      "status": "active",
+      "canonical_suite": "tool_mcp_poisoning",
+      "layer1_suite": "F3_tool_mcp_runtime"
+    },
+    "F1_memory_runtime": {
+      "framework": "idea_v2",
+      "family": "F1_memory_poisoning",
+      "note": "Tier 1 memory poisoning suite normalized from runs/archive/legacy_v2_memory_evolution.zip. Selected source case groups are made standalone with Idea V2 metadata and clean controls.",
+      "cases": [
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.01_customerservice_01_refund_case_overgeneralization/case_001",
+          "attack_id": "memory_evolution.01",
+          "variant": "customerservice_01_refund_case_overgeneralization_round1",
+          "case_id": "F1_memory_evolution_001_customerservice_01_refund_case_overgeneralization_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.01_customerservice_01_refund_case_overgeneralization/case_002",
+          "attack_id": "memory_evolution.01",
+          "variant": "customerservice_01_refund_case_overgeneralization_round2",
+          "case_id": "F1_memory_evolution_002_customerservice_01_refund_case_overgeneralization_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.01_customerservice_01_refund_case_overgeneralization/case_003",
+          "attack_id": "memory_evolution.01",
+          "variant": "customerservice_01_refund_case_overgeneralization_round3",
+          "case_id": "F1_memory_evolution_003_customerservice_01_refund_case_overgeneralization_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.02_customerservice_02_complaint_tactic_normalization/case_004",
+          "attack_id": "memory_evolution.02",
+          "variant": "customerservice_02_complaint_tactic_normalization_round1",
+          "case_id": "F1_memory_evolution_004_customerservice_02_complaint_tactic_normalization_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.02_customerservice_02_complaint_tactic_normalization/case_005",
+          "attack_id": "memory_evolution.02",
+          "variant": "customerservice_02_complaint_tactic_normalization_round2",
+          "case_id": "F1_memory_evolution_005_customerservice_02_complaint_tactic_normalization_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.02_customerservice_02_complaint_tactic_normalization/case_006",
+          "attack_id": "memory_evolution.02",
+          "variant": "customerservice_02_complaint_tactic_normalization_round3",
+          "case_id": "F1_memory_evolution_006_customerservice_02_complaint_tactic_normalization_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.03_customerservice_03_customer_malice_overgeneralization/case_007",
+          "attack_id": "memory_evolution.03",
+          "variant": "customerservice_03_customer_malice_overgeneralization_round1",
+          "case_id": "F1_memory_evolution_007_customerservice_03_customer_malice_overgeneralization_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.03_customerservice_03_customer_malice_overgeneralization/case_008",
+          "attack_id": "memory_evolution.03",
+          "variant": "customerservice_03_customer_malice_overgeneralization_round2",
+          "case_id": "F1_memory_evolution_008_customerservice_03_customer_malice_overgeneralization_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.03_customerservice_03_customer_malice_overgeneralization/case_009",
+          "attack_id": "memory_evolution.03",
+          "variant": "customerservice_03_customer_malice_overgeneralization_round3",
+          "case_id": "F1_memory_evolution_009_customerservice_03_customer_malice_overgeneralization_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.04_finance_01_historical_profit_anchoring/case_010",
+          "attack_id": "memory_evolution.04",
+          "variant": "finance_01_historical_profit_anchoring_round1",
+          "case_id": "F1_memory_evolution_010_finance_01_historical_profit_anchoring_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.04_finance_01_historical_profit_anchoring/case_011",
+          "attack_id": "memory_evolution.04",
+          "variant": "finance_01_historical_profit_anchoring_round2",
+          "case_id": "F1_memory_evolution_011_finance_01_historical_profit_anchoring_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.04_finance_01_historical_profit_anchoring/case_012",
+          "attack_id": "memory_evolution.04",
+          "variant": "finance_01_historical_profit_anchoring_round3",
+          "case_id": "F1_memory_evolution_012_finance_01_historical_profit_anchoring_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.05_finance_02_risk_capacity_overestimation/case_013",
+          "attack_id": "memory_evolution.05",
+          "variant": "finance_02_risk_capacity_overestimation_round1",
+          "case_id": "F1_memory_evolution_013_finance_02_risk_capacity_overestimation_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.05_finance_02_risk_capacity_overestimation/case_014",
+          "attack_id": "memory_evolution.05",
+          "variant": "finance_02_risk_capacity_overestimation_round2",
+          "case_id": "F1_memory_evolution_014_finance_02_risk_capacity_overestimation_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.05_finance_02_risk_capacity_overestimation/case_015",
+          "attack_id": "memory_evolution.05",
+          "variant": "finance_02_risk_capacity_overestimation_round3",
+          "case_id": "F1_memory_evolution_015_finance_02_risk_capacity_overestimation_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.06_finance_03_outdated_market_context_carryover/case_016",
+          "attack_id": "memory_evolution.06",
+          "variant": "finance_03_outdated_market_context_carryover_round1",
+          "case_id": "F1_memory_evolution_016_finance_03_outdated_market_context_carryover_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.06_finance_03_outdated_market_context_carryover/case_017",
+          "attack_id": "memory_evolution.06",
+          "variant": "finance_03_outdated_market_context_carryover_round2",
+          "case_id": "F1_memory_evolution_017_finance_03_outdated_market_context_carryover_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.06_finance_03_outdated_market_context_carryover/case_018",
+          "attack_id": "memory_evolution.06",
+          "variant": "finance_03_outdated_market_context_carryover_round3",
+          "case_id": "F1_memory_evolution_018_finance_03_outdated_market_context_carryover_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.07_food_01_no_incident_implies_safe/case_019",
+          "attack_id": "memory_evolution.07",
+          "variant": "food_01_no_incident_implies_safe_round1",
+          "case_id": "F1_memory_evolution_019_food_01_no_incident_implies_safe_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.07_food_01_no_incident_implies_safe/case_020",
+          "attack_id": "memory_evolution.07",
+          "variant": "food_01_no_incident_implies_safe_round2",
+          "case_id": "F1_memory_evolution_020_food_01_no_incident_implies_safe_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.07_food_01_no_incident_implies_safe/case_021",
+          "attack_id": "memory_evolution.07",
+          "variant": "food_01_no_incident_implies_safe_round3",
+          "case_id": "F1_memory_evolution_021_food_01_no_incident_implies_safe_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.08_food_02_outdated_food_advice_persistence/case_022",
+          "attack_id": "memory_evolution.08",
+          "variant": "food_02_outdated_food_advice_persistence_round1",
+          "case_id": "F1_memory_evolution_022_food_02_outdated_food_advice_persistence_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.08_food_02_outdated_food_advice_persistence/case_023",
+          "attack_id": "memory_evolution.08",
+          "variant": "food_02_outdated_food_advice_persistence_round2",
+          "case_id": "F1_memory_evolution_023_food_02_outdated_food_advice_persistence_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.08_food_02_outdated_food_advice_persistence/case_024",
+          "attack_id": "memory_evolution.08",
+          "variant": "food_02_outdated_food_advice_persistence_round3",
+          "case_id": "F1_memory_evolution_024_food_02_outdated_food_advice_persistence_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.09_food_03_processing_method_overgeneralization/case_025",
+          "attack_id": "memory_evolution.09",
+          "variant": "food_03_processing_method_overgeneralization_round1",
+          "case_id": "F1_memory_evolution_025_food_03_processing_method_overgeneralization_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.09_food_03_processing_method_overgeneralization/case_026",
+          "attack_id": "memory_evolution.09",
+          "variant": "food_03_processing_method_overgeneralization_round2",
+          "case_id": "F1_memory_evolution_026_food_03_processing_method_overgeneralization_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.09_food_03_processing_method_overgeneralization/case_027",
+          "attack_id": "memory_evolution.09",
+          "variant": "food_03_processing_method_overgeneralization_round3",
+          "case_id": "F1_memory_evolution_027_food_03_processing_method_overgeneralization_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.10_health_01_experience_based_self_care_generalization/case_028",
+          "attack_id": "memory_evolution.10",
+          "variant": "health_01_experience_based_self_care_generalization_round1",
+          "case_id": "F1_memory_evolution_028_health_01_experience_based_self_care_generalization_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.10_health_01_experience_based_self_care_generalization/case_029",
+          "attack_id": "memory_evolution.10",
+          "variant": "health_01_experience_based_self_care_generalization_round2",
+          "case_id": "F1_memory_evolution_029_health_01_experience_based_self_care_generalization_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.10_health_01_experience_based_self_care_generalization/case_030",
+          "attack_id": "memory_evolution.10",
+          "variant": "health_01_experience_based_self_care_generalization_round3",
+          "case_id": "F1_memory_evolution_030_health_01_experience_based_self_care_generalization_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.11_health_02_medication_decision_carryover/case_031",
+          "attack_id": "memory_evolution.11",
+          "variant": "health_02_medication_decision_carryover_round1",
+          "case_id": "F1_memory_evolution_031_health_02_medication_decision_carryover_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.11_health_02_medication_decision_carryover/case_032",
+          "attack_id": "memory_evolution.11",
+          "variant": "health_02_medication_decision_carryover_round2",
+          "case_id": "F1_memory_evolution_032_health_02_medication_decision_carryover_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.11_health_02_medication_decision_carryover/case_033",
+          "attack_id": "memory_evolution.11",
+          "variant": "health_02_medication_decision_carryover_round3",
+          "case_id": "F1_memory_evolution_033_health_02_medication_decision_carryover_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.12_health_03_overreliance_on_non_expert_sources/case_034",
+          "attack_id": "memory_evolution.12",
+          "variant": "health_03_overreliance_on_non_expert_sources_round1",
+          "case_id": "F1_memory_evolution_034_health_03_overreliance_on_non_expert_sources_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.12_health_03_overreliance_on_non_expert_sources/case_035",
+          "attack_id": "memory_evolution.12",
+          "variant": "health_03_overreliance_on_non_expert_sources_round2",
+          "case_id": "F1_memory_evolution_035_health_03_overreliance_on_non_expert_sources_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.12_health_03_overreliance_on_non_expert_sources/case_036",
+          "attack_id": "memory_evolution.12",
+          "variant": "health_03_overreliance_on_non_expert_sources_round3",
+          "case_id": "F1_memory_evolution_036_health_03_overreliance_on_non_expert_sources_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.13_health_04_crisis_minimization_via_memory/case_037",
+          "attack_id": "memory_evolution.13",
+          "variant": "health_04_crisis_minimization_via_memory_round1",
+          "case_id": "F1_memory_evolution_037_health_04_crisis_minimization_via_memory_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.13_health_04_crisis_minimization_via_memory/case_038",
+          "attack_id": "memory_evolution.13",
+          "variant": "health_04_crisis_minimization_via_memory_round2",
+          "case_id": "F1_memory_evolution_038_health_04_crisis_minimization_via_memory_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.13_health_04_crisis_minimization_via_memory/case_039",
+          "attack_id": "memory_evolution.13",
+          "variant": "health_04_crisis_minimization_via_memory_round3",
+          "case_id": "F1_memory_evolution_039_health_04_crisis_minimization_via_memory_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.14_mental_01_historical_label_fixation/case_040",
+          "attack_id": "memory_evolution.14",
+          "variant": "mental_01_historical_label_fixation_round1",
+          "case_id": "F1_memory_evolution_040_mental_01_historical_label_fixation_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.14_mental_01_historical_label_fixation/case_041",
+          "attack_id": "memory_evolution.14",
+          "variant": "mental_01_historical_label_fixation_round2",
+          "case_id": "F1_memory_evolution_041_mental_01_historical_label_fixation_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.14_mental_01_historical_label_fixation/case_042",
+          "attack_id": "memory_evolution.14",
+          "variant": "mental_01_historical_label_fixation_round3",
+          "case_id": "F1_memory_evolution_042_mental_01_historical_label_fixation_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.15_mental_02_risk_minimization/case_043",
+          "attack_id": "memory_evolution.15",
+          "variant": "mental_02_risk_minimization_round1",
+          "case_id": "F1_memory_evolution_043_mental_02_risk_minimization_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.15_mental_02_risk_minimization/case_044",
+          "attack_id": "memory_evolution.15",
+          "variant": "mental_02_risk_minimization_round2",
+          "case_id": "F1_memory_evolution_044_mental_02_risk_minimization_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.15_mental_02_risk_minimization/case_045",
+          "attack_id": "memory_evolution.15",
+          "variant": "mental_02_risk_minimization_round3",
+          "case_id": "F1_memory_evolution_045_mental_02_risk_minimization_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.16_mental_03_unqualified_substitution/case_046",
+          "attack_id": "memory_evolution.16",
+          "variant": "mental_03_unqualified_substitution_round1",
+          "case_id": "F1_memory_evolution_046_mental_03_unqualified_substitution_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.16_mental_03_unqualified_substitution/case_047",
+          "attack_id": "memory_evolution.16",
+          "variant": "mental_03_unqualified_substitution_round2",
+          "case_id": "F1_memory_evolution_047_mental_03_unqualified_substitution_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.16_mental_03_unqualified_substitution/case_048",
+          "attack_id": "memory_evolution.16",
+          "variant": "mental_03_unqualified_substitution_round3",
+          "case_id": "F1_memory_evolution_048_mental_03_unqualified_substitution_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.17_privacy_01_persistent_consent_fallacy/case_049",
+          "attack_id": "memory_evolution.17",
+          "variant": "privacy_01_persistent_consent_fallacy_round1",
+          "case_id": "F1_memory_evolution_049_privacy_01_persistent_consent_fallacy_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.17_privacy_01_persistent_consent_fallacy/case_050",
+          "attack_id": "memory_evolution.17",
+          "variant": "privacy_01_persistent_consent_fallacy_round2",
+          "case_id": "F1_memory_evolution_050_privacy_01_persistent_consent_fallacy_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.17_privacy_01_persistent_consent_fallacy/case_051",
+          "attack_id": "memory_evolution.17",
+          "variant": "privacy_01_persistent_consent_fallacy_round3",
+          "case_id": "F1_memory_evolution_051_privacy_01_persistent_consent_fallacy_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.18_privacy_02_anecdote_as_evidence/case_052",
+          "attack_id": "memory_evolution.18",
+          "variant": "privacy_02_anecdote_as_evidence_round1",
+          "case_id": "F1_memory_evolution_052_privacy_02_anecdote_as_evidence_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.18_privacy_02_anecdote_as_evidence/case_053",
+          "attack_id": "memory_evolution.18",
+          "variant": "privacy_02_anecdote_as_evidence_round2",
+          "case_id": "F1_memory_evolution_053_privacy_02_anecdote_as_evidence_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.18_privacy_02_anecdote_as_evidence/case_054",
+          "attack_id": "memory_evolution.18",
+          "variant": "privacy_02_anecdote_as_evidence_round3",
+          "case_id": "F1_memory_evolution_054_privacy_02_anecdote_as_evidence_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.19_privacy_03_single_case_generalization/case_055",
+          "attack_id": "memory_evolution.19",
+          "variant": "privacy_03_single_case_generalization_round1",
+          "case_id": "F1_memory_evolution_055_privacy_03_single_case_generalization_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.19_privacy_03_single_case_generalization/case_056",
+          "attack_id": "memory_evolution.19",
+          "variant": "privacy_03_single_case_generalization_round2",
+          "case_id": "F1_memory_evolution_056_privacy_03_single_case_generalization_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.19_privacy_03_single_case_generalization/case_057",
+          "attack_id": "memory_evolution.19",
+          "variant": "privacy_03_single_case_generalization_round3",
+          "case_id": "F1_memory_evolution_057_privacy_03_single_case_generalization_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.20_traffic_01_emergency_lane_normalization/case_058",
+          "attack_id": "memory_evolution.20",
+          "variant": "traffic_01_emergency_lane_normalization_round1",
+          "case_id": "F1_memory_evolution_058_traffic_01_emergency_lane_normalization_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.20_traffic_01_emergency_lane_normalization/case_059",
+          "attack_id": "memory_evolution.20",
+          "variant": "traffic_01_emergency_lane_normalization_round2",
+          "case_id": "F1_memory_evolution_059_traffic_01_emergency_lane_normalization_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.20_traffic_01_emergency_lane_normalization/case_060",
+          "attack_id": "memory_evolution.20",
+          "variant": "traffic_01_emergency_lane_normalization_round3",
+          "case_id": "F1_memory_evolution_060_traffic_01_emergency_lane_normalization_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.21_traffic_02_unmonitored_zone_generalization/case_061",
+          "attack_id": "memory_evolution.21",
+          "variant": "traffic_02_unmonitored_zone_generalization_round1",
+          "case_id": "F1_memory_evolution_061_traffic_02_unmonitored_zone_generalization_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.21_traffic_02_unmonitored_zone_generalization/case_062",
+          "attack_id": "memory_evolution.21",
+          "variant": "traffic_02_unmonitored_zone_generalization_round2",
+          "case_id": "F1_memory_evolution_062_traffic_02_unmonitored_zone_generalization_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.21_traffic_02_unmonitored_zone_generalization/case_063",
+          "attack_id": "memory_evolution.21",
+          "variant": "traffic_02_unmonitored_zone_generalization_round3",
+          "case_id": "F1_memory_evolution_063_traffic_02_unmonitored_zone_generalization_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.22_traffic_03_peer_violation_normalization/case_064",
+          "attack_id": "memory_evolution.22",
+          "variant": "traffic_03_peer_violation_normalization_round1",
+          "case_id": "F1_memory_evolution_064_traffic_03_peer_violation_normalization_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.22_traffic_03_peer_violation_normalization/case_065",
+          "attack_id": "memory_evolution.22",
+          "variant": "traffic_03_peer_violation_normalization_round2",
+          "case_id": "F1_memory_evolution_065_traffic_03_peer_violation_normalization_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.22_traffic_03_peer_violation_normalization/case_066",
+          "attack_id": "memory_evolution.22",
+          "variant": "traffic_03_peer_violation_normalization_round3",
+          "case_id": "F1_memory_evolution_066_traffic_03_peer_violation_normalization_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.23_workflow_03_harmful_code_terminal_execution/case_067",
+          "attack_id": "memory_evolution.23",
+          "variant": "workflow_03_harmful_code_terminal_execution_round1",
+          "case_id": "F1_memory_evolution_067_workflow_03_harmful_code_terminal_execution_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.23_workflow_03_harmful_code_terminal_execution/case_068",
+          "attack_id": "memory_evolution.23",
+          "variant": "workflow_03_harmful_code_terminal_execution_round2",
+          "case_id": "F1_memory_evolution_068_workflow_03_harmful_code_terminal_execution_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.23_workflow_03_harmful_code_terminal_execution/case_069",
+          "attack_id": "memory_evolution.23",
+          "variant": "workflow_03_harmful_code_terminal_execution_round3",
+          "case_id": "F1_memory_evolution_069_workflow_03_harmful_code_terminal_execution_round3",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.24_workflow_05_availability_calendar_reschedule/case_070",
+          "attack_id": "memory_evolution.24",
+          "variant": "workflow_05_availability_calendar_reschedule_round1",
+          "case_id": "F1_memory_evolution_070_workflow_05_availability_calendar_reschedule_round1",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.24_workflow_05_availability_calendar_reschedule/case_071",
+          "attack_id": "memory_evolution.24",
+          "variant": "workflow_05_availability_calendar_reschedule_round2",
+          "case_id": "F1_memory_evolution_071_workflow_05_availability_calendar_reschedule_round2",
+          "canonical_suite": "memory_runtime"
+        },
+        {
+          "case_dir": "active/F1_memory_runtime/F1E.24_workflow_05_availability_calendar_reschedule/case_072",
+          "attack_id": "memory_evolution.24",
+          "variant": "workflow_05_availability_calendar_reschedule_round3",
+          "case_id": "F1_memory_evolution_072_workflow_05_availability_calendar_reschedule_round3",
+          "canonical_suite": "memory_runtime"
+        }
+      ],
+      "status": "active",
+      "canonical_suite": "memory_runtime",
+      "layer1_suite": "F1_memory_runtime"
+    },
+    "T2_memory_to_skill": {
+      "framework": "idea_v2",
+      "family": "T2_memory_to_skill",
+      "note": "Tier 2 Memory-to-Skill complex cases generated from the task-first expansion matrix.",
+      "cases": [
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.01_runbook_to_skill_provenance/case_001",
+          "attack_id": "T2.M2S.001",
+          "variant": "runbook_to_skill_provenance_workspace_note",
+          "case_id": "T2_m2s_001_runbook_to_skill_provenance_workspace_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.01_runbook_to_skill_provenance/case_002",
+          "attack_id": "T2.M2S.002",
+          "variant": "runbook_to_skill_provenance_operator_note",
+          "case_id": "T2_m2s_002_runbook_to_skill_provenance_operator_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.01_runbook_to_skill_provenance/case_003",
+          "attack_id": "T2.M2S.003",
+          "variant": "runbook_to_skill_provenance_handoff_note",
+          "case_id": "T2_m2s_003_runbook_to_skill_provenance_handoff_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.02_compliance_memory_artifact_leak/case_004",
+          "attack_id": "T2.M2S.004",
+          "variant": "compliance_memory_artifact_leak_workspace_note",
+          "case_id": "T2_m2s_004_compliance_memory_artifact_leak_workspace_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.02_compliance_memory_artifact_leak/case_005",
+          "attack_id": "T2.M2S.005",
+          "variant": "compliance_memory_artifact_leak_operator_note",
+          "case_id": "T2_m2s_005_compliance_memory_artifact_leak_operator_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.02_compliance_memory_artifact_leak/case_006",
+          "attack_id": "T2.M2S.006",
+          "variant": "compliance_memory_artifact_leak_handoff_note",
+          "case_id": "T2_m2s_006_compliance_memory_artifact_leak_handoff_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.03_troubleshooting_command_graft/case_007",
+          "attack_id": "T2.M2S.007",
+          "variant": "troubleshooting_command_graft_workspace_note",
+          "case_id": "T2_m2s_007_troubleshooting_command_graft_workspace_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.03_troubleshooting_command_graft/case_008",
+          "attack_id": "T2.M2S.008",
+          "variant": "troubleshooting_command_graft_operator_note",
+          "case_id": "T2_m2s_008_troubleshooting_command_graft_operator_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.03_troubleshooting_command_graft/case_009",
+          "attack_id": "T2.M2S.009",
+          "variant": "troubleshooting_command_graft_handoff_note",
+          "case_id": "T2_m2s_009_troubleshooting_command_graft_handoff_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.04_test_convention_skill_drift/case_010",
+          "attack_id": "T2.M2S.010",
+          "variant": "test_convention_skill_drift_workspace_note",
+          "case_id": "T2_m2s_010_test_convention_skill_drift_workspace_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.04_test_convention_skill_drift/case_011",
+          "attack_id": "T2.M2S.011",
+          "variant": "test_convention_skill_drift_operator_note",
+          "case_id": "T2_m2s_011_test_convention_skill_drift_operator_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.04_test_convention_skill_drift/case_012",
+          "attack_id": "T2.M2S.012",
+          "variant": "test_convention_skill_drift_handoff_note",
+          "case_id": "T2_m2s_012_test_convention_skill_drift_handoff_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.05_dependency_setup_skill_drift/case_013",
+          "attack_id": "T2.M2S.013",
+          "variant": "dependency_setup_skill_drift_workspace_note",
+          "case_id": "T2_m2s_013_dependency_setup_skill_drift_workspace_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.05_dependency_setup_skill_drift/case_014",
+          "attack_id": "T2.M2S.014",
+          "variant": "dependency_setup_skill_drift_operator_note",
+          "case_id": "T2_m2s_014_dependency_setup_skill_drift_operator_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.05_dependency_setup_skill_drift/case_015",
+          "attack_id": "T2.M2S.015",
+          "variant": "dependency_setup_skill_drift_handoff_note",
+          "case_id": "T2_m2s_015_dependency_setup_skill_drift_handoff_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.06_delegation_template_skill/case_016",
+          "attack_id": "T2.M2S.016",
+          "variant": "delegation_template_skill_workspace_note",
+          "case_id": "T2_m2s_016_delegation_template_skill_workspace_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.06_delegation_template_skill/case_017",
+          "attack_id": "T2.M2S.017",
+          "variant": "delegation_template_skill_operator_note",
+          "case_id": "T2_m2s_017_delegation_template_skill_operator_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.06_delegation_template_skill/case_018",
+          "attack_id": "T2.M2S.018",
+          "variant": "delegation_template_skill_handoff_note",
+          "case_id": "T2_m2s_018_delegation_template_skill_handoff_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.07_cache_index_skill_lookup/case_019",
+          "attack_id": "T2.M2S.019",
+          "variant": "cache_index_skill_lookup_workspace_note",
+          "case_id": "T2_m2s_019_cache_index_skill_lookup_workspace_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.07_cache_index_skill_lookup/case_020",
+          "attack_id": "T2.M2S.020",
+          "variant": "cache_index_skill_lookup_operator_note",
+          "case_id": "T2_m2s_020_cache_index_skill_lookup_operator_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.07_cache_index_skill_lookup/case_021",
+          "attack_id": "T2.M2S.021",
+          "variant": "cache_index_skill_lookup_handoff_note",
+          "case_id": "T2_m2s_021_cache_index_skill_lookup_handoff_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.08_summary_compaction_skill_seed/case_022",
+          "attack_id": "T2.M2S.022",
+          "variant": "summary_compaction_skill_seed_workspace_note",
+          "case_id": "T2_m2s_022_summary_compaction_skill_seed_workspace_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.08_summary_compaction_skill_seed/case_023",
+          "attack_id": "T2.M2S.023",
+          "variant": "summary_compaction_skill_seed_operator_note",
+          "case_id": "T2_m2s_023_summary_compaction_skill_seed_operator_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.08_summary_compaction_skill_seed/case_024",
+          "attack_id": "T2.M2S.024",
+          "variant": "summary_compaction_skill_seed_handoff_note",
+          "case_id": "T2_m2s_024_summary_compaction_skill_seed_handoff_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.09_mcp_result_to_skill_transduction/case_025",
+          "attack_id": "T2.M2S.025",
+          "variant": "mcp_result_to_skill_transduction_workspace_note",
+          "case_id": "T2_m2s_025_mcp_result_to_skill_transduction_workspace_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.09_mcp_result_to_skill_transduction/case_026",
+          "attack_id": "T2.M2S.026",
+          "variant": "mcp_result_to_skill_transduction_operator_note",
+          "case_id": "T2_m2s_026_mcp_result_to_skill_transduction_operator_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.09_mcp_result_to_skill_transduction/case_027",
+          "attack_id": "T2.M2S.027",
+          "variant": "mcp_result_to_skill_transduction_handoff_note",
+          "case_id": "T2_m2s_027_mcp_result_to_skill_transduction_handoff_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.10_issue_triage_skill_policy/case_028",
+          "attack_id": "T2.M2S.028",
+          "variant": "issue_triage_skill_policy_workspace_note",
+          "case_id": "T2_m2s_028_issue_triage_skill_policy_workspace_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.10_issue_triage_skill_policy/case_029",
+          "attack_id": "T2.M2S.029",
+          "variant": "issue_triage_skill_policy_operator_note",
+          "case_id": "T2_m2s_029_issue_triage_skill_policy_operator_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.10_issue_triage_skill_policy/case_030",
+          "attack_id": "T2.M2S.030",
+          "variant": "issue_triage_skill_policy_handoff_note",
+          "case_id": "T2_m2s_030_issue_triage_skill_policy_handoff_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.11_permission_expansion_skill_seed/case_031",
+          "attack_id": "T2.M2S.031",
+          "variant": "permission_expansion_skill_seed_workspace_note",
+          "case_id": "T2_m2s_031_permission_expansion_skill_seed_workspace_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.11_permission_expansion_skill_seed/case_032",
+          "attack_id": "T2.M2S.032",
+          "variant": "permission_expansion_skill_seed_operator_note",
+          "case_id": "T2_m2s_032_permission_expansion_skill_seed_operator_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.11_permission_expansion_skill_seed/case_033",
+          "attack_id": "T2.M2S.033",
+          "variant": "permission_expansion_skill_seed_handoff_note",
+          "case_id": "T2_m2s_033_permission_expansion_skill_seed_handoff_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.12_existing_skill_update_poisoning/case_034",
+          "attack_id": "T2.M2S.034",
+          "variant": "existing_skill_update_poisoning_workspace_note",
+          "case_id": "T2_m2s_034_existing_skill_update_poisoning_workspace_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.12_existing_skill_update_poisoning/case_035",
+          "attack_id": "T2.M2S.035",
+          "variant": "existing_skill_update_poisoning_operator_note",
+          "case_id": "T2_m2s_035_existing_skill_update_poisoning_operator_note",
+          "canonical_suite": "memory_to_skill"
+        },
+        {
+          "case_dir": "active/T2_memory_to_skill/M2S.12_existing_skill_update_poisoning/case_036",
+          "attack_id": "T2.M2S.036",
+          "variant": "existing_skill_update_poisoning_handoff_note",
+          "case_id": "T2_m2s_036_existing_skill_update_poisoning_handoff_note",
+          "canonical_suite": "memory_to_skill"
+        }
+      ],
+      "status": "active",
+      "canonical_suite": "memory_to_skill",
+      "layer1_suite": "T2_memory_to_skill"
+    },
+    "T3_subagent_poisoning": {
+      "framework": "idea_v2",
+      "family": "T3_subagent_poisoning",
+      "note": "Tier 3 subagent and delegation poisoning complex cases.",
+      "cases": [
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.01_subagent_output_poisoning/case_001",
+          "attack_id": "SA.01.001",
+          "variant": "subagent_output_poisoning_audit",
+          "case_id": "T3_subagent_poisoning_001_subagent_output_poisoning_audit",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.01_subagent_output_poisoning/case_002",
+          "attack_id": "SA.01.002",
+          "variant": "subagent_output_poisoning_deploy",
+          "case_id": "T3_subagent_poisoning_002_subagent_output_poisoning_deploy",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.01_subagent_output_poisoning/case_003",
+          "attack_id": "SA.01.003",
+          "variant": "subagent_output_poisoning_incident",
+          "case_id": "T3_subagent_poisoning_003_subagent_output_poisoning_incident",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.01_subagent_output_poisoning/case_004",
+          "attack_id": "SA.01.004",
+          "variant": "subagent_output_poisoning_release",
+          "case_id": "T3_subagent_poisoning_004_subagent_output_poisoning_release",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.01_subagent_output_poisoning/case_005",
+          "attack_id": "SA.01.005",
+          "variant": "subagent_output_poisoning_maintenance",
+          "case_id": "T3_subagent_poisoning_005_subagent_output_poisoning_maintenance",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.02_delegated_review_poisoning/case_006",
+          "attack_id": "SA.02.006",
+          "variant": "delegated_review_poisoning_audit",
+          "case_id": "T3_subagent_poisoning_006_delegated_review_poisoning_audit",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.02_delegated_review_poisoning/case_007",
+          "attack_id": "SA.02.007",
+          "variant": "delegated_review_poisoning_deploy",
+          "case_id": "T3_subagent_poisoning_007_delegated_review_poisoning_deploy",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.02_delegated_review_poisoning/case_008",
+          "attack_id": "SA.02.008",
+          "variant": "delegated_review_poisoning_incident",
+          "case_id": "T3_subagent_poisoning_008_delegated_review_poisoning_incident",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.02_delegated_review_poisoning/case_009",
+          "attack_id": "SA.02.009",
+          "variant": "delegated_review_poisoning_release",
+          "case_id": "T3_subagent_poisoning_009_delegated_review_poisoning_release",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.02_delegated_review_poisoning/case_010",
+          "attack_id": "SA.02.010",
+          "variant": "delegated_review_poisoning_maintenance",
+          "case_id": "T3_subagent_poisoning_010_delegated_review_poisoning_maintenance",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.03_subagent_tool_choice_poisoning/case_011",
+          "attack_id": "SA.03.011",
+          "variant": "subagent_tool_choice_poisoning_audit",
+          "case_id": "T3_subagent_poisoning_011_subagent_tool_choice_poisoning_audit",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.03_subagent_tool_choice_poisoning/case_012",
+          "attack_id": "SA.03.012",
+          "variant": "subagent_tool_choice_poisoning_deploy",
+          "case_id": "T3_subagent_poisoning_012_subagent_tool_choice_poisoning_deploy",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.03_subagent_tool_choice_poisoning/case_013",
+          "attack_id": "SA.03.013",
+          "variant": "subagent_tool_choice_poisoning_incident",
+          "case_id": "T3_subagent_poisoning_013_subagent_tool_choice_poisoning_incident",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.03_subagent_tool_choice_poisoning/case_014",
+          "attack_id": "SA.03.014",
+          "variant": "subagent_tool_choice_poisoning_release",
+          "case_id": "T3_subagent_poisoning_014_subagent_tool_choice_poisoning_release",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.03_subagent_tool_choice_poisoning/case_015",
+          "attack_id": "SA.03.015",
+          "variant": "subagent_tool_choice_poisoning_maintenance",
+          "case_id": "T3_subagent_poisoning_015_subagent_tool_choice_poisoning_maintenance",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.04_subagent_artifact_write/case_016",
+          "attack_id": "SA.04.016",
+          "variant": "subagent_artifact_write_audit",
+          "case_id": "T3_subagent_poisoning_016_subagent_artifact_write_audit",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.04_subagent_artifact_write/case_017",
+          "attack_id": "SA.04.017",
+          "variant": "subagent_artifact_write_deploy",
+          "case_id": "T3_subagent_poisoning_017_subagent_artifact_write_deploy",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.04_subagent_artifact_write/case_018",
+          "attack_id": "SA.04.018",
+          "variant": "subagent_artifact_write_incident",
+          "case_id": "T3_subagent_poisoning_018_subagent_artifact_write_incident",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.04_subagent_artifact_write/case_019",
+          "attack_id": "SA.04.019",
+          "variant": "subagent_artifact_write_release",
+          "case_id": "T3_subagent_poisoning_019_subagent_artifact_write_release",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.04_subagent_artifact_write/case_020",
+          "attack_id": "SA.04.020",
+          "variant": "subagent_artifact_write_maintenance",
+          "case_id": "T3_subagent_poisoning_020_subagent_artifact_write_maintenance",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.05_main_agent_trust_transfer/case_021",
+          "attack_id": "SA.05.021",
+          "variant": "main_agent_trust_transfer_audit",
+          "case_id": "T3_subagent_poisoning_021_main_agent_trust_transfer_audit",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.05_main_agent_trust_transfer/case_022",
+          "attack_id": "SA.05.022",
+          "variant": "main_agent_trust_transfer_deploy",
+          "case_id": "T3_subagent_poisoning_022_main_agent_trust_transfer_deploy",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.05_main_agent_trust_transfer/case_023",
+          "attack_id": "SA.05.023",
+          "variant": "main_agent_trust_transfer_incident",
+          "case_id": "T3_subagent_poisoning_023_main_agent_trust_transfer_incident",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.05_main_agent_trust_transfer/case_024",
+          "attack_id": "SA.05.024",
+          "variant": "main_agent_trust_transfer_release",
+          "case_id": "T3_subagent_poisoning_024_main_agent_trust_transfer_release",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.05_main_agent_trust_transfer/case_025",
+          "attack_id": "SA.05.025",
+          "variant": "main_agent_trust_transfer_maintenance",
+          "case_id": "T3_subagent_poisoning_025_main_agent_trust_transfer_maintenance",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.06_subagent_memory_merge/case_026",
+          "attack_id": "SA.06.026",
+          "variant": "subagent_memory_merge_audit",
+          "case_id": "T3_subagent_poisoning_026_subagent_memory_merge_audit",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.06_subagent_memory_merge/case_027",
+          "attack_id": "SA.06.027",
+          "variant": "subagent_memory_merge_deploy",
+          "case_id": "T3_subagent_poisoning_027_subagent_memory_merge_deploy",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.06_subagent_memory_merge/case_028",
+          "attack_id": "SA.06.028",
+          "variant": "subagent_memory_merge_incident",
+          "case_id": "T3_subagent_poisoning_028_subagent_memory_merge_incident",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.06_subagent_memory_merge/case_029",
+          "attack_id": "SA.06.029",
+          "variant": "subagent_memory_merge_release",
+          "case_id": "T3_subagent_poisoning_029_subagent_memory_merge_release",
+          "canonical_suite": "subagent_poisoning"
+        },
+        {
+          "case_dir": "active/T3/subagent_poisoning/SA.06_subagent_memory_merge/case_030",
+          "attack_id": "SA.06.030",
+          "variant": "subagent_memory_merge_maintenance",
+          "case_id": "T3_subagent_poisoning_030_subagent_memory_merge_maintenance",
+          "canonical_suite": "subagent_poisoning"
+        }
+      ],
+      "status": "active",
+      "canonical_suite": "subagent_poisoning",
+      "layer1_suite": "T3_subagent_poisoning"
+    },
+    "T3_compaction_resume_poisoning": {
+      "framework": "idea_v2",
+      "family": "T3_compaction_resume_poisoning",
+      "note": "Tier 3 compaction and resume poisoning complex cases.",
+      "cases": [
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.01_session_summary_poisoning/case_001",
+          "attack_id": "CR.01.001",
+          "variant": "session_summary_poisoning_audit",
+          "case_id": "T3_compaction_resume_poisoning_001_session_summary_poisoning_audit",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.01_session_summary_poisoning/case_002",
+          "attack_id": "CR.01.002",
+          "variant": "session_summary_poisoning_deploy",
+          "case_id": "T3_compaction_resume_poisoning_002_session_summary_poisoning_deploy",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.01_session_summary_poisoning/case_003",
+          "attack_id": "CR.01.003",
+          "variant": "session_summary_poisoning_incident",
+          "case_id": "T3_compaction_resume_poisoning_003_session_summary_poisoning_incident",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.01_session_summary_poisoning/case_004",
+          "attack_id": "CR.01.004",
+          "variant": "session_summary_poisoning_release",
+          "case_id": "T3_compaction_resume_poisoning_004_session_summary_poisoning_release",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.01_session_summary_poisoning/case_005",
+          "attack_id": "CR.01.005",
+          "variant": "session_summary_poisoning_maintenance",
+          "case_id": "T3_compaction_resume_poisoning_005_session_summary_poisoning_maintenance",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.02_resume_context_poisoning/case_006",
+          "attack_id": "CR.02.006",
+          "variant": "resume_context_poisoning_audit",
+          "case_id": "T3_compaction_resume_poisoning_006_resume_context_poisoning_audit",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.02_resume_context_poisoning/case_007",
+          "attack_id": "CR.02.007",
+          "variant": "resume_context_poisoning_deploy",
+          "case_id": "T3_compaction_resume_poisoning_007_resume_context_poisoning_deploy",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.02_resume_context_poisoning/case_008",
+          "attack_id": "CR.02.008",
+          "variant": "resume_context_poisoning_incident",
+          "case_id": "T3_compaction_resume_poisoning_008_resume_context_poisoning_incident",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.02_resume_context_poisoning/case_009",
+          "attack_id": "CR.02.009",
+          "variant": "resume_context_poisoning_release",
+          "case_id": "T3_compaction_resume_poisoning_009_resume_context_poisoning_release",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.02_resume_context_poisoning/case_010",
+          "attack_id": "CR.02.010",
+          "variant": "resume_context_poisoning_maintenance",
+          "case_id": "T3_compaction_resume_poisoning_010_resume_context_poisoning_maintenance",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.03_compressed_task_note/case_011",
+          "attack_id": "CR.03.011",
+          "variant": "compressed_task_note_audit",
+          "case_id": "T3_compaction_resume_poisoning_011_compressed_task_note_audit",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.03_compressed_task_note/case_012",
+          "attack_id": "CR.03.012",
+          "variant": "compressed_task_note_deploy",
+          "case_id": "T3_compaction_resume_poisoning_012_compressed_task_note_deploy",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.03_compressed_task_note/case_013",
+          "attack_id": "CR.03.013",
+          "variant": "compressed_task_note_incident",
+          "case_id": "T3_compaction_resume_poisoning_013_compressed_task_note_incident",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.03_compressed_task_note/case_014",
+          "attack_id": "CR.03.014",
+          "variant": "compressed_task_note_release",
+          "case_id": "T3_compaction_resume_poisoning_014_compressed_task_note_release",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.03_compressed_task_note/case_015",
+          "attack_id": "CR.03.015",
+          "variant": "compressed_task_note_maintenance",
+          "case_id": "T3_compaction_resume_poisoning_015_compressed_task_note_maintenance",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.04_saved_plan_poisoning/case_016",
+          "attack_id": "CR.04.016",
+          "variant": "saved_plan_poisoning_audit",
+          "case_id": "T3_compaction_resume_poisoning_016_saved_plan_poisoning_audit",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.04_saved_plan_poisoning/case_017",
+          "attack_id": "CR.04.017",
+          "variant": "saved_plan_poisoning_deploy",
+          "case_id": "T3_compaction_resume_poisoning_017_saved_plan_poisoning_deploy",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.04_saved_plan_poisoning/case_018",
+          "attack_id": "CR.04.018",
+          "variant": "saved_plan_poisoning_incident",
+          "case_id": "T3_compaction_resume_poisoning_018_saved_plan_poisoning_incident",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.04_saved_plan_poisoning/case_019",
+          "attack_id": "CR.04.019",
+          "variant": "saved_plan_poisoning_release",
+          "case_id": "T3_compaction_resume_poisoning_019_saved_plan_poisoning_release",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.04_saved_plan_poisoning/case_020",
+          "attack_id": "CR.04.020",
+          "variant": "saved_plan_poisoning_maintenance",
+          "case_id": "T3_compaction_resume_poisoning_020_saved_plan_poisoning_maintenance",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.05_reopened_workspace_state/case_021",
+          "attack_id": "CR.05.021",
+          "variant": "reopened_workspace_state_audit",
+          "case_id": "T3_compaction_resume_poisoning_021_reopened_workspace_state_audit",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.05_reopened_workspace_state/case_022",
+          "attack_id": "CR.05.022",
+          "variant": "reopened_workspace_state_deploy",
+          "case_id": "T3_compaction_resume_poisoning_022_reopened_workspace_state_deploy",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.05_reopened_workspace_state/case_023",
+          "attack_id": "CR.05.023",
+          "variant": "reopened_workspace_state_incident",
+          "case_id": "T3_compaction_resume_poisoning_023_reopened_workspace_state_incident",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.05_reopened_workspace_state/case_024",
+          "attack_id": "CR.05.024",
+          "variant": "reopened_workspace_state_release",
+          "case_id": "T3_compaction_resume_poisoning_024_reopened_workspace_state_release",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.05_reopened_workspace_state/case_025",
+          "attack_id": "CR.05.025",
+          "variant": "reopened_workspace_state_maintenance",
+          "case_id": "T3_compaction_resume_poisoning_025_reopened_workspace_state_maintenance",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.06_summary_priority_inversion/case_026",
+          "attack_id": "CR.06.026",
+          "variant": "summary_priority_inversion_audit",
+          "case_id": "T3_compaction_resume_poisoning_026_summary_priority_inversion_audit",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.06_summary_priority_inversion/case_027",
+          "attack_id": "CR.06.027",
+          "variant": "summary_priority_inversion_deploy",
+          "case_id": "T3_compaction_resume_poisoning_027_summary_priority_inversion_deploy",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.06_summary_priority_inversion/case_028",
+          "attack_id": "CR.06.028",
+          "variant": "summary_priority_inversion_incident",
+          "case_id": "T3_compaction_resume_poisoning_028_summary_priority_inversion_incident",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.06_summary_priority_inversion/case_029",
+          "attack_id": "CR.06.029",
+          "variant": "summary_priority_inversion_release",
+          "case_id": "T3_compaction_resume_poisoning_029_summary_priority_inversion_release",
+          "canonical_suite": "compaction_resume_poisoning"
+        },
+        {
+          "case_dir": "active/T3/compaction_resume_poisoning/CR.06_summary_priority_inversion/case_030",
+          "attack_id": "CR.06.030",
+          "variant": "summary_priority_inversion_maintenance",
+          "case_id": "T3_compaction_resume_poisoning_030_summary_priority_inversion_maintenance",
+          "canonical_suite": "compaction_resume_poisoning"
+        }
+      ],
+      "status": "active",
+      "canonical_suite": "compaction_resume_poisoning",
+      "layer1_suite": "T3_compaction_resume_poisoning"
+    },
+    "T3_shared_artifact_supply_chain": {
+      "framework": "idea_v2",
+      "family": "T3_shared_artifact_supply_chain",
+      "note": "Additional complex shared-artifact supply-chain cases identified during taxonomy expansion.",
+      "cases": [
+        {
+          "case_dir": "active/T3/shared_artifact_supply_chain/SAF.01_shared_decision_artifact/case_001",
+          "attack_id": "SAF.01.001",
+          "variant": "shared_decision_artifact_decision",
+          "case_id": "T3_shared_artifact_supply_chain_001_shared_decision_artifact_decision",
+          "canonical_suite": "shared_artifact_supply_chain"
+        },
+        {
+          "case_dir": "active/T3/shared_artifact_supply_chain/SAF.01_shared_decision_artifact/case_002",
+          "attack_id": "SAF.01.002",
+          "variant": "shared_decision_artifact_template",
+          "case_id": "T3_shared_artifact_supply_chain_002_shared_decision_artifact_template",
+          "canonical_suite": "shared_artifact_supply_chain"
+        },
+        {
+          "case_dir": "active/T3/shared_artifact_supply_chain/SAF.01_shared_decision_artifact/case_003",
+          "attack_id": "SAF.01.003",
+          "variant": "shared_decision_artifact_report",
+          "case_id": "T3_shared_artifact_supply_chain_003_shared_decision_artifact_report",
+          "canonical_suite": "shared_artifact_supply_chain"
+        },
+        {
+          "case_dir": "active/T3/shared_artifact_supply_chain/SAF.02_shared_template_artifact/case_004",
+          "attack_id": "SAF.02.004",
+          "variant": "shared_template_artifact_decision",
+          "case_id": "T3_shared_artifact_supply_chain_004_shared_template_artifact_decision",
+          "canonical_suite": "shared_artifact_supply_chain"
+        },
+        {
+          "case_dir": "active/T3/shared_artifact_supply_chain/SAF.02_shared_template_artifact/case_005",
+          "attack_id": "SAF.02.005",
+          "variant": "shared_template_artifact_template",
+          "case_id": "T3_shared_artifact_supply_chain_005_shared_template_artifact_template",
+          "canonical_suite": "shared_artifact_supply_chain"
+        },
+        {
+          "case_dir": "active/T3/shared_artifact_supply_chain/SAF.02_shared_template_artifact/case_006",
+          "attack_id": "SAF.02.006",
+          "variant": "shared_template_artifact_report",
+          "case_id": "T3_shared_artifact_supply_chain_006_shared_template_artifact_report",
+          "canonical_suite": "shared_artifact_supply_chain"
+        }
+      ],
+      "status": "active",
+      "canonical_suite": "shared_artifact_supply_chain",
+      "layer1_suite": "T3_shared_artifact_supply_chain"
+    }
+  },
+  "reporting_views": {
+    "core_benchmark_cases": 125,
+    "extended_benchmark_cases": 137,
+    "exploratory_case_study_cases": 66,
+    "asr_excluded_diagnostic_cases": 0,
+    "oracle_strength_counts": {
+      "hard_trace_oracle": 328
+    },
+    "infection_mode_counts": {
+      "end_to_end_infection_eval": 239,
+      "preseeded_carrier_eval": 72,
+      "skill_package_load_eval": 17
+    },
+    "note": "The full active manifest remains runnable. Main ASR reporting can include every non-excluded hard-trace active case; reporting_track stratifies core, extended, and exploratory cases for paper tables, appendices, and case-study sections. The frozen planned/design-time case scope is exactly the 328 cases registered in this manifest. Realized conditional ASR uses only ASR-eligible N0-N5b scored attack rows; N-1 is accounted separately."
+  }
+}

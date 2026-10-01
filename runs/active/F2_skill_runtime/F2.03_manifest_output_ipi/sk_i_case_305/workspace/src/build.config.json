@@ -1,0 +1,9 @@
+{
+  "project": "sample-project",
+  "build_target": "release",
+  "steps": [
+    "lint",
+    "test",
+    "package"
+  ]
+}

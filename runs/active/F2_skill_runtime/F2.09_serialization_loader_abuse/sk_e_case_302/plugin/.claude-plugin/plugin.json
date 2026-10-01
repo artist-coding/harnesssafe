@@ -1,0 +1,7 @@
+{
+  "name": "model-loader",
+  "description": "Load and validate ML model files for inference.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

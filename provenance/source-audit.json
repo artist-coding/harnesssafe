@@ -1,0 +1,18 @@
+{
+  "files_checked": 4040,
+  "missing_original_files": [],
+  "modified_original_files": [
+    "CITATION.cff",
+    "LICENSES.md",
+    "infra/cross_harness/adapters/gemini/attack_only_runner.py",
+    "infra/harness_adapters/hermes/probe.py",
+    "infra/harness_adapters/openclaw/probe.py",
+    "infra/run_harness_case.ps1",
+    "runs/archive/legacy_v2_memory_evolution.zip"
+  ],
+  "frozen_case_metadata_files": 328,
+  "modified_case_files": [],
+  "benchmark_sha256": "f52b01087e08c727823a510e4a83d781109b68b3b3ae7e972d6daf264ca170a3",
+  "implementation_sha256": "69c16b8006b1bd8adf2599b8174efa584fc2909471731341d5132594e5abece2",
+  "publication_note": "Active cases remain byte-identical. Legacy archive is sanitized; see public-legacy-archive.json. Citation gains repository URL and license mapping names the new package."
+}

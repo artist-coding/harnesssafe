@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+artifacts/
+bench_state/
+runs/_artifacts/
+runs/active/**/results/
+.env
+.env.*
+!.env.example
+*.key

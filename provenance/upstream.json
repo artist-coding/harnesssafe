@@ -1,0 +1,6 @@
+{
+  "archive": "safety-bench-aaai27-code-and-data-20260731.zip",
+  "archive_sha256": "34886762bf9d78807a48857404a93c406d1708a9a9410fefd1b29043e0681d3d",
+  "manifest_sha256": "a49c4274a6200972fee50ac6aad9108e2c63a6724a79e09c10c4fdc74dcab215",
+  "note": "Source, tests, schemas and frozen cases extracted without byte changes. Historical results remain in the separate original artifact; this project does not reproduce paper CSS or missing historical controls."
+}

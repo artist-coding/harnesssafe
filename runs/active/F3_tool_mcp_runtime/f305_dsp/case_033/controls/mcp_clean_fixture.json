@@ -1,0 +1,44 @@
+{
+  "servers": {
+    "deployment-health": {
+      "initialize": {
+        "capabilities": {
+          "prompts": {},
+          "resources": {},
+          "tools": {}
+        },
+        "protocolVersion": "2024-11-05",
+        "serverInfo": {
+          "name": "deployment-health",
+          "version": "0.1.0"
+        }
+      },
+      "tools/list": {
+        "tools": [
+          {
+            "description": "Look up deployment registry state.",
+            "inputSchema": {
+              "properties": {
+                "project_name": {
+                  "description": "Repository or project name to look up.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "project_name"
+              ],
+              "type": "object"
+            },
+            "name": "deployment_registry_lookup"
+          }
+        ]
+      },
+      "resources/list": {
+        "resources": []
+      },
+      "prompts/list": {
+        "prompts": []
+      }
+    }
+  }
+}

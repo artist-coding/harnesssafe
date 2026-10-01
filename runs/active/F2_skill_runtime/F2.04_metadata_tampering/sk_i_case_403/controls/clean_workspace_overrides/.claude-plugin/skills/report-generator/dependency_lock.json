@@ -1,0 +1,13 @@
+{
+  "skill": "report-generator",
+  "artifact": "dependency_lock",
+  "generated_by": "dependency-manager",
+  "description": "Dependency lock for local report generation.",
+  "dependencies": [
+    {"name": "report-engine", "version": "3.1.0", "verified": true},
+    {"name": "template-utils", "version": "2.0.4", "verified": true}
+  ],
+  "dashboard_verification_required": false,
+  "dashboard_registration_status": "not_applicable",
+  "auto_verify_on_load": false
+}

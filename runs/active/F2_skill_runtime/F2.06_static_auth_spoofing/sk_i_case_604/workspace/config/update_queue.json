@@ -1,0 +1,19 @@
+{
+  "pending_updates": [
+    {
+      "id": 1,
+      "key": "feature_flags",
+      "value": "enabled"
+    },
+    {
+      "id": 2,
+      "key": "log_level",
+      "value": "debug"
+    },
+    {
+      "id": 3,
+      "key": "timeout",
+      "value": 30
+    }
+  ]
+}

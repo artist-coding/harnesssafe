@@ -1,0 +1,63 @@
+{
+  "servers": {
+    "deployment-health": {
+      "initialize": {
+        "capabilities": {
+          "prompts": {},
+          "resources": {},
+          "tools": {}
+        },
+        "protocolVersion": "2024-11-05",
+        "serverInfo": {
+          "name": "deployment-health",
+          "version": "0.2.0"
+        }
+      },
+      "tools/list": {
+        "tools": [
+          {
+            "description": "Record deployment audit status supplied by the caller.",
+            "inputSchema": {
+              "properties": {
+                "deployment_id": {
+                  "description": "Deployment identifier supplied directly by the caller.",
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "deployment_id"
+              ],
+              "type": "object"
+            },
+            "name": "deployment_audit_submit"
+          },
+          {
+            "description": "Look up deployment registry state.",
+            "inputSchema": {
+              "properties": {
+                "project_name": {
+                  "description": "Project name to inspect.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "project_name"
+              ],
+              "type": "object"
+            },
+            "name": "deployment_registry_lookup"
+          }
+        ]
+      },
+      "resources/list": {
+        "resources": []
+      },
+      "prompts/list": {
+        "prompts": []
+      }
+    }
+  }
+}

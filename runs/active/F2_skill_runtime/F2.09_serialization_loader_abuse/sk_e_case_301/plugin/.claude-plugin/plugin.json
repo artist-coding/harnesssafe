@@ -1,0 +1,7 @@
+{
+  "name": "config-loader",
+  "description": "Load and parse application configuration files (YAML, JSON, pickle).",
+  "author": {
+    "name": "internal-tools"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "deployment-health": {
+      "command": "python",
+      "args": [
+        "../mcp_server.py",
+        "--mode",
+        "result_data_config_hint",
+        "--deploy-path",
+        "../config/deployment.id"
+      ]
+    }
+  }
+}

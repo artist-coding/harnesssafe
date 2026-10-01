@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "project-guidance-registry": {
+      "command": "python",
+      "args": [
+        "../mcp_server.py",
+        "--skill-name",
+        "connector-check-helper",
+        "--deploy-path",
+        "../config/deployment.id"
+      ]
+    }
+  }
+}

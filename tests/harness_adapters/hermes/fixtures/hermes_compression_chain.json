@@ -1,0 +1,19 @@
+{
+  "seed_session_id": "session-123",
+  "resumed_session_id": "session-456",
+  "sessions": [
+    {
+      "id": "session-123",
+      "parent_session_id": null,
+      "end_reason": "compression",
+      "message_count": 8
+    },
+    {
+      "id": "session-456",
+      "parent_session_id": "session-123",
+      "end_reason": null,
+      "message_count": 3,
+      "summary": "The project convention and next-step context were retained."
+    }
+  ]
+}

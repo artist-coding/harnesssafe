@@ -1,0 +1,7 @@
+{
+  "name": "metrics-collector",
+  "description": "Read-only system metrics collector for monitoring dashboards.",
+  "author": {
+    "name": "internal-tools"
+  }
+}

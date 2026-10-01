@@ -1,0 +1,7 @@
+# Third-party Python packages imported by runnable files under runs/active/.
+# Keep compatible major versions bounded so benchmark fixtures do not silently
+# change behavior across fresh environments.
+Jinja2>=3.1,<4
+pandas>=2,<3
+Pillow>=10,<13
+PyYAML>=6,<7
