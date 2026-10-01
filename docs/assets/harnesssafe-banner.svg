@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+  <title id="title">HarnessSafe</title>
+  <desc id="desc">Reproducible safety experiments for agent harnesses. 328 frozen cases, 7 adapter integrations, one experiment workflow.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1423"/>
+      <stop offset="1" stop-color="#12283b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7de8cf"/>
+      <stop offset="1" stop-color="#67bfff"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#a3c4e2" stroke-opacity=".055"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="440" rx="24" fill="url(#background)"/>
+  <rect width="1280" height="440" rx="24" fill="url(#grid)"/>
+  <rect x=".5" y=".5" width="1279" height="439" rx="24" fill="none" stroke="#2a4154"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="52" y="44" width="7" height="15" rx="2" fill="#7de8cf"/>
+    <text x="72" y="57" font-size="13" font-weight="600" letter-spacing="2.8" fill="#a7c9d7">AGENT HARNESS SECURITY</text>
+    <text x="48" y="158" font-size="84" font-weight="700" letter-spacing="-3" fill="#f4f9ff">Harness<tspan fill="#7de8cf">Safe</tspan></text>
+    <text x="52" y="207" font-size="24" fill="#b9cbd9">Reproducible safety experiments for agent harnesses.</text>
+    <text x="52" y="243" font-size="16" fill="#7e9aaf">Freeze the cases. Record the evidence. Compare the versions.</text>
+    <g transform="translate(972 38)">
+      <path d="M116 24 L191 55 L191 106 C191 153 164 179 116 199 C68 179 41 153 41 106 L41 55 Z" fill="#132d3e" stroke="url(#accent)" stroke-width="2.5"/>
+      <path d="M80 81 H152 M80 112 H152 M80 143 H152" stroke="#416378" stroke-width="2"/>
+      <path d="M90 81 V112 H141 V143" fill="none" stroke="#7de8cf" stroke-width="3"/>
+      <circle cx="90" cy="81" r="7" fill="#7de8cf"/>
+      <circle cx="90" cy="112" r="7" fill="#0e2132" stroke="#7de8cf" stroke-width="2"/>
+      <circle cx="141" cy="112" r="7" fill="#0e2132" stroke="#7de8cf" stroke-width="2"/>
+      <circle cx="141" cy="143" r="7" fill="#72c9ef"/>
+      <path d="M9 80 H40 M192 145 H229" stroke="#4d7187" stroke-width="2"/>
+      <circle cx="8" cy="80" r="4" fill="#72c9ef"/>
+      <circle cx="230" cy="145" r="4" fill="#7de8cf"/>
+    </g>
+    <g transform="translate(48 292)">
+      <rect width="384" height="108" rx="13" fill="#112236" stroke="#294257"/>
+      <text x="24" y="53" font-size="38" font-weight="700" fill="#f0f7ff">328</text>
+      <text x="24" y="82" font-size="15" fill="#a4bbc9">Frozen benchmark cases</text>
+      <path d="M326 33 V74 M338 33 V74 M350 33 V74" stroke="#5d8ca5" stroke-width="3"/>
+    </g>
+    <g transform="translate(448 292)">
+      <rect width="384" height="108" rx="13" fill="#112637" stroke="#2c495b"/>
+      <text x="24" y="53" font-size="38" font-weight="700" fill="#7de8cf">7</text>
+      <text x="24" y="82" font-size="15" fill="#a4bbc9">Adapter integrations</text>
+      <circle cx="337" cy="54" r="18" fill="none" stroke="#5a9eaa" stroke-width="2"/>
+      <circle cx="337" cy="54" r="5" fill="#7de8cf"/>
+    </g>
+    <g transform="translate(848 292)">
+      <rect width="384" height="108" rx="13" fill="#112637" stroke="#2c495b"/>
+      <text x="24" y="53" font-size="38" font-weight="700" fill="#8dcbf8">1</text>
+      <text x="24" y="82" font-size="15" fill="#a4bbc9">Consistent experiment workflow</text>
+      <path d="M318 54 H353 M344 44 L354 54 L344 64" fill="none" stroke="#8dcbf8" stroke-width="2.5"/>
+    </g>
+  </g>
+</svg>

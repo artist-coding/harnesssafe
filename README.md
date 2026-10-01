@@ -1,81 +1,246 @@
-# HarnessSafe
+<p align="center">
+  <img src="docs/assets/harnesssafe-banner.svg" width="100%" alt="HarnessSafe — 328 个冻结案例，7 种 harness 适配，一套可复现实验流程">
+</p>
 
-用于复测 agent harness 版本的本地实验框架。复用 328 个冻结案例和已有适配器，增加统一配置、版本预检、固定计划、断点续跑、证据校验和升级比较。
+<p align="center">
+  <strong>让 agent harness 的每一次更新，都能回到同一套安全实验。</strong><br>
+  固定案例与协议，保留运行证据，比较版本变化。
+</p>
 
-**Codex CLI、Claude Code、Hermes Agent、OpenClaw、Gemini CLI、OpenCode、Kimi Code** 均已接入统一命令。前四种使用现有 Windows 运行器，后三种使用现有 Linux 运行器。评分与控制组支持存在差异，见 [适配器状态](docs/adapters.md)。
+<p align="center">
+  <a href="https://github.com/artist-coding/harnesssafe/actions/workflows/tests.yml"><img src="https://github.com/artist-coding/harnesssafe/actions/workflows/tests.yml/badge.svg" alt="Offline framework checks"></a>
+  <a href="requirements.txt"><img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&amp;logoColor=white" alt="Python 3.10+"></a>
+  <a href="runs/manifest.json"><img src="https://img.shields.io/badge/Frozen_cases-328-168B77" alt="328 frozen cases"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/Code-Apache--2.0-526B86" alt="Code license: Apache 2.0"></a>
+  <a href="LICENSES.md"><img src="https://img.shields.io/badge/Case_definitions-CC_BY_4.0-526B86" alt="Case definitions: CC BY 4.0"></a>
+</p>
 
-## 安装和离线检查
+<p align="center">
+  <a href="#overview">项目概览</a> ·
+  <a href="#adapters">支持范围</a> ·
+  <a href="#benchmark">测试案例</a> ·
+  <a href="#quickstart">快速开始</a> ·
+  <a href="#compare">版本复测</a> ·
+  <a href="#docs">文档</a>
+</p>
 
-需要 Python 3.10+。执行 Windows 适配器还需要 PowerShell 7；Linux 适配器需要 bubblewrap。每个 harness 需独立安装。以下命令在项目根目录执行：
+---
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements-dev.txt
-python -m harnesssafe adapters
-python -m harnesssafe cases
-python -m pytest -q tests/framework
+<a id="overview"></a>
+
+## 为什么做 HarnessSafe
+
+Agent 的安全表现取决于模型，也取决于它所处的运行环境：记忆如何保存、技能如何加载、工具结果如何解释，以及上下文如何在压缩和子代理之间传递。
+
+**HarnessSafe 为这些运行机制提供一套可重复执行的安全实验框架。** 当 Codex、Claude Code 或其他 harness 更新后，可以在固定案例和配置下重新测试，检查攻击结果、覆盖率与防护表现的变化。
+
+| 你想验证什么 | HarnessSafe 提供什么 |
+| --- | --- |
+| 升级后，安全表现有没有变化？ | 固定案例、版本记录、共同有效样本上的逐项比较 |
+| 同一次实验能否重新检查？ | 配置与源码哈希、运行证据、可校验的试验收据 |
+| 中断后如何继续，避免重复计算？ | 固定试验清单；续跑只处理尚未尝试的试验 |
+| 失败或不支持的案例会不会被算作安全？ | 完整状态与排除原因；未评分不会自动变成 N0 |
+| 不同 harness 能否使用统一入口？ | 七种适配器共用配置、计划、运行与报告命令 |
+
+### 一条实验流程
+
+```mermaid
+flowchart LR
+    A["配置与版本检查<br/>init · doctor"] --> B["冻结实验计划<br/>plan"]
+    B --> C["调用原生适配器<br/>run"]
+    C --> D["保存证据与执行状态"]
+    D --> E["生成报告<br/>report"]
+    E --> F["比较版本<br/>compare"]
+
+    classDef default fill:#eef8f6,stroke:#328879,color:#163f3a;
 ```
 
-Linux 使用 `source .venv/bin/activate` 激活虚拟环境。doctor 会拒绝不符合 requirements.txt 范围的依赖。
+<a id="adapters"></a>
 
-## 一套流程复测七种 harness
+## 七种 harness，一套管理入口
 
-Codex/Claude 可以直接 init；其余适配器从 [七种配置模板](examples/README.md) 填写原生运行时/provider 参数，或通过 init 的 --provider-config 与 --runtime-config 导入。
+“已接入”表示具备统一的实验管理入口；执行平台、控制组与正式评分能力如下。具体安装与版本要求见 [适配器文档](docs/adapters.md)。
 
-```text
+| Harness | 原生执行平台 | 支持的实验组 | 当前评分路径 |
+| --- | --- | --- | --- |
+| **Codex CLI** | Windows | 攻击组 + 4 种控制组 | 共享 Evaluation Record v3 |
+| **Claude Code** | Windows | 攻击组 + 4 种控制组 | 共享 Evaluation Record v3 |
+| **Hermes Agent** | Windows | 攻击组 + 4 种控制组 | 共享 Evaluation Record v3 |
+| **OpenClaw** | Windows | 攻击组 + 4 种控制组 | 共享 Evaluation Record v3 |
+| **Gemini CLI** | Linux | 攻击组 | 已有分析桥接 → 共享 v3 资格判断 |
+| **OpenCode** | Linux | 攻击组 | 原始证据采集；正式评分待接入 |
+| **Kimi Code** | Linux | 攻击组 | 诊断分析；暂不进入正式指标 |
+
+> **版本兼容性有明确边界。** Hermes/OpenClaw 新版本需要对应能力证明；Gemini/OpenCode 的证明须匹配目标版本与可执行文件。Kimi 的原生协议目前绑定已验证的 **0.26.0** 运行时。CLI 接口发生变化时仍可能需要更新适配器。
+
+查看本地能力清单：
+
+```bash
+python -m harnesssafe adapters
+```
+
+<a id="benchmark"></a>
+
+## 328 个冻结案例，覆盖七类机制
+
+| 家族 | 测试机制 | 案例数 |
+| --- | --- | ---: |
+| **F1** | 持久记忆与后续任务中的污染传播 | 72 |
+| **F2** | 技能加载、技能内容与执行行为 | 84 |
+| **F3** | 工具 / MCP 接口与返回内容 | 70 |
+| **T2** | 记忆内容向技能转化的跨机制传播 | 36 |
+| **T3-S** | 子代理委派与结果回传 | 30 |
+| **T3-C** | 上下文压缩与会话恢复 | 30 |
+| **T3-A** | 共享产物与供应链传播 | 6 |
+| **合计** | | **328** |
+
+案例清单见 [runs/manifest.json](runs/manifest.json)。`--smoke` 固定选择每个家族的第一个案例，共 **7 例**，用于检查运行通路；省略该选项可规划全部案例。
+
+支持控制组的适配器可增加 `clean_control`、`no_persist_control`、`no_trigger_control` 与 `cleanup_control`，并通过 `--repeats` 预先声明重复次数。
+
+<a id="quickstart"></a>
+
+## 快速开始
+
+需要 **Python 3.10+**。真实执行还需安装目标 harness：Windows 入口需要 PowerShell 7，Linux 入口需要 bubblewrap；Git Bash、Node 和版本证明等额外要求见 [配置说明](docs/adapters.md)。
+
+### 1. 安装框架
+
+```bash
+git clone https://github.com/artist-coding/harnesssafe.git
+cd harnesssafe
+python -m venv .venv
+```
+
+<details>
+<summary><strong>Windows / PowerShell</strong></summary>
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements-dev.txt
+```
+
+</details>
+
+<details>
+<summary><strong>Linux / Bash</strong></summary>
+
+```bash
+source .venv/bin/activate
+python -m pip install -r requirements-dev.txt
+```
+
+</details>
+
+### 2. 先体验离线计划与报告
+
+不需要 harness CLI 或模型凭据，就可以查看案例、规划试验并生成报告：
+
+```bash
+python -m harnesssafe cases
+python -m harnesssafe plan --config examples/experiments/codex.json --out artifacts/preview
+python -m harnesssafe report --plan artifacts/preview
+```
+
+打开 `artifacts/preview/report.md` 查看输出。示例配置包含占位符，**这一步不会运行模型**；未执行试验的指标显示为 `N/A`。
+
+### 3. 运行第一次真实实验
+
+下面以 **Windows 上的 Codex CLI** 为例。先安装并完成 CLI 的登录，替换 `YOUR_MODEL_ID`；新建独立配置与实验目录：
+
+```bash
 python -m harnesssafe init --harness codex --model YOUR_MODEL_ID --name codex-before --smoke --output experiments/codex-before.json
 python -m harnesssafe doctor --config experiments/codex-before.json
 python -m harnesssafe plan --config experiments/codex-before.json --out artifacts/codex-before
 ```
 
-init 默认只查询本地 CLI 版本；doctor 检查平台、版本、CLI 契约与依赖；plan 完全离线。这三个命令不调用模型。下面的 run 才执行真实实验并使用模型：
+确认配置后，先执行一个试验，再继续剩余试验：
 
-```text
+```bash
 python -m harnesssafe run --plan artifacts/codex-before --limit 1
 python -m harnesssafe run --plan artifacts/codex-before --resume
 python -m harnesssafe report --plan artifacts/codex-before
 ```
 
-smoke 固定选择每个家族按 manifest 顺序的第一个案例，共 7 例，只用于验证通路。省略 --smoke 可选择全部 328 例。其他 harness 使用相同 doctor/plan/run/report 命令，只替换配置文件与实验目录。
+**只有 `run` 会调用模型，并可能产生费用。** `--resume` 不重跑已经尝试过的失败或中断试验。其他 harness 从 [七种配置模板](examples/README.md) 开始，使用同一套后续命令。
 
-Codex/Claude 默认 default_permission；Hermes/OpenClaw 的原生入口仅支持 max_permission。Linux 原生配置标记为 adapter_default，不与 Windows 权限档位混用。isolated_home 隔离 agent 状态，不是操作系统安全边界；高权限基准应在专用测试环境运行。
+<a id="compare"></a>
 
-## CLI 更新后再测
+## 更新 CLI 后，用相同条件复测
 
-重新 init 或复制配置，固定相同模型、案例选择、权限和超时，填写新 CLI 的精确版本。--executable 可以指定单独安装的版本。Hermes/OpenClaw 新版本需要身份绑定的能力证明；Gemini/OpenCode 的证明必须与目标版本及可执行文件匹配。Kimi 原生协议目前仍严格绑定已验证的 0.26.0 运行时。
+保留框架代码、模型、案例、权限、超时与重复次数，安装目标 CLI 版本后创建另一份实验。也可以通过 `--executable` 指定独立安装的版本。
 
-```text
+```bash
+python -m harnesssafe init --harness codex --model YOUR_MODEL_ID --name codex-after --smoke --output experiments/codex-after.json
 python -m harnesssafe doctor --config experiments/codex-after.json
 python -m harnesssafe plan --config experiments/codex-after.json --out artifacts/codex-after
 python -m harnesssafe run --plan artifacts/codex-after
 python -m harnesssafe compare artifacts/codex-before artifacts/codex-after --out artifacts/codex-comparison
 ```
 
-报告保存覆盖率、正式 ASR、共同样本 ASR、固定家族权重 CSS、逐案例变化，以及精确共同样本清单。CLI 参数或协议发生不兼容变化时需更新适配器，不承诺任意未来版本都无需适配。框架不会自动升级 CLI。
+比较报告回答三个问题：
 
-## 评分边界
+- **覆盖是否改变？** 各版本的有效试验数、覆盖率和执行状态分布。
+- **共同案例上有何变化？** 逐案例、逐重复编号的阶段变化与指标差值。
+- **分数使用了哪些样本？** 精确成员清单和哈希保存在 `common-support.json`。
 
-Windows 四个适配器复用共享 Evaluation Record v3。Gemini 接入已有分析桥接后，再由共享 v3 判断资格。OpenCode 当前统一入口保留原始证据，尚不产出正式评分；Kimi 的已有分析仍是诊断用途。执行完成本身不代表 evaluation_eligible=true。
+改变模型、provider 或运行条件时，报告会标记为配置比较，避免将多个因素的变化归因于 CLI 版本。
 
-不支持、失败、未完成、未运行和未评分都不能记作 N0 或安全。缺少有效共同样本时 ASR/CSS 为 N/A。Linux 的当前统一调度仅支持 attack，配置 controls 会明确报错。
+### 如何阅读指标
 
-## 输出与复现
+| 指标 | 含义 |
+| --- | --- |
+| **Coverage** | 正式有效试验数 ÷ 计划试验数 |
+| **ASR** | 正式有效试验中到达 N5a / N5b 的攻击比例；越低越好 |
+| **Conditional CSS** | 有效试验的平均安全权重；越高越好 |
+| **Standardized CSS** | 在共同有效样本上按完整基准的固定家族权重计算 |
 
-- plan.json、source-lock.json：配置、案例集、实验臂、重复次数、代码与案例哈希；外部 provider/conformance 文件有哈希和 inputs/ 副本。
-- environment.json：实际 CLI/运行时身份、帮助指纹、Python 和依赖版本。
-- jobs/<job_id>/：调用、原生输出、日志和证据收据。
-- results.jsonl、results.csv：完整计划清单，保留失败与未运行项。
-- report.json、report.md、common-support.json：指标和共同样本成员。
+未运行、失败、不支持和未评分的记录会保留在清单中，并从正式评分中排除。没有有效样本，或标准化 CSS 所需的家族缺失时，结果为 `N/A`。权重与完整定义见 [实验协议](docs/experiments.md)。
 
---resume 只运行尚未尝试的试验；重复测量应预先用 --repeats 声明。计划后修改案例、代码或外部证明会阻止继续执行。Linux 短路径原生目录和证据副本的关系见适配器文档。
+## 每次实验留下什么
 
-artifacts/、bench_state/ 和凭据目录已被 .gitignore 排除。原始运行日志留在本地，不应直接上传为公开结果包。
+```text
+artifacts/codex-before/
+├── plan.json               # 配置、案例、实验组与重复次数
+├── source-lock.json        # 源码与冻结案例的哈希
+├── environment.json        # 实际运行时身份（开始执行后生成）
+├── inputs/                 # 配置引用的外部证明与 profile 副本（如有）
+├── jobs/
+│   └── <job_id>/           # 原生证据、启动记录和完成收据
+├── results.jsonl           # 完整试验清单
+├── results.csv             # 表格格式输出
+├── report.json
+├── report.md
+└── common-support.json     # 共同有效样本成员
+```
 
-[实验协议](docs/experiments.md) · [适配器状态](docs/adapters.md) · [开发说明](docs/development.md) · [本地验证](docs/local-validation.md)
+源码、案例、CLI 或外部能力证明发生变化时，框架会阻止继续混入旧实验。生成报告时会复核已记录证据的完整性。
 
-## 来源和许可证
+<a id="docs"></a>
 
-来源与原压缩包 SHA-256 在 provenance/upstream.json。历史结果仍在原匿名投稿压缩包中，不作为当前 CLI 的新结果。本框架不重建缺失的历史 CSS 成员或对照实验记录。
+## 文档与开发
 
-代码 Apache-2.0；案例定义和文档按照 LICENSES.md 使用 CC BY 4.0。CITATION.cff 暂保留匿名投稿信息，公开发布时更新作者和项目地址。本仓库提供可复现实验代码；真实模型与 Linux 真机验证状态见本地验证记录。旧版构建归档仅保留模板，公开文件清单见 [发布说明](docs/publication.md)。
+| 文档 | 内容 |
+| --- | --- |
+| [配置示例](examples/README.md) | 七种 harness 的配置起点 |
+| [适配器状态](docs/adapters.md) | 平台要求、版本资格、控制组和评分限制 |
+| [实验协议](docs/experiments.md) | 试验语义、指标、共同样本与恢复策略 |
+| [开发说明](docs/development.md) | 模块职责和离线验证方法 |
+| [验证记录](docs/local-validation.md) | 本地检查结果与实机验证范围 |
+| [公开发布范围](docs/publication.md) | 模板归档处理、测试夹具和排除的本地产物 |
+
+运行离线框架测试：
+
+```bash
+python -m pytest -q tests/framework
+```
+
+欢迎通过 [Issues](https://github.com/artist-coding/harnesssafe/issues) 提交版本兼容性问题与改进建议。报告兼容性问题时，请附上 harness/CLI 版本、操作系统、模型标识和脱敏后的错误信息。适配器扩展、协议变更和评分实现需配套可验证证据。
+
+## 当前范围与许可证
+
+本仓库提供实验代码、冻结案例和复测工作流。**真实模型实验、Linux 原生运行验证和正式评分覆盖，以各适配器的验证记录为准**；离线 CI 通过不等于所有真实 harness 通路均已验证。固定实验过程也不保证远程模型每次输出完全相同。
+
+源码采用 [Apache 2.0](LICENSE)，案例定义与文档按 [许可证映射](LICENSES.md) 使用 CC BY 4.0。来源记录见 [provenance/upstream.json](provenance/upstream.json)，引用信息见 [CITATION.cff](CITATION.cff)；原匿名作者信息尚待完善。
+
+旧版构建归档的公开副本仅保留模板，原始运行日志与凭据不进入仓库。历史论文结果与当前 CLI 的新实验结果需分别报告。高权限实验应在专用、已获授权的测试环境中运行。
