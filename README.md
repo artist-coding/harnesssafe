@@ -97,6 +97,31 @@ Xiao Zhang · Yusheng Wang · Yuhao Fei · Dongyuan Li · Zian Liang · Liuyu Xi
 
 </details>
 
+### 论文图解
+
+[![HarnessSafe 整体框架：入口、载体、边界、后续触发与阶段评估](docs/assets/paper/background.png)](https://artist-coding.github.io/#overview)
+
+论文图 2：风险如何经过持久载体与运行边界，在后续正常任务中被再次触发。[在项目网站放大查看](https://artist-coding.github.io/#overview) · [矢量 PDF](docs/assets/paper/background.pdf)
+
+<details>
+<summary><strong>展开查看案例分类与论文实验结果</strong></summary>
+
+#### 案例分类
+
+<img src="docs/assets/paper/benchmark.png" width="680" alt="论文图 1：七类持久载体和 328 个冻结案例的分布">
+
+论文图 1：三个层级覆盖核心持久载体、跨载体转化与跨边界传播。[浏览全部案例](https://artist-coding.github.io/cases.html) · [矢量 PDF](docs/assets/paper/benchmark.pdf)
+
+#### 论文中的阶段分布
+
+<img src="docs/assets/paper/checkpoint_dist.png" width="900" alt="论文图 3：实验 1 中各 harness–模型配置的阶段分布，N−1 单独列为未评分">
+
+论文图 3：**arXiv v1（2026-08-07）的历史实验**。每根柱代表论文中的一个 harness–模型配置；N−1 工作流未完成，不进入 CSS。当前 CLI 版本需要重新测试。[实验说明](https://artist-coding.github.io/#results) · [矢量 PDF](docs/assets/paper/checkpoint_dist.pdf)
+
+</details>
+
+三张图均保留论文原图内容，来源与文件哈希见 [配图说明](docs/assets/paper/README.md)。
+
 <a id="adapters"></a>
 
 ## 七种 harness，一套管理入口

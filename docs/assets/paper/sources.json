@@ -1,0 +1,26 @@
+{
+  "paper": "https://arxiv.org/abs/2608.06984",
+  "doi": "10.48550/arXiv.2608.06984",
+  "license": "CC-BY-4.0",
+  "conversion": "Original author-provided PDF figures rendered with Poppler; longest edge 2400 px. No figure content changed.",
+  "files": [
+    {
+      "pdf": "background.pdf",
+      "pdf_sha256": "ec4ec4b1700bf2036a46a541f08c66364484631c1fae37ece25e6e49f5a3a444",
+      "png": "background.png",
+      "png_sha256": "581c172360e6e5ab6960fbbfa997ef5e20f6294081abe4d748ec4b8ab9e531ef"
+    },
+    {
+      "pdf": "benchmark.pdf",
+      "pdf_sha256": "33e9b71ec9848ddd69555173a9d42917b053c6a2ab1f4c4e960b495182955711",
+      "png": "benchmark.png",
+      "png_sha256": "56a01b935b0873359fd0b7dc8977e72de602b19c8881d9e23707172554d976bc"
+    },
+    {
+      "pdf": "checkpoint_dist.pdf",
+      "pdf_sha256": "6dc3ac2f840baccbe3e89967f475a632d42a14d9e7b7b5f1643e17dc526df707",
+      "png": "checkpoint_dist.png",
+      "png_sha256": "b3473075f215546a1c77cebd1802d07cad544c643504051328b0541c9746dcf4"
+    }
+  ]
+}
