@@ -8,6 +8,6 @@
 
 .gitattributes 禁用自动换行转换，防止 Windows/Linux checkout 改写冻结案例和能力绑定的文件哈希。
 
-本仓库是持续开发代码发布，不是已经完成所有 harness 实机验证的论文结果发布。OpenCode/Kimi 正式评分限制、Kimi 的原生版本锁定和真实模型验证状态见 adapters.md 与 local-validation.md。CITATION.cff 的原匿名作者信息保留，未将 GitHub 维护者冒认为原论文作者。
+本仓库是持续开发代码发布，不是已经完成所有 harness 实机验证的论文结果发布。OpenCode/Kimi 正式评分限制、Kimi 的原生版本锁定和真实模型验证状态见 adapters.md 与 local-validation.md。论文作者及引用信息依据 [arXiv 公开元数据](https://arxiv.org/abs/2608.06984)维护。
 
-论文源码、与主稿对齐的附录及三张配图收录在 [paper/](../paper/README.md)，按源文件字节原样保留。主稿哈希与原始代码与数据归档中的论文来源记录一致，详见 [provenance/paper_source.json](../provenance/paper_source.json)。当前未包含完整论文 PDF、HarnessSafe.bib 和 AAAI 模板依赖；README 与引用元数据均将其标识为匿名源码稿件，不声称已正式发表。
+论文入口为 [arXiv:2608.06984](https://arxiv.org/abs/2608.06984)，项目网站为 [artist-coding.github.io](https://artist-coding.github.io/)。[paper/](../paper/README.md) 提供公开论文链接与 BibTeX 引用；本地匿名草稿及其配图不再收录于仓库当前版本。

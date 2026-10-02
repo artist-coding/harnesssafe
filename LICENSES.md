@@ -14,7 +14,6 @@ mapping below applies.
 | `runs/manifest.json`, `runs/active/**/case_meta.json`, task prompts, case metadata, and non-executable benchmark case definitions | Creative Commons Attribution 4.0 International |
 | Executable mock servers, tool/MCP fixtures, plugins, and scripts inside benchmark cases | Apache License 2.0 |
 | Sanitized files copied into `runs/_artifacts/repro_bundles/` | Same license as the copied source path; generated summaries and tables are CC BY 4.0 |
-| `paper/` manuscript sources and original figures | Author-provided manuscript materials; no separate license supplied. These materials are outside the software and case-definition license grants above. |
 | Raw traces, honeypot logs, canary-bearing artifacts, local agent homes, credentials, and unpublished run outputs | Not part of the public release unless explicitly included in a sanitized release bundle |
 
 The CC BY 4.0 legal code is available at
@@ -32,5 +31,4 @@ not have explicit permission to test.
 ## Attribution
 
 When citing or reusing the benchmark, cite the final `CITATION.cff` metadata
-once the public repository URL, artifact URL or DOI, version, release date, and
-author list have been finalized.
+for the paper authors, arXiv identifier, DOI, and publication year.

@@ -1,17 +1,48 @@
 cff-version: 1.2.0
-message: "Please cite the accompanying HarnessSafe manuscript when using this benchmark."
+message: "Please cite the HarnessSafe paper when using this benchmark."
 title: "HarnessSafe: Reproducible Safety Experiments for Agent Harnesses"
 type: software
-version: anonymous-aaai27
-date-released: 2026-07-31
 authors:
-  - family-names: Anonymous
+  - family-names: Zhang
+    given-names: Xiao
+  - family-names: Wang
+    given-names: Yusheng
+  - family-names: Fei
+    given-names: Yuhao
+  - family-names: Li
+    given-names: Dongyuan
+  - family-names: Liang
+    given-names: Zian
+  - family-names: Xiang
+    given-names: Liuyu
+  - family-names: Gu
+    given-names: Hongxun
+  - family-names: He
+    given-names: Zhaofeng
 repository-code: https://github.com/artist-coding/harnesssafe
+url: https://artist-coding.github.io/
 preferred-citation:
-  type: generic
+  type: article
   title: "HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses"
   authors:
-    - name: Anonymous Submission
+    - family-names: Zhang
+      given-names: Xiao
+    - family-names: Wang
+      given-names: Yusheng
+    - family-names: Fei
+      given-names: Yuhao
+    - family-names: Li
+      given-names: Dongyuan
+    - family-names: Liang
+      given-names: Zian
+    - family-names: Xiang
+      given-names: Liuyu
+    - family-names: Gu
+      given-names: Hongxun
+    - family-names: He
+      given-names: Zhaofeng
+  journal: arXiv
   year: 2026
-  url: https://github.com/artist-coding/harnesssafe/tree/main/paper
-  notes: "Anonymous manuscript source; publication metadata pending."
+  month: 8
+  doi: 10.48550/arXiv.2608.06984
+  url: https://arxiv.org/abs/2608.06984

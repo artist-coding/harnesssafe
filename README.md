@@ -8,6 +8,15 @@
 </p>
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2608.06984"><img src="https://img.shields.io/badge/arXiv-2608.06984-B31B1B?logo=arxiv&amp;logoColor=white" alt="Paper: arXiv 2608.06984"></a>
+  <a href="https://artist-coding.github.io/"><img src="https://img.shields.io/badge/Project-Website-168B77" alt="HarnessSafe project website"></a>
+</p>
+
+<p align="center">
+  <strong><a href="https://arxiv.org/abs/2608.06984">arXiv 论文</a> · <a href="https://arxiv.org/pdf/2608.06984">论文 PDF</a> · <a href="https://artist-coding.github.io/">项目网站</a></strong>
+</p>
+
+<p align="center">
   <a href="https://github.com/artist-coding/harnesssafe/actions/workflows/tests.yml"><img src="https://github.com/artist-coding/harnesssafe/actions/workflows/tests.yml/badge.svg" alt="Offline framework checks"></a>
   <a href="requirements.txt"><img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&amp;logoColor=white" alt="Python 3.10+"></a>
   <a href="runs/manifest.json"><img src="https://img.shields.io/badge/Frozen_cases-328-168B77" alt="328 frozen cases"></a>
@@ -16,7 +25,7 @@
 </p>
 
 <p align="center">
-  <a href="#paper">论文与附录</a> ·
+  <a href="#paper">论文与引用</a> ·
   <a href="#overview">项目概览</a> ·
   <a href="#adapters">支持范围</a> ·
   <a href="#benchmark">测试案例</a> ·
@@ -58,31 +67,33 @@ flowchart LR
 
 <a id="paper"></a>
 
-## 论文与附录
+## 论文与引用
 
 **HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses**
 
+Xiao Zhang · Yusheng Wang · Yuhao Fei · Dongyuan Li · Zian Liang · Liuyu Xiang · Hongxun Gu · Zhaofeng He
+
 论文提出 **Persistent-Risk Lifecycle**，将持久风险描述为从攻击入口、载体留存、跨边界传播到后续触发与可观察违规的完整过程；在七类机制的 328 个案例上，使用 **N0–N5b 阶段评估与 CSS** 分析不同 harness–模型配置的风险遏制表现。
 
-**[阅读论文说明](paper/README.md) · [主论文源码](paper/harnesssafe_final.tex) · [补充附录](paper/harnesssafe_appendix_restructured_paper_aligned.tex) · [BibTeX 引用](paper/CITATION.bib)**
+**[arXiv 论文](https://arxiv.org/abs/2608.06984) · [论文 PDF](https://arxiv.org/pdf/2608.06984) · [项目网站](https://artist-coding.github.io/) · [BibTeX 引用](paper/CITATION.bib)**
 
-> 当前收录本地匿名稿件的 LaTeX 源码与原始配图，完整 PDF 和部分编译依赖尚未提供。论文历史结果与当前框架的新实验结果需分别报告。
+论文于 **2026 年 8 月 7 日**发布于 arXiv。论文中的历史结果与当前框架的新实验结果需分别报告。
 
 <details>
 <summary><strong>引用 HarnessSafe</strong></summary>
 
 ```bibtex
-@misc{harnesssafe2026,
-  author = {{Anonymous Submission}},
+@misc{zhang2026harnesssafe,
   title = {{HarnessSafe}: Evaluating Safety Across Persistent Carriers in Agent Harnesses},
+  author = {Xiao Zhang and Yusheng Wang and Yuhao Fei and Dongyuan Li and Zian Liang and Liuyu Xiang and Hongxun Gu and Zhaofeng He},
   year = {2026},
-  howpublished = {Manuscript source},
-  url = {https://github.com/artist-coding/harnesssafe/tree/main/paper},
-  note = {Anonymous manuscript; publication metadata pending}
+  eprint = {2608.06984},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CR},
+  doi = {10.48550/arXiv.2608.06984},
+  url = {https://arxiv.org/abs/2608.06984}
 }
 ```
-
-作者信息暂沿用原稿的匿名署名，公开作者名单与发表信息确认后再更新。
 
 </details>
 
@@ -272,6 +283,6 @@ python -m pytest -q tests/framework
 
 本仓库提供实验代码、冻结案例和复测工作流。**真实模型实验、Linux 原生运行验证和正式评分覆盖，以各适配器的验证记录为准**；离线 CI 通过不等于所有真实 harness 通路均已验证。固定实验过程也不保证远程模型每次输出完全相同。
 
-源码采用 [Apache 2.0](LICENSE)，案例定义与文档按 [许可证映射](LICENSES.md) 使用 CC BY 4.0。来源记录见 [provenance/upstream.json](provenance/upstream.json)，引用信息见 [CITATION.cff](CITATION.cff)；原匿名作者信息尚待完善。
+源码采用 [Apache 2.0](LICENSE)，案例定义与文档按 [许可证映射](LICENSES.md) 使用 CC BY 4.0。来源记录见 [provenance/upstream.json](provenance/upstream.json)，引用信息见 [CITATION.cff](CITATION.cff)，论文作者与发表日期依据 [arXiv 公开记录](https://arxiv.org/abs/2608.06984)维护。
 
 旧版构建归档的公开副本仅保留模板，原始运行日志与凭据不进入仓库。历史论文结果与当前 CLI 的新实验结果需分别报告。高权限实验应在专用、已获授权的测试环境中运行。
