@@ -16,6 +16,7 @@
 </p>
 
 <p align="center">
+  <a href="#paper">论文与附录</a> ·
   <a href="#overview">项目概览</a> ·
   <a href="#adapters">支持范围</a> ·
   <a href="#benchmark">测试案例</a> ·
@@ -54,6 +55,36 @@ flowchart LR
 
     classDef default fill:#eef8f6,stroke:#328879,color:#163f3a;
 ```
+
+<a id="paper"></a>
+
+## 论文与附录
+
+**HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses**
+
+论文提出 **Persistent-Risk Lifecycle**，将持久风险描述为从攻击入口、载体留存、跨边界传播到后续触发与可观察违规的完整过程；在七类机制的 328 个案例上，使用 **N0–N5b 阶段评估与 CSS** 分析不同 harness–模型配置的风险遏制表现。
+
+**[阅读论文说明](paper/README.md) · [主论文源码](paper/harnesssafe_final.tex) · [补充附录](paper/harnesssafe_appendix_restructured_paper_aligned.tex) · [BibTeX 引用](paper/CITATION.bib)**
+
+> 当前收录本地匿名稿件的 LaTeX 源码与原始配图，完整 PDF 和部分编译依赖尚未提供。论文历史结果与当前框架的新实验结果需分别报告。
+
+<details>
+<summary><strong>引用 HarnessSafe</strong></summary>
+
+```bibtex
+@misc{harnesssafe2026,
+  author = {{Anonymous Submission}},
+  title = {{HarnessSafe}: Evaluating Safety Across Persistent Carriers in Agent Harnesses},
+  year = {2026},
+  howpublished = {Manuscript source},
+  url = {https://github.com/artist-coding/harnesssafe/tree/main/paper},
+  note = {Anonymous manuscript; publication metadata pending}
+}
+```
+
+作者信息暂沿用原稿的匿名署名，公开作者名单与发表信息确认后再更新。
+
+</details>
 
 <a id="adapters"></a>
 
